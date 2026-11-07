@@ -1,0 +1,131 @@
+<?xml version="1.0" ?>
+<mxfile host="app.diagrams.net" modified="2026-11-07T05:45:00.000Z" agent="Antigravity RTMS V5 Simplified Flowchart" version="24.7.5">
+  <diagram id="stable_staff_flow_v5" name="Stable Staff Simplified Business Flowchart V5">
+    <mxGraphModel dx="1920" dy="1080" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1080" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="v_header_title" value="&amp;lt;b style=&amp;quot;font-size:24px;color:#0F172A;&amp;quot;&amp;gt;STABLE STAFF ROLE-BASED BUSINESS FLOWCHART&amp;lt;/b&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;span style=&amp;quot;font-size:14px;color:#64748B;&amp;quot;&amp;gt;Role: STABLE_STAFF (Nhân viên chuồng) — 4 Core Operational Functional Areas&amp;lt;/span&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Segoe UI;fontColor=#0F172A;" vertex="1" parent="1">
+          <mxGeometry x="480" y="50" width="960" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="node_start" value="START" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#1E293B;strokeWidth=1.8;fillColor=#FFFFFF;fontColor=#0F172A;fontFamily=Segoe UI;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="225" y="207" width="90" height="46" as="geometry"/>
+        </mxCell>
+        <mxCell id="node_login" value="Login" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#1E293B;strokeWidth=1.8;fillColor=#FFFFFF;fontColor=#0F172A;fontFamily=Segoe UI;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="385" y="206" width="120" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="node_validate" value="Validate&amp;lt;br/&amp;gt;Account" style="rhombus;whiteSpace=wrap;html=1;strokeColor=#1E293B;strokeWidth=1.8;fillColor=#FFFFFF;fontColor=#0F172A;fontFamily=Segoe UI;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="580" y="195" width="150" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="node_denied" value="Access Denied" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#1E293B;strokeWidth=1.8;fillColor=#FFFFFF;fontColor=#0F172A;fontFamily=Segoe UI;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="735" y="127" width="140" height="46" as="geometry"/>
+        </mxCell>
+        <mxCell id="node_end_invalid" value="END" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#1E293B;strokeWidth=1.8;fillColor=#FFFFFF;fontColor=#0F172A;fontFamily=Segoe UI;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="935" y="128" width="80" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="node_dashboard" value="&amp;lt;div style=&amp;quot;font-weight:bold;font-size:15px;color:#0F172A;&amp;quot;&amp;gt;Dashboard&amp;lt;/div&amp;gt;&amp;lt;div style=&amp;quot;font-size:11px;color:#64748B;&amp;quot;&amp;gt;(Field Operations Hub)&amp;lt;/div&amp;gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#0F172A;strokeWidth=2.4;fillColor=#FFFFFF;fontColor=#0F172A;fontFamily=Segoe UI;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="860" y="201" width="200" height="58" as="geometry"/>
+        </mxCell>
+        <mxCell id="node_logout" value="Logout" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#1E293B;strokeWidth=1.8;fillColor=#FFFFFF;fontColor=#0F172A;fontFamily=Segoe UI;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="207" width="110" height="46" as="geometry"/>
+        </mxCell>
+        <mxCell id="node_session_end" value="Session End" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#1E293B;strokeWidth=1.8;fillColor=#FFFFFF;fontColor=#0F172A;fontFamily=Segoe UI;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="1330" y="207" width="110" height="46" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge_start_login" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1E293B;strokeWidth=1.8;endArrow=block;endFill=1;fontFamily=Segoe UI;fontSize=12;fontColor=#334155;fontStyle=1;" edge="1" parent="1" source="node_start" target="node_login">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge_login_val" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1E293B;strokeWidth=1.8;endArrow=block;endFill=1;fontFamily=Segoe UI;fontSize=12;fontColor=#334155;fontStyle=1;" edge="1" parent="1" source="node_login" target="node_validate">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge_val_denied" value="Invalid" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1E293B;strokeWidth=1.8;endArrow=block;endFill=1;fontFamily=Segoe UI;fontSize=12;fontColor=#334155;fontStyle=1;" edge="1" parent="1" source="node_validate" target="node_denied">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="655" y="150"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_denied_end" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1E293B;strokeWidth=1.8;endArrow=block;endFill=1;fontFamily=Segoe UI;fontSize=12;fontColor=#334155;fontStyle=1;" edge="1" parent="1" source="node_denied" target="node_end_invalid">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge_val_dash" value="Valid" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1E293B;strokeWidth=1.8;endArrow=block;endFill=1;fontFamily=Segoe UI;fontSize=12;fontColor=#334155;fontStyle=1;" edge="1" parent="1" source="node_validate" target="node_dashboard">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge_dash_logout" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1E293B;strokeWidth=1.8;endArrow=block;endFill=1;fontFamily=Segoe UI;fontSize=12;fontColor=#334155;fontStyle=1;" edge="1" parent="1" source="node_dashboard" target="node_logout">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge_logout_end" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1E293B;strokeWidth=1.8;endArrow=block;endFill=1;fontFamily=Segoe UI;fontSize=12;fontColor=#334155;fontStyle=1;" edge="1" parent="1" source="node_logout" target="node_session_end">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="area_1" value="&amp;lt;div style=&amp;quot;padding: 26px 28px; box-sizing: border-box;&amp;quot;&amp;gt;
+  &amp;lt;div style=&amp;quot;text-align: center; font-weight: bold; font-size: 18px; color: #0F172A; margin-bottom: 16px;&amp;quot;&amp;gt;Daily Tasks &amp;amp; Training&amp;lt;/div&amp;gt;
+  &amp;lt;hr style=&amp;quot;border: none; border-top: 1px solid #E2E8F0; margin-bottom: 24px;&amp;quot; /&amp;gt;
+  &amp;lt;div style=&amp;quot;font-size: 14.5px; line-height: 1.6; color: #1E293B;&amp;quot;&amp;gt;
+    Review daily and assigned tasks.&lt;br/&gt;&lt;br/&gt;Check special or recovery instructions, if assigned.&lt;br/&gt;&lt;br/&gt;Prepare horses and equipment for training.&lt;br/&gt;&lt;br/&gt;Confirm readiness and mark assigned tasks as completed.
+  &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#1E293B;strokeWidth=1.8;fillColor=#FFFFFF;verticalAlign=top;align=left;spacingTop=0;spacingLeft=0;spacingRight=0;fontFamily=Segoe UI;" vertex="1" parent="1">
+          <mxGeometry x="82" y="380" width="400" height="370" as="geometry"/>
+        </mxCell>
+        <mxCell id="area_2" value="&amp;lt;div style=&amp;quot;padding: 26px 28px; box-sizing: border-box;&amp;quot;&amp;gt;
+  &amp;lt;div style=&amp;quot;text-align: center; font-weight: bold; font-size: 18px; color: #0F172A; margin-bottom: 16px;&amp;quot;&amp;gt;Stable Management&amp;lt;/div&amp;gt;
+  &amp;lt;hr style=&amp;quot;border: none; border-top: 1px solid #E2E8F0; margin-bottom: 24px;&amp;quot; /&amp;gt;
+  &amp;lt;div style=&amp;quot;font-size: 14.5px; line-height: 1.6; color: #1E293B;&amp;quot;&amp;gt;
+    Review stable layout and horse locations.&lt;br/&gt;&lt;br/&gt;Receive horse intake and check veterinary clearance.&lt;br/&gt;&lt;br/&gt;IF not cleared, hold intake and await veterinary decision.&lt;br/&gt;&lt;br/&gt;Check stall availability and safety before assigning or moving horses.
+  &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#1E293B;strokeWidth=1.8;fillColor=#FFFFFF;verticalAlign=top;align=left;spacingTop=0;spacingLeft=0;spacingRight=0;fontFamily=Segoe UI;" vertex="1" parent="1">
+          <mxGeometry x="534" y="380" width="400" height="370" as="geometry"/>
+        </mxCell>
+        <mxCell id="area_3" value="&amp;lt;div style=&amp;quot;padding: 26px 28px; box-sizing: border-box;&amp;quot;&amp;gt;
+  &amp;lt;div style=&amp;quot;text-align: center; font-weight: bold; font-size: 18px; color: #0F172A; margin-bottom: 16px;&amp;quot;&amp;gt;Feeding Management&amp;lt;/div&amp;gt;
+  &amp;lt;hr style=&amp;quot;border: none; border-top: 1px solid #E2E8F0; margin-bottom: 24px;&amp;quot; /&amp;gt;
+  &amp;lt;div style=&amp;quot;font-size: 14.5px; line-height: 1.6; color: #1E293B;&amp;quot;&amp;gt;
+    Review the approved daily feeding plan.&lt;br/&gt;&lt;br/&gt;Prepare the correct ration for each horse.&lt;br/&gt;&lt;br/&gt;IF a custom diet applies, follow the approved feeding instructions.&lt;br/&gt;&lt;br/&gt;Feed horses and record meal attendance.
+  &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#1E293B;strokeWidth=1.8;fillColor=#FFFFFF;verticalAlign=top;align=left;spacingTop=0;spacingLeft=0;spacingRight=0;fontFamily=Segoe UI;" vertex="1" parent="1">
+          <mxGeometry x="986" y="380" width="400" height="370" as="geometry"/>
+        </mxCell>
+        <mxCell id="area_4" value="&amp;lt;div style=&amp;quot;padding: 26px 28px; box-sizing: border-box;&amp;quot;&amp;gt;
+  &amp;lt;div style=&amp;quot;text-align: center; font-weight: bold; font-size: 18px; color: #0F172A; margin-bottom: 16px;&amp;quot;&amp;gt;Incidents &amp;amp; Inventory&amp;lt;/div&amp;gt;
+  &amp;lt;hr style=&amp;quot;border: none; border-top: 1px solid #E2E8F0; margin-bottom: 24px;&amp;quot; /&amp;gt;
+  &amp;lt;div style=&amp;quot;font-size: 14.5px; line-height: 1.6; color: #1E293B;&amp;quot;&amp;gt;
+    Report abnormal conditions and incidents.&lt;br/&gt;&lt;br/&gt;IF urgent, notify the relevant veterinarian and trainer.&lt;br/&gt;&lt;br/&gt;Track incident progress and update its resolution status.&lt;br/&gt;&lt;br/&gt;Check stock and request replenishment IF below the minimum level.
+  &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#1E293B;strokeWidth=1.8;fillColor=#FFFFFF;verticalAlign=top;align=left;spacingTop=0;spacingLeft=0;spacingRight=0;fontFamily=Segoe UI;" vertex="1" parent="1">
+          <mxGeometry x="1438" y="380" width="400" height="370" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge_dash_area1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1E293B;strokeWidth=1.8;endArrow=block;endFill=1;fontFamily=Segoe UI;fontSize=12;fontColor=#334155;fontStyle=1;" edge="1" parent="1" source="node_dashboard" target="area_1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="960" y="320"/>
+              <mxPoint x="282" y="320"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_dash_area2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1E293B;strokeWidth=1.8;endArrow=block;endFill=1;fontFamily=Segoe UI;fontSize=12;fontColor=#334155;fontStyle=1;" edge="1" parent="1" source="node_dashboard" target="area_2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="960" y="320"/>
+              <mxPoint x="734" y="320"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_dash_area3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1E293B;strokeWidth=1.8;endArrow=block;endFill=1;fontFamily=Segoe UI;fontSize=12;fontColor=#334155;fontStyle=1;" edge="1" parent="1" source="node_dashboard" target="area_3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="960" y="320"/>
+              <mxPoint x="1186" y="320"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_dash_area4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1E293B;strokeWidth=1.8;endArrow=block;endFill=1;fontFamily=Segoe UI;fontSize=12;fontColor=#334155;fontStyle=1;" edge="1" parent="1" source="node_dashboard" target="area_4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="960" y="320"/>
+              <mxPoint x="1638" y="320"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
