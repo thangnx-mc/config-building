@@ -1,0 +1,455 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      * { box-sizing: border-box; }
+      text { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif; }
+      .title-main { font-size: 23px; font-weight: 700; fill: #0F172A; text-anchor: middle; }
+      .title-sub { font-size: 13.5px; font-weight: 400; fill: #64748B; text-anchor: middle; }
+      .region-box { fill: #FAFAFA; stroke: #94A3B8; stroke-width: 1.6px; stroke-dasharray: none; rx: 8px; }
+      .region-label { font-size: 13px; font-weight: 700; fill: #475569; letter-spacing: 0.8px; text-transform: uppercase; }
+      .card-comp { fill: #FFFFFF; stroke: #334155; stroke-width: 1.8px; rx: 6px; }
+      .card-sub { fill: #F8FAFC; stroke: #CBD5E1; stroke-width: 1.2px; rx: 4px; }
+      .tech-title { font-size: 17px; font-weight: 700; fill: #0F172A; }
+      .tech-sub { font-size: 12px; font-weight: 500; fill: #64748B; }
+      .module-title { font-size: 12px; font-weight: 700; fill: #1E293B; }
+      .module-desc { font-size: 10.5px; font-weight: 400; fill: #64748B; }
+      .conn-label { font-size: 11px; font-weight: 600; fill: #1E293B; }
+      .docker-tag { font-size: 10px; font-weight: 700; fill: #0284C7; }
+    </style>
+
+    <marker id="arrow-solid" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#1E293B" />
+    </marker>
+    <marker id="arrow-dash" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#64748B" />
+    </marker>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1920" height="1080" fill="#FFFFFF" />
+
+  <!-- Diagram Title Header -->
+  <text x="960" y="38" class="title-main">RACEHORSE SYSTEM ARCHITECTURE DIAGRAM</text>
+  <text x="960" y="58" class="title-sub">Racehorse Training &amp; Club Management System • Verified Modular Monolith Baseline (Develop: e8b3b8f)</text>
+
+  <!-- ========================================================================= -->
+  <!-- REGION 1: THIRD PARTIES (TOP HORIZONTAL CONTAINER) -->
+  <!-- ========================================================================= -->
+  <rect x="470" y="75" width="1390" height="115" class="region-box" fill="#F8FAFC" />
+  <text x="1840" y="96" text-anchor="end" class="region-label">Third Parties &amp; Cloud Services</text>
+
+  <!-- 1A. Cloudinary -->
+  <g transform="translate(500, 95)">
+    <rect width="280" height="75" rx="5" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2" />
+    <svg x="12" y="14" width="46" height="46" viewBox="0 0 24 24"><title>Cloudinary</title><path fill="#3448C5" d="M24 14.8598c0 2.1729-1.3757 3.974-3.5903 4.6996l-.0995.0318V17.989c1.3777-.5805 2.1869-1.7275 2.1869-3.1291-.0072-2-1.6087-3.6288-3.6082-3.6699h-.5964l-.1432-.5686c-.7025-2.8996-3.2886-4.9489-6.2721-4.97a6.3915 6.3915 0 0 0-5.811 3.664l-.1828.3757-.4175.0437a4.4311 4.4311 0 0 0-3.3052 2.088c-1.2803 2.0856-.6274 4.8143 1.4583 6.0947v1.6897h-.01l-.149-.0675a5.9402 5.9402 0 0 1-3.3658-4.3494c-.5787-3.2291 1.57-6.3161 4.7991-6.8948a7.8766 7.8766 0 0 1 6.9839-4.149c3.4724.025 6.535 2.28 7.5901 5.5883 2.5789.3366 4.5138 2.5245 4.5327 5.1251zm-15.3176-1.322h.5647a.0656.0656 0 0 0 .0457-.1113L7.084 11.2158l-.0007-.0007a.0656.0656 0 0 0-.0927.0007L4.78 13.4265a.0656.0656 0 0 0 .0477.1113h.5566a.0656.0656 0 0 1 .0657.0656v5.0574c0 .6588.534 1.1928 1.1928 1.1928H9.247a.0656.0656 0 0 0 .0457-.1113l-.33-.33a1.1928 1.1928 0 0 1-.348-.839v-4.97a.0676.0676 0 0 1 .0676-.0655zm9.769 2.5466h.5667a.0655.0655 0 0 0 .0457-.1133l-2.2107-2.2087-.0015-.0015a.0636.0636 0 0 0-.0899.0015L14.551 15.971a.0657.0657 0 0 0 .0457.1133h.5567a.0656.0656 0 0 1 .0656.0656v2.5108c0 .6588.534 1.1928 1.1928 1.1928h2.6063a.0655.0655 0 0 0 .0457-.1113l-.33-.33a1.1928 1.1928 0 0 1-.348-.839V16.15a.0656.0656 0 0 1 .0657-.0656zm-4.8844-1.2743h.5646a.0656.0656 0 0 0 .0477-.1114l-2.2107-2.2027-.0006-.0006a.0656.0656 0 0 0-.0928.0006l-2.2087 2.2068a.0656.0656 0 0 0 .0457.1113h.5626a.0676.0676 0 0 1 .0657.0676v3.7791c0 .6588.534 1.1928 1.1928 1.1928h2.5983a.0656.0656 0 0 0 .0477-.1113l-.332-.33a1.193 1.193 0 0 1-.346-.839v-3.6956c0-.0366.0291-.0665.0657-.0676z"/></svg>
+    <text x="68" y="32" class="tech-title" style="font-size: 15px;">Cloudinary</text>
+    <text x="68" y="48" class="tech-sub" style="font-size: 11px;">Cloud Object &amp; Media Storage</text>
+    <text x="68" y="62" class="module-desc">Horse photos, medical files, task proof</text>
+  </g>
+
+  <!-- 1B. PayOS by CASSO -->
+  <g transform="translate(810, 95)">
+    <rect width="280" height="75" rx="5" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2" />
+    <g transform="translate(15, 18)">
+      <text x="0" y="24" font-size="24" font-weight="800" fill="#5A3FFF">payOS</text>
+      <text x="4" y="36" font-size="9" font-weight="700" fill="#64748B">by CASSO</text>
+    </g>
+    <text x="88" y="32" class="tech-title" style="font-size: 15px;">PayOS Gateway</text>
+    <text x="88" y="48" class="tech-sub" style="font-size: 11px;">Payment Service &amp; Webhooks</text>
+    <text x="88" y="62" class="module-desc">VietQR generation &amp; wallet deposit</text>
+  </g>
+
+  <!-- 1C. VietQR Standard -->
+  <g transform="translate(1120, 95)">
+    <rect width="260" height="75" rx="5" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2" />
+    <g transform="translate(15, 18)">
+      <polygon points="0,0 12,0 6,10" fill="#E31837" />
+      <polygon points="0,12 12,12 6,22" fill="#003B70" />
+      <text x="18" y="22" font-size="18" font-weight="900" fill="#003B70">VIET<tspan fill="#E31837">QR</tspan></text>
+    </g>
+    <text x="96" y="32" class="tech-title" style="font-size: 15px;">VietQR</text>
+    <text x="96" y="48" class="tech-sub" style="font-size: 11px;">Banking QR Standard</text>
+    <text x="96" y="62" class="module-desc">NAPAS247 instant interbank pay</text>
+  </g>
+
+  <!-- 1D. Vercel Hosting Platform -->
+  <g transform="translate(1410, 95)">
+    <rect width="280" height="75" rx="5" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2" />
+    <svg x="15" y="16" width="38" height="38" viewBox="0 0 24 24"><title>Vercel</title><path fill="#000000" d="M24 22.525H0l12-21.05 12 21.05z"/></svg>
+    <text x="65" y="32" class="tech-title" style="font-size: 15px;">Vercel Platform</text>
+    <text x="65" y="48" class="tech-sub" style="font-size: 11px;">Global Edge Network &amp; CDN</text>
+    <text x="65" y="62" class="module-desc">Hosts React SPA (horse-project-phi)</text>
+  </g>
+
+  <!-- ========================================================================= -->
+  <!-- REGION 2: CLIENT APPLICATIONS (LEFT CONTAINER) -->
+  <!-- ========================================================================= -->
+  <rect x="50" y="75" width="350" height="970" class="region-box" />
+  <text x="70" y="102" class="region-label">Client Applications</text>
+
+  <!-- 2A. Single Page Web App Main Card -->
+  <g transform="translate(65, 120)">
+    <rect width="320" height="150" class="card-comp" />
+    <svg x="18" y="18" width="50" height="50" viewBox="0 0 24 24"><title>React</title><path fill="#61DAFB" d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38-.318-.184-.688-.277-1.092-.278zm-.005 1.09v.006c.225 0 .406.044.558.127.666.382.955 1.835.73 3.704-.054.46-.142.945-.25 1.44-.96-.236-2.006-.417-3.107-.534-.66-.905-1.345-1.727-2.035-2.447 1.592-1.48 3.087-2.292 4.105-2.295zm-9.77.02c1.012 0 2.514.808 4.11 2.28-.686.72-1.37 1.537-2.02 2.442-1.107.117-2.154.298-3.113.538-.112-.49-.195-.964-.254-1.42-.23-1.868.054-3.32.714-3.707.19-.09.4-.127.563-.132zm4.882 3.05c.455.468.91.992 1.36 1.564-.44-.02-.89-.034-1.345-.034-.46 0-.915.01-1.36.034.44-.572.895-1.096 1.345-1.565zM12 8.1c.74 0 1.477.034 2.202.093.406.582.802 1.203 1.183 1.86.372.64.71 1.29 1.018 1.946-.308.655-.646 1.31-1.013 1.95-.38.66-.773 1.288-1.18 1.87-.728.063-1.466.098-2.21.098-.74 0-1.477-.035-2.202-.093-.406-.582-.802-1.204-1.183-1.86-.372-.64-.71-1.29-1.018-1.946.303-.657.646-1.313 1.013-1.954.38-.66.773-1.286 1.18-1.868.728-.064 1.466-.098 2.21-.098zm-3.635.254c-.24.377-.48.763-.704 1.16-.225.39-.435.782-.635 1.174-.265-.656-.49-1.31-.676-1.947.64-.15 1.315-.283 2.015-.386zm7.26 0c.695.103 1.365.23 2.006.387-.18.632-.405 1.282-.66 1.933-.2-.39-.41-.783-.64-1.174-.225-.392-.465-.774-.705-1.146zm3.063.675c.484.15.944.317 1.375.498 1.732.74 2.852 1.708 2.852 2.476-.005.768-1.125 1.74-2.857 2.475-.42.18-.88.342-1.355.493-.28-.958-.646-1.956-1.1-2.98.45-1.017.81-2.01 1.085-2.964zm-13.395.004c.278.96.645 1.957 1.1 2.98-.45 1.017-.812 2.01-1.086 2.964-.484-.15-.944-.318-1.37-.5-1.732-.737-2.852-1.706-2.852-2.474 0-.768 1.12-1.742 2.852-2.476.42-.18.88-.342 1.356-.494zm11.678 4.28c.265.657.49 1.312.676 1.948-.64.157-1.316.29-2.016.39.24-.375.48-.762.705-1.158.225-.39.435-.788.636-1.18zm-9.945.02c.2.392.41.783.64 1.175.23.39.465.772.705 1.143-.695-.102-1.365-.23-2.006-.386.18-.63.406-1.282.66-1.933zM17.92 16.32c.112.493.2.968.254 1.423.23 1.868-.054 3.32-.714 3.708-.147.09-.338.128-.563.128-1.012 0-2.514-.807-4.11-2.28.686-.72 1.37-1.536 2.02-2.44 1.107-.118 2.154-.3 3.113-.54zm-11.83.01c.96.234 2.006.415 3.107.532.66.905 1.345 1.727 2.035 2.446-1.595 1.483-3.092 2.295-4.11 2.295-.22-.005-.406-.05-.553-.132-.666-.38-.955-1.834-.73-3.703.054-.46.142-.944.25-1.438zm4.56.64c.44.02.89.034 1.345.034.46 0 .915-.01 1.36-.034-.44.572-.895 1.095-1.345 1.565-.455-.47-.91-.993-1.36-1.565z"/></svg>
+    <svg x="74" y="20" width="32" height="32" viewBox="0 0 24 24"><title>Vite</title><path fill="#646CFF" d="m8.286 10.578.512-8.657a.306.306 0 0 1 .247-.282L17.377.006a.306.306 0 0 1 .353.385l-1.558 5.403a.306.306 0 0 0 .352.385l2.388-.46a.306.306 0 0 1 .332.438l-6.79 13.55-.123.19a.294.294 0 0 1-.252.14c-.177 0-.35-.152-.305-.369l1.095-5.301a.306.306 0 0 0-.388-.355l-1.433.435a.306.306 0 0 1-.389-.354l.69-3.375a.306.306 0 0 0-.37-.36l-2.32.536a.306.306 0 0 1-.374-.316zm14.976-7.926L17.284 3.74l-.544 1.887 2.077-.4a.8.8 0 0 1 .84.369.8.8 0 0 1 .034.783L12.9 19.93l-.013.025-.015.023-.122.19a.801.801 0 0 1-.672.37.826.826 0 0 1-.634-.302.8.8 0 0 1-.16-.67l1.029-4.981-1.12.34a.81.81 0 0 1-.86-.262.802.802 0 0 1-.165-.67l.63-3.08-2.027.468a.808.808 0 0 1-.768-.233.81.81 0 0 1-.217-.6l.389-6.57-7.44-1.33a.612.612 0 0 0-.64.906L11.58 23.691a.612.612 0 0 0 1.066-.004l11.26-20.135a.612.612 0 0 0-.644-.9z"/></svg>
+
+    <text x="120" y="38" class="tech-title">Racehorse Web App</text>
+    <text x="120" y="56" class="tech-sub">React 19 • Vite 8 • React Router 7</text>
+    <text x="120" y="72" class="module-desc">Single-Page Web Application</text>
+
+    <line x1="18" y1="88" x2="302" y2="88" stroke="#E2E8F0" stroke-width="1" />
+    <text x="18" y="106" font-size="11" font-weight="600" fill="#334155">• Deployed on Vercel Global Edge CDN</text>
+    <text x="18" y="122" font-size="11" font-weight="600" fill="#334155">• Recharts • Three.js 3D Track Visualizer</text>
+    <text x="18" y="138" font-size="11" font-weight="600" fill="#334155">• REST API Client via fetch &amp; Bearer JWT</text>
+  </g>
+
+  <!-- 2B. 5 Role Personas Accessing the Single App -->
+  <g transform="translate(65, 290)">
+    <text x="0" y="18" font-size="12" font-weight="700" fill="#475569" text-transform="uppercase">Role Interfaces (Role-Based Views):</text>
+
+    <!-- Role 1: Club Manager -->
+    <g transform="translate(0, 30)">
+      <rect width="320" height="110" class="card-sub" />
+      <circle cx="28" cy="28" r="14" fill="#E0E7FF" stroke="#4F46E5" stroke-width="1.5" />
+      <text x="28" y="32" font-size="12" font-weight="700" fill="#4338CA" text-anchor="middle">M</text>
+      <text x="52" y="26" class="module-title" style="font-size: 13px;">Club Manager (CLUB_MANAGER)</text>
+      <text x="52" y="42" class="module-desc">System Admin, Financials, Stables &amp; RBAC</text>
+      <line x1="16" y1="56" x2="304" y2="56" stroke="#E2E8F0" stroke-width="1" />
+      <text x="16" y="74" font-size="10.5" fill="#334155">Routes: /admin/users, /admin/matrix, /stables</text>
+      <text x="16" y="90" font-size="10.5" fill="#334155">Actions: Approve replenishment, configure permissions</text>
+    </g>
+
+    <!-- Role 2: Head Trainer -->
+    <g transform="translate(0, 150)">
+      <rect width="320" height="110" class="card-sub" />
+      <circle cx="28" cy="28" r="14" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5" />
+      <text x="28" y="32" font-size="12" font-weight="700" fill="#B45309" text-anchor="middle">T</text>
+      <text x="52" y="26" class="module-title" style="font-size: 13px;">Head Trainer (HEAD_TRAINER)</text>
+      <text x="52" y="42" class="module-desc">Training Management, Track Lanes &amp; Trials</text>
+      <line x1="16" y1="56" x2="304" y2="56" stroke="#E2E8F0" stroke-width="1" />
+      <text x="16" y="74" font-size="10.5" fill="#334155">Routes: /training/schedule, /training/plans</text>
+      <text x="16" y="90" font-size="10.5" fill="#334155">Actions: Book track lanes, conflict detection, trial runs</text>
+    </g>
+
+    <!-- Role 3: Veterinarian -->
+    <g transform="translate(0, 270)">
+      <rect width="320" height="110" class="card-sub" />
+      <circle cx="28" cy="28" r="14" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5" />
+      <text x="28" y="32" font-size="12" font-weight="700" fill="#15803D" text-anchor="middle">V</text>
+      <text x="52" y="26" class="module-title" style="font-size: 13px;">Veterinarian (VETERINARIAN)</text>
+      <text x="52" y="42" class="module-desc">Medical Exams, Injury Logs &amp; Training Lock</text>
+      <line x1="16" y1="56" x2="304" y2="56" stroke="#E2E8F0" stroke-width="1" />
+      <text x="16" y="74" font-size="10.5" fill="#334155">Routes: /vet/dashboard, /vet/examinations</text>
+      <text x="16" y="90" font-size="10.5" fill="#334155">Actions: Clinical screening, injury anatomy, quarantine</text>
+    </g>
+
+    <!-- Role 4: Stable Staff -->
+    <g transform="translate(0, 390)">
+      <rect width="320" height="110" class="card-sub" />
+      <circle cx="28" cy="28" r="14" fill="#F1F5F9" stroke="#475569" stroke-width="1.5" />
+      <text x="28" y="32" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">S</text>
+      <text x="52" y="26" class="module-title" style="font-size: 13px;">Stable Staff (STABLE_STAFF)</text>
+      <text x="52" y="42" class="module-desc">Daily Care, Stall Inspection &amp; Feeding</text>
+      <line x1="16" y1="56" x2="304" y2="56" stroke="#E2E8F0" stroke-width="1" />
+      <text x="16" y="74" font-size="10.5" fill="#334155">Routes: /stable-care (Tasks, Feeding, Stalls, Incidents)</text>
+      <text x="16" y="90" font-size="10.5" fill="#334155">Actions: Checklist ticks, turnout, report urgent incidents</text>
+    </g>
+
+    <!-- Role 5: Horse Owner -->
+    <g transform="translate(0, 510)">
+      <rect width="320" height="110" class="card-sub" />
+      <circle cx="28" cy="28" r="14" fill="#FEE2E2" stroke="#DC2626" stroke-width="1.5" />
+      <text x="28" y="32" font-size="12" font-weight="700" fill="#B91C1C" text-anchor="middle">O</text>
+      <text x="52" y="26" class="module-title" style="font-size: 13px;">Horse Owner (HORSE_OWNER)</text>
+      <text x="52" y="42" class="module-desc">Horse Profiles, Pedigree &amp; Digital Wallet</text>
+      <line x1="16" y1="56" x2="304" y2="56" stroke="#E2E8F0" stroke-width="1" />
+      <text x="16" y="74" font-size="10.5" fill="#334155">Routes: /horses, /wallet, /reports/owner</text>
+      <text x="16" y="90" font-size="10.5" fill="#334155">Actions: PayOS deposit, view 3-gen pedigree &amp; medical</text>
+    </g>
+  </g>
+
+  <!-- ========================================================================= -->
+  <!-- REGION 3: RACEHORSE BACKEND PLATFORM & INFRASTRUCTURE -->
+  <!-- ========================================================================= -->
+  <rect x="470" y="210" width="1390" height="835" class="region-box" />
+  <text x="490" y="235" class="region-label">Racehorse Backend Platform &amp; Infrastructure</text>
+
+  <!-- Docker Containerization Badge -->
+  <g transform="translate(1550, 220)">
+    <svg x="0" y="0" width="22" height="22" viewBox="0 0 24 24"><title>Docker</title><path fill="#2496ED" d="M13.983 11.078h2.119a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.119a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 00.186-.186V3.574a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m0 2.716h2.118a.187.187 0 00.186-.186V6.29a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.887c0 .102.082.185.185.186m-2.93 0h2.12a.186.186 0 00.184-.186V6.29a.185.185 0 00-.185-.185H8.1a.185.185 0 00-.185.185v1.887c0 .102.083.185.185.186m-2.964 0h2.119a.186.186 0 00.185-.186V6.29a.185.185 0 00-.185-.185H5.136a.186.186 0 00-.186.185v1.887c0 .102.084.185.186.186m5.893 2.715h2.118a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m-2.93 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.083.185.185.185m-2.964 0h2.119a.185.185 0 00.185-.185V9.006a.185.185 0 00-.184-.186h-2.12a.186.186 0 00-.186.186v1.887c0 .102.084.185.186.185m-2.92 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.082.185.185.185M23.763 9.89c-.065-.051-.672-.51-1.954-.51-.338.001-.676.03-1.01.087-.248-1.7-1.653-2.53-1.716-2.566l-.344-.199-.226.327c-.284.438-.49.922-.612 1.43-.23.97-.09 1.882.403 2.661-.595.332-1.55.413-1.744.42H.751a.751.751 0 00-.75.748 11.376 11.376 0 00.692 4.062c.545 1.428 1.355 2.48 2.41 3.124 1.18.723 3.1 1.137 5.275 1.137.983.003 1.963-.086 2.93-.266a12.248 12.248 0 003.823-1.389c.98-.567 1.86-1.288 2.61-2.136 1.252-1.418 1.998-2.997 2.553-4.4h.221c1.372 0 2.215-.549 2.68-1.009.309-.293.55-.65.707-1.046l.098-.288Z"/></svg>
+    <text x="28" y="15" font-size="11" font-weight="700" fill="#0284C7">Dockerized (eclipse-temurin:21-jre)</text>
+  </g>
+
+  <!-- 3A. PayOS Webhook Proxy (Node.js) - Positioned at x=980, y=250 -->
+  <g transform="translate(980, 250)">
+    <rect width="300" height="80" class="card-comp" fill="#F8FAFC" />
+    <circle cx="24" cy="25" r="12" fill="#0284C7" />
+    <text x="24" y="29" font-size="10" font-weight="800" fill="#FFFFFF" text-anchor="middle">JS</text>
+    <text x="45" y="26" class="tech-title" style="font-size: 14px;">PayOS Webhook Proxy</text>
+    <text x="45" y="42" class="tech-sub" style="font-size: 11px;">Node.js Micro-Proxy • Port :8099</text>
+    <text x="16" y="64" class="module-desc">Catches external PayOS webhooks &amp; forwards upstream</text>
+  </g>
+
+  <!-- 3B. Core Backend Server (Modular Monolith) -->
+  <g transform="translate(500, 350)">
+    <rect width="780" height="675" class="card-comp" />
+
+    <!-- Backend Header -->
+    <svg x="20" y="16" width="48" height="48" viewBox="0 0 24 24"><title>Spring Boot</title><path fill="#6DB33F" d="m23.693 10.7058-4.73-8.1844c-.4094-.7106-1.4166-1.2942-2.2402-1.2942H7.2725c-.819 0-1.8308.5836-2.2402 1.2942L.307 10.7058c-.4095.7106-.4095 1.873 0 2.5837l4.7252 8.189c.4094.7107 1.4166 1.2943 2.2402 1.2943h9.455c.819 0 1.826-.5836 2.2402-1.2942l4.7252-8.189c.4095-.7107.4095-1.8732 0-2.5838zM10.9763 5.7547c0-.5365.4377-.9742.9742-.9742s.9742.4377.9742.9742v5.8217c0 .5366-.4377.9742-.9742.9742s-.9742-.4376-.9742-.9742zm.9742 12.4294c-3.6427 0-6.6077-2.965-6.6077-6.6077.0047-2.0896.993-4.0521 2.6685-5.304a.8657.8657 0 0 1 1.2142.1788.8657.8657 0 0 1-.1788 1.2143c-2.1602 1.6048-2.612 4.6592-1.0072 6.8194 1.6049 2.1603 4.6593 2.612 6.8195 1.0072 1.2378-.9177 1.9673-2.372 1.9673-3.9157a4.8972 4.8972 0 0 0-1.9861-3.925c-.386-.2824-.466-.8284-.1836-1.2143.2824-.386.8283-.466 1.2143-.1835 1.6895 1.2471 2.6826 3.2238 2.6873 5.3228 0 3.6474-2.965 6.6077-6.6077 6.6077z"/></svg>
+    <svg x="74" y="14" width="34" height="48" viewBox="0 0 24 24"><path fill="#0074BD" d="M47.617 98.12s-4.767 2.774 3.397 3.71c9.892 1.13 14.947.968 25.845-1.092 0 0 2.871 1.795 6.873 3.351-24.439 10.47-55.308-.607-36.115-5.969zm-2.988-13.665s-5.348 3.959 2.823 4.805c10.567 1.091 18.91 1.18 33.354-1.6 0 0 1.993 2.025 5.132 3.131-29.542 8.64-62.446.68-41.309-6.336z"/><path fill="#EA2D2E" d="M69.802 61.271c6.025 6.935-1.58 13.17-1.58 13.17s15.289-7.891 8.269-17.777c-6.559-9.215-11.587-13.792 15.635-29.58 0 .001-42.731 10.67-22.324 34.187z"/><path fill="#0074BD" d="M102.123 108.229s3.529 2.91-3.888 5.159c-14.102 4.272-58.706 5.56-71.094.171-4.451-1.938 3.899-4.625 6.526-5.192 2.739-.593 4.303-.485 4.303-.485-4.953-3.487-32.013 6.85-13.743 9.815 49.821 8.076 90.817-3.637 77.896-9.468zM49.912 70.294s-22.686 5.389-8.033 7.348c6.188.828 18.518.638 30.011-.326 9.39-.789 18.813-2.474 18.813-2.474s-3.308 1.419-5.704 3.053c-23.042 6.061-67.544 3.238-54.731-2.958 10.832-5.239 19.644-4.643 19.644-4.643zm40.697 22.747c23.421-12.167 12.591-23.86 5.032-22.285-1.848.385-2.677.72-2.677.72s.688-1.079 2-1.543c14.953-5.255 26.451 15.503-4.823 23.725 0-.002.359-.327.468-.617z"/><path fill="#EA2D2E" d="M76.491 1.587S89.459 14.563 64.188 34.51c-20.266 16.006-4.621 25.13-.007 35.559-11.831-10.673-20.509-20.07-14.688-28.815C58.041 28.42 81.722 22.195 76.491 1.587z"/><path fill="#0074BD" d="M52.214 126.021c22.476 1.437 57-.8 57.817-11.436 0 0-1.571 4.032-18.577 7.231-19.186 3.612-42.854 3.191-56.887.874 0 .001 2.875 2.381 17.647 3.331z"/></svg>
+    <svg x="735" y="16" width="28" height="28" viewBox="0 0 24 24"><title>Docker</title><path fill="#2496ED" d="M13.983 11.078h2.119a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.119a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 00.186-.186V3.574a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m0 2.716h2.118a.187.187 0 00.186-.186V6.29a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.887c0 .102.082.185.185.186m-2.93 0h2.12a.186.186 0 00.184-.186V6.29a.185.185 0 00-.185-.185H8.1a.185.185 0 00-.185.185v1.887c0 .102.083.185.185.186m-2.964 0h2.119a.186.186 0 00.185-.186V6.29a.185.185 0 00-.185-.185H5.136a.186.186 0 00-.186.185v1.887c0 .102.084.185.186.186m5.893 2.715h2.118a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m-2.93 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.083.185.185.185m-2.964 0h2.119a.185.185 0 00.185-.185V9.006a.185.185 0 00-.184-.186h-2.12a.186.186 0 00-.186.186v1.887c0 .102.084.185.186.185m-2.92 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.082.185.185.185M23.763 9.89c-.065-.051-.672-.51-1.954-.51-.338.001-.676.03-1.01.087-.248-1.7-1.653-2.53-1.716-2.566l-.344-.199-.226.327c-.284.438-.49.922-.612 1.43-.23.97-.09 1.882.403 2.661-.595.332-1.55.413-1.744.42H.751a.751.751 0 00-.75.748 11.376 11.376 0 00.692 4.062c.545 1.428 1.355 2.48 2.41 3.124 1.18.723 3.1 1.137 5.275 1.137.983.003 1.963-.086 2.93-.266a12.248 12.248 0 003.823-1.389c.98-.567 1.86-1.288 2.61-2.136 1.252-1.418 1.998-2.997 2.553-4.4h.221c1.372 0 2.215-.549 2.68-1.009.309-.293.55-.65.707-1.046l.098-.288Z"/></svg>
+
+    <text x="120" y="34" class="tech-title" style="font-size: 19px;">Spring Boot Backend Server</text>
+    <text x="120" y="52" class="tech-sub" style="font-size: 13px;">Java 21 • Spring Boot 4.1.1 • Embedded Tomcat (:8080)</text>
+    <text x="120" y="68" font-size="11" font-weight="600" fill="#0284C7">Architecture: Modular Monolith (com.racehorse.*)</text>
+
+    <!-- Security & Auth Filter Sub-Bar -->
+    <rect x="20" y="80" width="740" height="36" rx="4" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1" />
+    <text x="32" y="103" font-size="11.5" font-weight="700" fill="#1E293B">Spring Security 7 + OAuth2 Resource Server:</text>
+    <text x="310" y="103" font-size="11" fill="#475569">Bearer JWT Filter • RBAC Matrix (@PreAuthorize) • Password Encoder</text>
+
+    <!-- 10 Domain Modules (2 columns x 5 rows) -->
+    <!-- Column 1 -->
+    <!-- Module 1: Auth & User Management -->
+    <g transform="translate(20, 130)">
+      <rect width="360" height="85" class="card-sub" />
+      <text x="14" y="22" class="module-title">1. Auth &amp; RBAC Module (auth, admin)</text>
+      <text x="14" y="38" class="module-desc">JWT Auth, UserAccount, RolePermissionService</text>
+      <text x="14" y="54" class="module-desc">5 Roles matrix, dynamic action permissions</text>
+      <text x="14" y="70" font-size="10" fill="#0284C7">Controllers: AuthController, AdminController</text>
+    </g>
+
+    <!-- Module 2: Horse & Pedigree -->
+    <g transform="translate(20, 225)">
+      <rect width="360" height="85" class="card-sub" />
+      <text x="14" y="22" class="module-title">2. Horse &amp; Pedigree Module (horse)</text>
+      <text x="14" y="38" class="module-desc">Horse profile, microchip RFID identification</text>
+      <text x="14" y="54" class="module-desc">3-generation ancestral pedigree, fractional ownership</text>
+      <text x="14" y="70" font-size="10" fill="#0284C7">Controllers: HorseController, PedigreeController</text>
+    </g>
+
+    <!-- Module 3: Training & Telemetry -->
+    <g transform="translate(20, 320)">
+      <rect width="360" height="85" class="card-sub" />
+      <text x="14" y="22" class="module-title">3. Training &amp; Conflict Engine (training)</text>
+      <text x="14" y="38" class="module-desc">Hourly racetrack slot scheduling engine</text>
+      <text x="14" y="54" class="module-desc">Track Lane Conflict Prevention algorithm, readiness</text>
+      <text x="14" y="70" font-size="10" fill="#0284C7">Controllers: TrainingScheduleController, PlanController</text>
+    </g>
+
+    <!-- Module 4: Racing & Competition -->
+    <g transform="translate(20, 415)">
+      <rect width="360" height="85" class="card-sub" />
+      <text x="14" y="22" class="module-title">4. Racing &amp; Competition Module (racing)</text>
+      <text x="14" y="38" class="module-desc">Race events, race entries &amp; lane distribution</text>
+      <text x="14" y="54" class="module-desc">Owner participation approval &amp; trial run bookings</text>
+      <text x="14" y="70" font-size="10" fill="#0284C7">Controllers: RaceEventController, RaceEntryController</text>
+    </g>
+
+    <!-- Module 5: Medical & Health Care -->
+    <g transform="translate(20, 510)">
+      <rect width="360" height="85" class="card-sub" />
+      <text x="14" y="22" class="module-title">5. Clinical Care &amp; Vet Module (health, medical)</text>
+      <text x="14" y="38" class="module-desc">Clinical exams, 21-zone injury anatomy mapping</text>
+      <text x="14" y="54" class="module-desc">Training Lock (is_training_locked) &amp; clearance check</text>
+      <text x="14" y="70" font-size="10" fill="#0284C7">Controllers: MedicalRecordController, InjuryController</text>
+    </g>
+
+    <!-- Column 2 -->
+    <!-- Module 6: Stable & Facilities -->
+    <g transform="translate(400, 130)">
+      <rect width="360" height="85" class="card-sub" />
+      <text x="14" y="22" class="module-title">6. Stables &amp; Facilities Module (stable)</text>
+      <text x="14" y="38" class="module-desc">Barn map, stall grid, horse intake staging</text>
+      <text x="14" y="54" class="module-desc">Stall movement, quarantine rule (max 4/zone)</text>
+      <text x="14" y="70" font-size="10" fill="#0284C7">Controllers: StableController, StallController</text>
+    </g>
+
+    <!-- Module 7: Care Tasks & Nutrition -->
+    <g transform="translate(400, 225)">
+      <rect width="360" height="85" class="card-sub" />
+      <text x="14" y="22" class="module-title">7. Care &amp; Nutrition Module (caretask, nutrition)</text>
+      <text x="14" y="38" class="module-desc">Shift checklists, grooming, post-training recovery</text>
+      <text x="14" y="54" class="module-desc">Feeding plans, ration templates, meal attendance</text>
+      <text x="14" y="70" font-size="10" fill="#0284C7">Controllers: CareTaskController, NutritionController</text>
+    </g>
+
+    <!-- Module 8: Incidents & Inventory -->
+    <g transform="translate(400, 320)">
+      <rect width="360" height="85" class="card-sub" />
+      <text x="14" y="22" class="module-title">8. Incidents &amp; Inventory (incident, inventory)</text>
+      <text x="14" y="38" class="module-desc">1-touch abnormal condition &amp; urgent triage (&lt;30s)</text>
+      <text x="14" y="54" class="module-desc">Feed/hay/bedding audit, replenishment proposals</text>
+      <text x="14" y="70" font-size="10" fill="#0284C7">Controllers: IncidentController, InventoryController</text>
+    </g>
+
+    <!-- Module 9: Wallet & Billing System -->
+    <g transform="translate(400, 415)">
+      <rect width="360" height="85" class="card-sub" />
+      <text x="14" y="22" class="module-title">9. Wallet &amp; Billing Module (wallet, finance)</text>
+      <text x="14" y="38" class="module-desc">Owner digital wallet, deposit ledger &amp; balances</text>
+      <text x="14" y="54" class="module-desc">PayOS checkout session, auto-renewal deduction</text>
+      <text x="14" y="70" font-size="10" fill="#0284C7">Controllers: WalletController, FinanceController</text>
+    </g>
+
+    <!-- Module 10: Scheduled Automation & Notification -->
+    <g transform="translate(400, 510)">
+      <rect width="360" height="85" class="card-sub" />
+      <text x="14" y="22" class="module-title">10. Scheduled Automation (automation, notif)</text>
+      <text x="14" y="38" class="module-desc">DailyAutomationJob (cron 06:00 AM daily)</text>
+      <text x="14" y="54" class="module-desc">Preventive care reminders, owner daily reports, renewals</text>
+      <text x="14" y="70" font-size="10" fill="#0284C7">NotificationController (Multi-role in-app alerts)</text>
+    </g>
+
+    <!-- Bottom summary row -->
+    <rect x="20" y="608" width="740" height="52" rx="4" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" />
+    <svg x="32" y="618" width="30" height="30" viewBox="0 0 24 24"><title>Cloudinary</title><path fill="#3448C5" d="M24 14.8598c0 2.1729-1.3757 3.974-3.5903 4.6996l-.0995.0318V17.989c1.3777-.5805 2.1869-1.7275 2.1869-3.1291-.0072-2-1.6087-3.6288-3.6082-3.6699h-.5964l-.1432-.5686c-.7025-2.8996-3.2886-4.9489-6.2721-4.97a6.3915 6.3915 0 0 0-5.811 3.664l-.1828.3757-.4175.0437a4.4311 4.4311 0 0 0-3.3052 2.088c-1.2803 2.0856-.6274 4.8143 1.4583 6.0947v1.6897h-.01l-.149-.0675a5.9402 5.9402 0 0 1-3.3658-4.3494c-.5787-3.2291 1.57-6.3161 4.7991-6.8948a7.8766 7.8766 0 0 1 6.9839-4.149c3.4724.025 6.535 2.28 7.5901 5.5883 2.5789.3366 4.5138 2.5245 4.5327 5.1251zm-15.3176-1.322h.5647a.0656.0656 0 0 0 .0457-.1113L7.084 11.2158l-.0007-.0007a.0656.0656 0 0 0-.0927.0007L4.78 13.4265a.0656.0656 0 0 0 .0477.1113h.5566a.0656.0656 0 0 1 .0657.0656v5.0574c0 .6588.534 1.1928 1.1928 1.1928H9.247a.0656.0656 0 0 0 .0457-.1113l-.33-.33a1.1928 1.1928 0 0 1-.348-.839v-4.97a.0676.0676 0 0 1 .0676-.0655zm9.769 2.5466h.5667a.0655.0655 0 0 0 .0457-.1133l-2.2107-2.2087-.0015-.0015a.0636.0636 0 0 0-.0899.0015L14.551 15.971a.0657.0657 0 0 0 .0457.1133h.5567a.0656.0656 0 0 1 .0656.0656v2.5108c0 .6588.534 1.1928 1.1928 1.1928h2.6063a.0655.0655 0 0 0 .0457-.1113l-.33-.33a1.1928 1.1928 0 0 1-.348-.839V16.15a.0656.0656 0 0 1 .0657-.0656zm-4.8844-1.2743h.5646a.0656.0656 0 0 0 .0477-.1114l-2.2107-2.2027-.0006-.0006a.0656.0656 0 0 0-.0928.0006l-2.2087 2.2068a.0656.0656 0 0 0 .0457.1113h.5626a.0676.0676 0 0 1 .0657.0676v3.7791c0 .6588.534 1.1928 1.1928 1.1928h2.5983a.0656.0656 0 0 0 .0477-.1113l-.332-.33a1.193 1.193 0 0 1-.346-.839v-3.6956c0-.0366.0291-.0665.0657-.0676z"/></svg>
+    <text x="72" y="632" font-size="11.5" font-weight="700" fill="#1E293B">Media Upload Client (com.racehorse.media):</text>
+    <text x="72" y="648" font-size="11" fill="#64748B">CloudinaryStorageClient (cloudinary-http5:2.4.0) • Horse profile files, photo evidence</text>
+  </g>
+
+  <!-- 3C. Database Server (Top Right) -->
+  <g transform="translate(1330, 255)">
+    <rect width="500" height="340" class="card-comp" />
+    <svg x="20" y="16" width="46" height="46" viewBox="0 0 128 128"><path fill="#ee352c" d="M52.935 0v.002c-.426-.058-7.306 2.42-11.742 4.223-5.988 2.44-10.636 4.766-13.504 6.78-.926.657-2.054 1.75-2.475 2.37l-.007-.021a1.424 1.424 0 0 0-.069.148c-.022.04-.052.086-.066.12a1.812 1.812 0 0 0-.115.66l.064.06c.017.207.065.44.168.695.252.62.988 1.376 1.822 2.15 0 0 8.621 8.409 9.668 9.61 4.766 5.503 6.84 10.927 7.034 18.406.117 4.805-.796 9.03-3.063 13.932-4.03 8.796-12.535 18.504-25.652 29.276l.199-.067c-.09.072-.208.174-.295.242-1.57 1.24-3.896 3.565-5.078 5.038-1.764 2.209-3.157 4.553-3.758 6.355-1.066 3.255-.543 6.548 1.51 9.59 2.636 3.875 7.887 7.83 14.01 10.521 3.12 1.377 8.368 3.14 12.322 4.127 6.567 1.667 19.28 3.469 26.273 3.739 1.414.059 3.312.059 3.39 0 .155-.097 1.241-2.168 2.501-4.744 4.3-8.778 7.399-17.013 9.086-24.047 1.007-4.262 1.801-9.94 2.324-16.663.136-1.88.194-8.177.078-10.308-.175-3.487-.483-6.316-.968-9.086a4.17 4.17 0 0 1-.07-.573c15.578-4.628 32.768-8.821 44.187-10.568l1.764-.271-.272-.428c-1.55-2.403-2.615-3.894-3.894-5.483-3.72-4.61-8.233-8.349-13.756-11.449-7.595-4.244-17.419-7.557-29.858-10.018-2.344-.465-7.495-1.357-11.68-1.996l-.39-.699c-2.287-4.03-4.805-9.027-6.278-12.398-1.142-2.616-2.228-5.639-2.828-7.809C53.187.098 53.15.02 52.935 0Zm-.31.988h.02c.018.02.095.564.173 1.203.33 2.712.931 5.328 1.881 8.157.716 2.13.716 2.015-.117 1.763-1.976-.542-10.83-2.072-17.244-2.964-1.027-.135-1.899-.271-1.899-.291-.077-.078 4.63-2.537 6.703-3.506 2.654-1.22 9.94-4.265 10.483-4.362ZM33.947 9.67l.756.252c4.108 1.395 14.434 3.373 20.13 3.838.64.058 1.182.115 1.2.115.02.02-.52.31-1.219.639-2.75 1.376-5.775 3.061-7.867 4.36-.476.296-.912.546-1.127.648a1193.726 1193.726 0 0 1-1.932-.315l-1.824-1.787a803.536 803.536 0 0 0-7.11-6.84zm-.775.602 2.732 3.41c1.492 1.88 3.003 3.72 3.332 4.127.291.359.503.622.543.7-1.935-.337-4.006-.708-5.6-1.052-1.163-.252-3.39-.775-5.134-1.375-.18-.07-.385-.146-.58-.219v-.205c.02-1.3 1.666-3.238 4.455-5.213zm23.173 4.646c.015-.007.03-.006.04.004.077 0 .172.172.404.695.66 1.453 2.715 5.367 3.219 6.123l.064.104a1193.726 1193.726 0 0 1-10.977-1.79 2.86 2.86 0 0 1 .372-.232c2.035-1.124 4.088-2.557 5.91-4.088.445-.368.851-.715.93-.773a.097.097 0 0 1 .038-.043zm-26.138 3.275c.019-.018.329.1.736.235a50.336 50.336 0 0 0 2.81.851 142.909 142.909 0 0 0 2.557.678c1.162.29 2.132.563 2.15.563.137.136 2.094 6.394 2.753 8.797.252.91.446 1.685.427 1.685-.02.02-.234-.31-.486-.756-2.267-3.99-5.851-8.04-9.998-11.297-.542-.387-.95-.736-.95-.756zm9.513 2.618c0 .038 0 .02.02.02.098 0 .524.057 1.047.173 3.293.736 9.203 1.86 12.98 2.5.64.097 1.143.214 1.143.252 0 .04-.23.175-.522.33-.64.33-3.217 1.86-4.07 2.44-2.15 1.435-4.087 2.983-5.482 4.378a79.99 79.99 0 0 1-1.047 1.028s-.115-.33-.213-.737c-.697-2.694-2.15-6.684-3.469-9.494-.213-.445-.387-.852-.387-.89zm16.8 3.215c.115.04.31.699.697 2.152a31.732 31.732 0 0 1 .93 8.873c-.04.814-.079 1.57-.118 1.668l-.057.191-1.007-.33c-2.073-.658-5.444-1.645-8.33-2.459-1.648-.446-2.985-.852-2.985-.89 0-.117 2.403-2.52 3.43-3.43 1.956-1.725 7.264-5.832 7.44-5.775zm1.335.195c.058-.058 8.024 1.316 11.647 2.014 2.694.523 6.607 1.338 6.84 1.435.115.04-.291.269-1.59.852-5.115 2.305-8.914 4.38-12.692 6.898-.988.66-1.822 1.201-1.84 1.201-.02 0-.039-.562-.039-1.24 0-3.681-.734-7.401-2.091-10.54-.136-.31-.254-.601-.235-.62zm20.596 4.068c.058.057-.193 1.629-.426 2.559-.698 2.887-2.576 7.17-4.88 11.2-.409.716-.778 1.297-.817 1.316-.038.02-.558-.273-1.16-.622-2.247-1.318-4.806-2.555-7.596-3.718-.775-.33-1.454-.601-1.473-.641-.136-.115 6.104-4.242 9.397-6.219 2.617-1.589 6.879-3.952 6.955-3.875zm1.475.233c.174 0 3.7.968 5.54 1.511 4.554 1.356 9.784 3.275 13.194 4.825l1.414.638-.986.233c-8.33 1.918-15.463 4.129-22.342 6.918-.562.233-1.066.425-1.104.425-.039 0 .157-.444.409-.986 2.073-4.399 3.408-8.991 3.738-12.906.019-.368.079-.658.137-.658zm-35.11 8.06c.058-.058 2.751.582 4.205.989 2.21.62 6.899 2.19 6.899 2.304 0 .02-.525.466-1.145 1.008-2.538 2.112-4.98 4.341-7.906 7.17-.871.833-1.606 1.51-1.645 1.51-.04 0-.059-.115-.04-.27.445-3.255.35-7.44-.27-11.683-.06-.543-.117-1.009-.098-1.028zm56.596.059c.038.039-1.24 2.052-2.055 3.195-1.162 1.667-2.867 3.877-6.722 8.72a1289.46 1289.46 0 0 0-5.076 6.413c-.775.969-1.415 1.783-1.436 1.783-.018 0-.27-.35-.541-.775-2.17-3.256-4.767-6.103-7.848-8.66a44.534 44.534 0 0 0-1.431-1.164c-.214-.155-.39-.31-.39-.33 0-.057 3.294-1.472 5.794-2.479 4.38-1.783 10.345-3.913 14.822-5.29 2.344-.735 4.844-1.452 4.883-1.413zm1.492.387c.077-.02.543.214 1.104.543 4.709 2.693 9.32 6.162 12.963 9.726 1.027 1.008 3.564 3.641 3.525 3.66 0 0-.891.08-1.937.157-8.157.62-18.6 2.343-28.635 4.765-.68.155-1.28.291-1.319.291-.038 0 .716-.756 1.666-1.666 5.89-5.677 8.583-9.261 11.76-15.656.446-.948.834-1.762.873-1.82zm-43.148 4.418c.27.058 2.788 1.239 4.687 2.189 1.744.871 4.361 2.266 4.496 2.383.02.019-.91.503-2.054 1.066a135.033 135.033 0 0 0-10.018 5.522c-.93.562-1.704 1.027-1.723 1.027-.078 0-.058-.078.465-1.027 1.744-3.177 3.14-6.975 3.934-10.676.077-.29.155-.484.213-.484zm-2.52.464c.058.058-.6 2.442-1.008 3.74-.795 2.46-2.131 5.54-3.43 7.866-.31.542-.775 1.338-1.027 1.783l-.484.774-1.084-1.045c-1.26-1.22-2.287-1.978-3.604-2.657-.524-.27-.93-.502-.93-.54 0-.156 3.314-3.159 5.852-5.329 1.82-1.57 5.657-4.65 5.715-4.592zm15.404 6.336.95.62c2.17 1.414 4.726 3.295 6.683 4.94 1.104.91 3.235 2.83 3.662 3.294l.233.252-1.57.447c-8.874 2.46-15.733 4.649-23.735 7.594-.892.33-1.647.6-1.705.6-.116 0-.213.096 1.783-1.745 5.115-4.707 9.65-9.898 13.022-14.955zm-4.05 1.008c.04.04-2.614 3.777-4.203 5.889-1.9 2.519-5.272 6.743-7.598 9.494-.968 1.144-1.8 2.092-1.84 2.111-.058.02-.078-.27-.078-.716 0-2.344-.599-4.844-1.645-6.975-.446-.891-.523-1.104-.425-1.201.368-.33 6.004-3.545 9.568-5.463 2.404-1.28 6.163-3.177 6.22-3.139zM44.1 55.26c.057 0 .502.233 1.007.504a21.28 21.28 0 0 1 3.332 2.248c.04.038-.464.446-1.123.93-1.84 1.317-4.63 3.43-6.258 4.728-1.705 1.356-1.763 1.394-1.57 1.104 1.28-1.957 1.92-3.062 2.598-4.477a36.066 36.066 0 0 0 1.627-4.05c.155-.56.347-.987.386-.987zm6.53 5.113c.097-.018.213.157.735.932 1.104 1.647 1.957 3.857 2.17 5.639l.039.386-2.654 1.028c-4.747 1.84-9.126 3.662-12.09 5.02a217.067 217.067 0 0 0-3.237 1.548c-.95.484-1.724.853-1.724.834 0-.02.6-.465 1.336-1.008 5.794-4.204 10.813-8.816 14.572-13.427.407-.484.775-.93.813-.95zm-3.003.737v.002c.078.077-2.132 2.576-3.643 4.107-3.74 3.816-7.441 6.801-12.033 9.707-.582.368-1.104.697-1.162.735-.135.078.038-.116 2.054-2.305a52.694 52.694 0 0 0 3.352-3.97c.736-.95.871-1.086 1.937-1.84 2.85-2.056 9.418-6.513 9.495-6.436zm25.974 2.3c.274 1.057.78 6.126.918 9.481.04.795.019 1.318-.021 1.318-.154 0-3.273-1.84-5.5-3.236-1.93-1.215-5.579-3.634-6.18-4.113a358.495 358.495 0 0 1 10.783-3.45zm-12.867 4.192c.254.11.635.32 1.404.795 3.991 2.5 9.418 5.522 11.743 6.53.716.31.793.193-.854 1.318-3.526 2.402-7.924 4.765-13.31 7.148-.95.426-1.745.756-1.764.756-.04 0 .077-.486.232-1.067 1.297-4.825 2.036-9.705 2.075-13.619.01-.977.014-1.46.039-1.707l.435-.154zm-2.965 1.055c.094.476.021 4.368-.127 5.494a49.361 49.361 0 0 1-1.78 8.428c-.214.717-.41 1.319-.448 1.357-.078.097-2.732-2.5-3.604-3.508-1.51-1.744-2.692-3.486-3.564-5.191-.404-.79-.987-2.205-1.055-2.518a345.346 345.346 0 0 1 8.592-3.355c.617-.232 1.343-.473 1.986-.707zm-12.603 4.9c.047.069.163.327.271.652.62 1.685 2.013 4.165 3.215 5.754 1.318 1.744 3.043 3.605 4.477 4.825.465.387.89.756.949.814.116.117.155.097-3.004 1.299-3.66 1.395-7.652 2.79-12.225 4.262a609.84 609.84 0 0 0-3.275 1.066c-.175.058-.114-.04.389-.834 2.267-3.544 5.714-10.5 7.652-15.422.33-.853.659-1.706.717-1.9.027-.095.066-.15.103-.211l.73-.305zm-4.01 1.7c-.132.39-.973 2.151-1.842 3.853-1.88 3.663-3.933 7.267-6.684 11.646-.466.755-.91 1.453-.97 1.53-.096.136-.135.098-.446-.502-.659-1.3-1.2-2.965-1.492-4.496-.29-1.511-.232-4.146.098-5.774.15-.717.216-.987.36-1.16a225.041 225.041 0 0 1 10.976-5.098zm33.479 1.2v.813c0 4.321-.465 10.25-1.143 14.57-.116.756-.213 1.377-.232 1.397 0 0-.563-.156-1.221-.35a49.985 49.985 0 0 1-8.912-3.816c-1.88-1.027-4.61-2.714-4.533-2.791.019-.02.832-.445 1.78-.95 3.799-1.975 7.441-4.107 10.6-6.22 1.182-.794 2.963-2.071 3.35-2.42zm-48.048 5.737c.074.004.052.163-.062.851a27.507 27.507 0 0 0-.213 2.07c-.155 2.83.31 4.925 1.705 7.792.388.794.698 1.453.678 1.472-.135.117-12.962 3.875-16.992 4.979-1.201.33-2.247.62-2.325.639-.136.04-.155.021-.097-.309.446-2.848 2.617-6.568 5.64-9.707 2.014-2.093 3.622-3.314 6.373-4.883.921-.524 2.066-1.163 3.057-1.71.737-.401 1.484-.799 2.236-1.194zm30.221 5.404h.002c.02-.02.483.232 1.045.56 4.147 2.404 9.921 4.633 14.842 5.776l.445.096-.619.35c-2.576 1.433-11.045 4.96-19.705 8.195-1.26.465-2.498.93-2.73 1.027-.233.097-.448.155-.448.135 0-.02.35-.698.795-1.531 2.422-4.534 4.863-10.055 6.104-13.891.155-.368.25-.697.27-.717zm-3.08 1.006h.002c.02.02-.136.428-.33.893-1.686 4.088-3.895 8.545-6.724 13.543-.716 1.28-1.317 2.306-1.336 2.306-.02 0-.601-.35-1.3-.775-4.106-2.52-7.75-5.62-10.132-8.623l-.35-.426 1.764-.484c6.316-1.724 11.684-3.584 17.012-5.87.756-.31 1.375-.564 1.394-.564zm19.143 6.686c.02.446-.967 4.437-1.781 7.324-.678 2.422-1.26 4.32-2.327 7.672-.464 1.474-.87 2.693-.89 2.693-.02 0-.135-.018-.252-.056-5.754-1.047-10.908-2.501-15.752-4.438-1.356-.543-3.293-1.415-3.41-1.512-.038-.039 1.124-.581 2.597-1.22 8.816-3.856 17.96-8.235 21.1-10.114.368-.233.657-.35.715-.35zM28.677 96.8c.04.04-2.423 3.585-5.87 8.41-1.203 1.686-2.597 3.661-3.12 4.397a77.468 77.468 0 0 0-1.764 2.596l-.814 1.261-.871-.738c-1.027-.853-2.809-2.673-3.604-3.68-1.666-2.073-2.791-4.264-3.236-6.26-.214-.93-.214-1.394-.02-1.45a1459.308 1459.308 0 0 1 10.31-2.424 861.655 861.655 0 0 0 6.935-1.627c1.124-.271 2.035-.485 2.054-.485zm2.479.95.621.697c2.79 3.12 5.637 5.425 9.086 7.44.62.35 1.086.659 1.047.679-.135.096-11.974 4.3-17.457 6.2a462.503 462.503 0 0 1-5.639 1.956c-.019 0-.194-.117-.387-.252l-.35-.252.563-.814c1.82-2.635 4.107-5.521 9.086-11.528zm15.463 11.062c.019-.02.87.29 1.918.68 2.519.949 4.513 1.55 7.187 2.228 3.294.833 8.061 1.646 10.872 1.88.426.037.657.076.58.134-.136.077-2.985 1.028-5.077 1.686-3.333 1.047-13.504 4.05-21.797 6.433a218.736 218.736 0 0 1-2.925.834c-.194.038-.834-.138-.834-.215 0-.038.465-.638 1.027-1.297 2.79-3.333 5.561-7.054 7.867-10.58.64-.969 1.182-1.764 1.182-1.783zm-3.412.098h.002c.019.02-1.357 2.227-3.76 6.025-1.026 1.608-2.17 3.432-2.576 4.07-.388.62-.971 1.59-1.3 2.131l-.56.987-.29-.076c-.699-.195-5.601-1.919-6.9-2.442a48.226 48.226 0 0 1-4.513-2.072c-1.55-.834-3.487-2.074-3.332-2.113.038-.02 2.692-.736 5.889-1.608 8.485-2.306 13.194-3.642 16.275-4.611.562-.175 1.046-.311 1.065-.291zm24.123 5.656h.021c.077.195-3.063 8.913-4.207 11.664-.25.62-.348.776-.484.756-.33-.02-4.881-.657-7.652-1.064-4.824-.736-12.925-2.15-14.958-2.616l-.464-.097 2.886-.659c6.2-1.395 9.184-2.15 12.207-3.08a86.251 86.251 0 0 0 11.413-4.4c.6-.27 1.102-.483 1.238-.502z"/></svg>
+    <svg x="455" y="16" width="28" height="28" viewBox="0 0 24 24"><title>Docker</title><path fill="#2496ED" d="M13.983 11.078h2.119a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.119a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 00.186-.186V3.574a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m0 2.716h2.118a.187.187 0 00.186-.186V6.29a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.887c0 .102.082.185.185.186m-2.93 0h2.12a.186.186 0 00.184-.186V6.29a.185.185 0 00-.185-.185H8.1a.185.185 0 00-.185.185v1.887c0 .102.083.185.185.186m-2.964 0h2.119a.186.186 0 00.185-.186V6.29a.185.185 0 00-.185-.185H5.136a.186.186 0 00-.186.185v1.887c0 .102.084.185.186.186m5.893 2.715h2.118a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m-2.93 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.083.185.185.185m-2.964 0h2.119a.185.185 0 00.185-.185V9.006a.185.185 0 00-.184-.186h-2.12a.186.186 0 00-.186.186v1.887c0 .102.084.185.186.185m-2.92 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.082.185.185.185M23.763 9.89c-.065-.051-.672-.51-1.954-.51-.338.001-.676.03-1.01.087-.248-1.7-1.653-2.53-1.716-2.566l-.344-.199-.226.327c-.284.438-.49.922-.612 1.43-.23.97-.09 1.882.403 2.661-.595.332-1.55.413-1.744.42H.751a.751.751 0 00-.75.748 11.376 11.376 0 00.692 4.062c.545 1.428 1.355 2.48 2.41 3.124 1.18.723 3.1 1.137 5.275 1.137.983.003 1.963-.086 2.93-.266a12.248 12.248 0 003.823-1.389c.98-.567 1.86-1.288 2.61-2.136 1.252-1.418 1.998-2.997 2.553-4.4h.221c1.372 0 2.215-.549 2.68-1.009.309-.293.55-.65.707-1.046l.098-.288Z"/></svg>
+
+    <text x="76" y="34" class="tech-title" style="font-size: 18px;">Microsoft SQL Server</text>
+    <text x="76" y="52" class="tech-sub" style="font-size: 12.5px;">Relational Database • Port :1433 • Collation: Vietnamese_100_CI_AS_SC</text>
+    <text x="76" y="68" font-size="11" font-weight="600" fill="#0284C7">Local Instance (racehorse_local) / Azure SQL Database</text>
+
+    <line x1="20" y1="82" x2="480" y2="82" stroke="#E2E8F0" stroke-width="1" />
+
+    <!-- Database Features -->
+    <g transform="translate(20, 95)">
+      <rect width="460" height="48" class="card-sub" />
+      <text x="14" y="20" class="module-title">Database Scripts Baseline (DATABASE/)</text>
+      <text x="14" y="36" class="module-desc">48 T-SQL schema &amp; migration scripts • ddl-auto=none</text>
+    </g>
+
+    <g transform="translate(20, 150)">
+      <rect width="460" height="48" class="card-sub" />
+      <text x="14" y="20" class="module-title">Data Access &amp; Object Mapping</text>
+      <text x="14" y="36" class="module-desc">Spring Data JPA / Hibernate ORM + Spring JdbcTemplate</text>
+    </g>
+
+    <g transform="translate(20, 205)">
+      <rect width="460" height="48" class="card-sub" />
+      <text x="14" y="20" class="module-title">Connection Pooling (HikariCP)</text>
+      <text x="14" y="36" class="module-desc">SET ARITHABORT ON • High-throughput pooled JDBC connections</text>
+    </g>
+
+    <g transform="translate(20, 260)">
+      <rect width="460" height="65" class="card-sub" />
+      <text x="14" y="20" class="module-title">Concurrency &amp; Transaction Integrity</text>
+      <text x="14" y="36" class="module-desc">sp_getapplock for race registration, stall &amp; lane allocation</text>
+      <text x="14" y="52" class="module-desc">ACID compliance, Foreign Key cascades, check constraints</text>
+    </g>
+  </g>
+
+  <!-- 3D. Logging & Observability (Bottom Right) -->
+  <g transform="translate(1330, 620)">
+    <rect width="500" height="405" class="card-comp" />
+    <svg x="20" y="16" width="44" height="44" viewBox="0 0 24 24"><title>Spring Boot</title><path fill="#6DB33F" d="m23.693 10.7058-4.73-8.1844c-.4094-.7106-1.4166-1.2942-2.2402-1.2942H7.2725c-.819 0-1.8308.5836-2.2402 1.2942L.307 10.7058c-.4095.7106-.4095 1.873 0 2.5837l4.7252 8.189c.4094.7107 1.4166 1.2943 2.2402 1.2943h9.455c.819 0 1.826-.5836 2.2402-1.2942l4.7252-8.189c.4095-.7107.4095-1.8732 0-2.5838zM10.9763 5.7547c0-.5365.4377-.9742.9742-.9742s.9742.4377.9742.9742v5.8217c0 .5366-.4377.9742-.9742.9742s-.9742-.4376-.9742-.9742zm.9742 12.4294c-3.6427 0-6.6077-2.965-6.6077-6.6077.0047-2.0896.993-4.0521 2.6685-5.304a.8657.8657 0 0 1 1.2142.1788.8657.8657 0 0 1-.1788 1.2143c-2.1602 1.6048-2.612 4.6592-1.0072 6.8194 1.6049 2.1603 4.6593 2.612 6.8195 1.0072 1.2378-.9177 1.9673-2.372 1.9673-3.9157a4.8972 4.8972 0 0 0-1.9861-3.925c-.386-.2824-.466-.8284-.1836-1.2143.2824-.386.8283-.466 1.2143-.1835 1.6895 1.2471 2.6826 3.2238 2.6873 5.3228 0 3.6474-2.965 6.6077-6.6077 6.6077z"/></svg>
+    <svg x="455" y="16" width="28" height="28" viewBox="0 0 24 24"><title>Docker</title><path fill="#2496ED" d="M13.983 11.078h2.119a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.119a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 00.186-.186V3.574a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m0 2.716h2.118a.187.187 0 00.186-.186V6.29a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.887c0 .102.082.185.185.186m-2.93 0h2.12a.186.186 0 00.184-.186V6.29a.185.185 0 00-.185-.185H8.1a.185.185 0 00-.185.185v1.887c0 .102.083.185.185.186m-2.964 0h2.119a.186.186 0 00.185-.186V6.29a.185.185 0 00-.185-.185H5.136a.186.186 0 00-.186.185v1.887c0 .102.084.185.186.186m5.893 2.715h2.118a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m-2.93 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.083.185.185.185m-2.964 0h2.119a.185.185 0 00.185-.185V9.006a.185.185 0 00-.184-.186h-2.12a.186.186 0 00-.186.186v1.887c0 .102.084.185.186.185m-2.92 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.082.185.185.185M23.763 9.89c-.065-.051-.672-.51-1.954-.51-.338.001-.676.03-1.01.087-.248-1.7-1.653-2.53-1.716-2.566l-.344-.199-.226.327c-.284.438-.49.922-.612 1.43-.23.97-.09 1.882.403 2.661-.595.332-1.55.413-1.744.42H.751a.751.751 0 00-.75.748 11.376 11.376 0 00.692 4.062c.545 1.428 1.355 2.48 2.41 3.124 1.18.723 3.1 1.137 5.275 1.137.983.003 1.963-.086 2.93-.266a12.248 12.248 0 003.823-1.389c.98-.567 1.86-1.288 2.61-2.136 1.252-1.418 1.998-2.997 2.553-4.4h.221c1.372 0 2.215-.549 2.68-1.009.309-.293.55-.65.707-1.046l.098-.288Z"/></svg>
+
+    <text x="74" y="34" class="tech-title" style="font-size: 18px;">Logging &amp; Observability</text>
+    <text x="74" y="52" class="tech-sub" style="font-size: 12.5px;">Logback • SLF4J • Spring Boot Actuator • Database Audit</text>
+
+    <line x1="20" y1="72" x2="480" y2="72" stroke="#E2E8F0" stroke-width="1" />
+
+    <g transform="translate(20, 85)">
+      <rect width="460" height="65" class="card-sub" />
+      <text x="14" y="20" class="module-title">Spring Boot Actuator Health &amp; Info</text>
+      <text x="14" y="36" class="module-desc">Endpoints: /actuator/health, /actuator/info</text>
+      <text x="14" y="52" class="module-desc">Frontend heartbeat via checkLocalBackend() on app start</text>
+    </g>
+
+    <g transform="translate(20, 160)">
+      <rect width="460" height="65" class="card-sub" />
+      <text x="14" y="20" class="module-title">Application System Logging (SLF4J / Logback)</text>
+      <text x="14" y="36" class="module-desc">logging.level.com.racehorse=INFO</text>
+      <text x="14" y="52" class="module-desc">Structured output for service traces, security audits &amp; SQL errors</text>
+    </g>
+
+    <g transform="translate(20, 235)">
+      <rect width="460" height="75" class="card-sub" />
+      <text x="14" y="20" class="module-title">Database Audit Trail (dbo.audit_logs)</text>
+      <text x="14" y="36" class="module-desc">Captures before/after snapshots of critical domain events:</text>
+      <text x="14" y="52" class="module-desc">• Role permissions matrix updates • Stall reassignments</text>
+      <text x="14" y="68" class="module-desc">• Digital wallet balance changes • Training lock status</text>
+    </g>
+
+    <g transform="translate(20, 320)">
+      <rect width="460" height="65" class="card-sub" />
+      <text x="14" y="20" class="module-title">In-App Multi-Role Priority Alerting</text>
+      <text x="14" y="36" class="module-desc">High/Normal notifications queue in dbo.notifications table</text>
+      <text x="14" y="52" class="module-desc">Immediate alerts to Vet &amp; Trainer upon incident reporting (&lt;30s)</text>
+    </g>
+  </g>
+
+  <!-- ========================================================================= -->
+  <!-- CONNECTORS & COMMUNICATION FLOWS (REQUEST / RESPONSE) -->
+  <!-- ========================================================================= -->
+
+  <!-- Flow 1: Client App -> Backend Server (Through Clean Corridor x=385..500) -->
+  <!-- Solid Line: Request -->
+  <path d="M 385 195 L 435 195 L 435 440 L 500 440" fill="none" stroke="#1E293B" stroke-width="1.8" marker-end="url(#arrow-solid)" />
+  <rect x="395" y="186" width="48" height="18" rx="3" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1" />
+  <text x="419" y="199" text-anchor="middle" class="conn-label" style="font-size:10px;">request</text>
+
+  <!-- Dashed Line: Response -->
+  <path d="M 500 465 L 452 465 L 452 220 L 385 220" fill="none" stroke="#64748B" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#arrow-dash)" />
+  <rect x="430" y="475" width="55" height="18" rx="3" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1" />
+  <text x="457" y="488" text-anchor="middle" class="conn-label" style="font-size:10px;fill:#64748B;">response</text>
+
+  <!-- Flow 3: Backend Server -> Database Server -->
+  <!-- Solid Line: Request -->
+  <line x1="1280" y1="420" x2="1330" y2="420" stroke="#1E293B" stroke-width="1.8" marker-end="url(#arrow-solid)" />
+  <rect x="1282" y="403" width="46" height="16" rx="2" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1" />
+  <text x="1305" y="415" text-anchor="middle" class="conn-label" style="font-size:9.5px;">request</text>
+
+  <!-- Dashed Line: Response -->
+  <line x1="1330" y1="450" x2="1280" y2="450" stroke="#64748B" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#arrow-dash)" />
+  <rect x="1280" y="456" width="50" height="16" rx="2" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1" />
+  <text x="1305" y="468" text-anchor="middle" class="conn-label" style="font-size:9.5px;fill:#64748B;">response</text>
+
+  <!-- Flow 4: Backend Server -> Logging & Observability -->
+  <!-- Solid Line: Log & Audit Write -->
+  <line x1="1280" y1="780" x2="1330" y2="780" stroke="#1E293B" stroke-width="1.8" marker-end="url(#arrow-solid)" />
+  <rect x="1282" y="763" width="46" height="16" rx="2" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1" />
+  <text x="1305" y="775" text-anchor="middle" class="conn-label" style="font-size:9.5px;">request</text>
+
+  <!-- Dashed Line: Health & Audit query response -->
+  <line x1="1330" y1="810" x2="1280" y2="810" stroke="#64748B" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#arrow-dash)" />
+  <rect x="1280" y="816" width="50" height="16" rx="2" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1" />
+  <text x="1305" y="828" text-anchor="middle" class="conn-label" style="font-size:9.5px;fill:#64748B;">response</text>
+
+  <!-- Flow 5: Backend Server -> Cloudinary (Direct, unobstructed path) -->
+  <line x1="640" y1="350" x2="640" y2="170" stroke="#1E293B" stroke-width="1.8" marker-end="url(#arrow-solid)" />
+  <rect x="585" y="245" width="50" height="18" rx="3" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1" />
+  <text x="610" y="258" text-anchor="middle" class="conn-label" style="font-size:10px;">request</text>
+
+  <line x1="655" y1="170" x2="655" y2="350" stroke="#64748B" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#arrow-dash)" />
+  <rect x="660" y="245" width="55" height="18" rx="3" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1" />
+  <text x="687" y="258" text-anchor="middle" class="conn-label" style="font-size:10px;fill:#64748B;">response</text>
+
+  <!-- Flow 6: Backend Server -> PayOS (Direct, unobstructed path) -->
+  <line x1="880" y1="350" x2="880" y2="170" stroke="#1E293B" stroke-width="1.8" marker-end="url(#arrow-solid)" />
+  <rect x="825" y="245" width="50" height="18" rx="3" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1" />
+  <text x="850" y="258" text-anchor="middle" class="conn-label" style="font-size:10px;">request</text>
+
+  <line x1="895" y1="170" x2="895" y2="350" stroke="#64748B" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#arrow-dash)" />
+  <rect x="900" y="245" width="55" height="18" rx="3" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1" />
+  <text x="927" y="258" text-anchor="middle" class="conn-label" style="font-size:10px;fill:#64748B;">response</text>
+
+  <!-- Flow 7: PayOS -> Webhook Proxy -> Backend Server -->
+  <path d="M 950 170 L 950 290 L 980 290" fill="none" stroke="#1E293B" stroke-width="1.6" marker-end="url(#arrow-solid)" />
+  <rect x="922" y="215" width="55" height="18" rx="3" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1" />
+  <text x="949" y="228" text-anchor="middle" class="conn-label" style="font-size:10px;">webhook</text>
+
+  <line x1="1130" y1="330" x2="1130" y2="350" stroke="#1E293B" stroke-width="1.6" marker-end="url(#arrow-solid)" />
+  <rect x="1108" y="333" width="45" height="15" rx="2" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="0.8" />
+  <text x="1130" y="344" text-anchor="middle" class="conn-label" style="font-size:9px;">forward</text>
+
+</svg>

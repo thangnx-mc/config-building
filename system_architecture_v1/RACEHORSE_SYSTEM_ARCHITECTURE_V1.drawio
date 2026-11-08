@@ -1,0 +1,192 @@
+<?xml version="1.0" ?>
+<mxfile host="app.diagrams.net" modified="2026-11-09T00:20:00.000Z" agent="Antigravity Racehorse Architecture V1" version="24.7.5">
+  <diagram id="racehorse_system_architecture_v1" name="Racehorse System Architecture V1">
+    <mxGraphModel dx="1920" dy="1080" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1080" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="v_title" value="&lt;b style='font-size:20px;color:#0F172A;'&gt;RACEHORSE SYSTEM ARCHITECTURE DIAGRAM&lt;/b&gt;&lt;br/&gt;&lt;span style='font-size:12px;color:#64748B;'&gt;Racehorse Training &amp; Management System • Verified Modular Monolith Baseline (Develop: e8b3b8f)&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="460" y="20" width="1000" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="c_third_parties" value="THIRD PARTIES &amp;amp; CLOUD SERVICES" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#94A3B8;strokeWidth=1.5;fillColor=#FAFAFA;verticalAlign=top;align=right;spacingRight=15;spacingTop=10;fontColor=#475569;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="470" y="75" width="1390" height="115" as="geometry"/>
+        </mxCell>
+        <mxCell id="tp_cloudinary" value="&lt;b style='font-size:14px;color:#0F172A;'&gt;Cloudinary&lt;/b&gt;&lt;br/&gt;&lt;span style='font-size:11px;color:#64748B;'&gt;Cloud Media &amp;amp; File Storage&lt;/span&gt;&lt;br/&gt;&lt;span style='font-size:10px;color:#334155;'&gt;Photos, medical files, task proof&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#334155;strokeWidth=1.8;fillColor=#FFFFFF;verticalAlign=top;align=left;spacingLeft=15;spacingTop=12;fontColor=#0F172A;" vertex="1" parent="1">
+          <mxGeometry x="500" y="95" width="280" height="75" as="geometry"/>
+        </mxCell>
+        <mxCell id="tp_payos" value="&lt;b style='font-size:14px;color:#5A3FFF;'&gt;payOS (by CASSO)&lt;/b&gt;&lt;br/&gt;&lt;span style='font-size:11px;color:#64748B;'&gt;Payment Gateway &amp;amp; Webhooks&lt;/span&gt;&lt;br/&gt;&lt;span style='font-size:10px;color:#334155;'&gt;VietQR generation &amp;amp; deposit flow&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#334155;strokeWidth=1.8;fillColor=#FFFFFF;verticalAlign=top;align=left;spacingLeft=15;spacingTop=12;fontColor=#0F172A;" vertex="1" parent="1">
+          <mxGeometry x="810" y="95" width="280" height="75" as="geometry"/>
+        </mxCell>
+        <mxCell id="tp_vietqr" value="&lt;b style='font-size:14px;color:#003B70;'&gt;VIET&lt;span style='color:#E31837;'&gt;QR&lt;/span&gt;&lt;/b&gt;&lt;br/&gt;&lt;span style='font-size:11px;color:#64748B;'&gt;Banking QR Standard&lt;/span&gt;&lt;br/&gt;&lt;span style='font-size:10px;color:#334155;'&gt;NAPAS247 instant interbank pay&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#334155;strokeWidth=1.8;fillColor=#FFFFFF;verticalAlign=top;align=left;spacingLeft=15;spacingTop=12;fontColor=#0F172A;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="95" width="260" height="75" as="geometry"/>
+        </mxCell>
+        <mxCell id="tp_vercel" value="&lt;b style='font-size:14px;color:#000000;'&gt;Vercel Platform&lt;/b&gt;&lt;br/&gt;&lt;span style='font-size:11px;color:#64748B;'&gt;Global Edge Network &amp;amp; CDN&lt;/span&gt;&lt;br/&gt;&lt;span style='font-size:10px;color:#334155;'&gt;Hosts React SPA (horse-project-phi)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#334155;strokeWidth=1.8;fillColor=#FFFFFF;verticalAlign=top;align=left;spacingLeft=15;spacingTop=12;fontColor=#0F172A;" vertex="1" parent="1">
+          <mxGeometry x="1410" y="95" width="280" height="75" as="geometry"/>
+        </mxCell>
+        <mxCell id="c_clients" value="CLIENT APPLICATIONS" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#94A3B8;strokeWidth=1.5;fillColor=#FAFAFA;verticalAlign=top;align=right;spacingRight=15;spacingTop=10;fontColor=#475569;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="50" y="75" width="350" height="970" as="geometry"/>
+        </mxCell>
+        <mxCell id="cl_spa" value="&lt;b style='font-size:16px;color:#0F172A;'&gt;Racehorse Web App&lt;/b&gt;&lt;br/&gt;&lt;span style='font-size:11.5px;color:#64748B;'&gt;React 19 • Vite 8 • React Router 7&lt;/span&gt;&lt;br/&gt;&lt;span style='font-size:10.5px;color:#334155;'&gt;Single-Page Web Application&lt;/span&gt;&lt;hr style='border:none;border-top:1px solid #E2E8F0;margin:6px 0;'/&gt;&lt;span style='font-size:10px;color:#475569;'&gt;• Deployed on Vercel Global Edge CDN&lt;br/&gt;• Recharts • Three.js 3D Track Visualizer&lt;br/&gt;• REST API Client via fetch &amp;amp; Bearer JWT&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#334155;strokeWidth=1.8;fillColor=#FFFFFF;verticalAlign=top;align=left;spacingLeft=15;spacingTop=12;fontColor=#0F172A;" vertex="1" parent="1">
+          <mxGeometry x="65" y="120" width="320" height="150" as="geometry"/>
+        </mxCell>
+        <mxCell id="role_1" value="&lt;b style='font-size:12px;color:#4338CA;'&gt;[M] Club Manager&lt;/b&gt;&lt;br/&gt;&lt;span style='font-size:10.5px;color:#64748B;'&gt;Admin, Finance, Stables &amp;amp; RBAC Matrix&lt;/span&gt;&lt;br/&gt;&lt;span style='font-size:9.5px;color:#334155;'&gt;/admin/users, /admin/matrix, /stables&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#CBD5E1;strokeWidth=1.2;fillColor=#F8FAFC;verticalAlign=top;align=left;spacingLeft=10;spacingTop=8;fontColor=#1E293B;" vertex="1" parent="1">
+          <mxGeometry x="65" y="320" width="320" height="110" as="geometry"/>
+        </mxCell>
+        <mxCell id="role_2" value="&lt;b style='font-size:12px;color:#B45309;'&gt;[T] Head Trainer&lt;/b&gt;&lt;br/&gt;&lt;span style='font-size:10.5px;color:#64748B;'&gt;Training Plans, Track Lanes &amp;amp; Trials&lt;/span&gt;&lt;br/&gt;&lt;span style='font-size:9.5px;color:#334155;'&gt;/training/schedule, /training/plans&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#CBD5E1;strokeWidth=1.2;fillColor=#F8FAFC;verticalAlign=top;align=left;spacingLeft=10;spacingTop=8;fontColor=#1E293B;" vertex="1" parent="1">
+          <mxGeometry x="65" y="440" width="320" height="110" as="geometry"/>
+        </mxCell>
+        <mxCell id="role_3" value="&lt;b style='font-size:12px;color:#15803D;'&gt;[V] Veterinarian&lt;/b&gt;&lt;br/&gt;&lt;span style='font-size:10.5px;color:#64748B;'&gt;Clinical Exams, Injury Logs &amp;amp; Training Lock&lt;/span&gt;&lt;br/&gt;&lt;span style='font-size:9.5px;color:#334155;'&gt;/vet/dashboard, /vet/examinations&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#CBD5E1;strokeWidth=1.2;fillColor=#F8FAFC;verticalAlign=top;align=left;spacingLeft=10;spacingTop=8;fontColor=#1E293B;" vertex="1" parent="1">
+          <mxGeometry x="65" y="560" width="320" height="110" as="geometry"/>
+        </mxCell>
+        <mxCell id="role_4" value="&lt;b style='font-size:12px;color:#334155;'&gt;[S] Stable Staff&lt;/b&gt;&lt;br/&gt;&lt;span style='font-size:10.5px;color:#64748B;'&gt;Daily Care, Stall Inspection &amp;amp; Feeding&lt;/span&gt;&lt;br/&gt;&lt;span style='font-size:9.5px;color:#334155;'&gt;/stable-care (Tasks, Feeding, Stalls, Incidents)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#CBD5E1;strokeWidth=1.2;fillColor=#F8FAFC;verticalAlign=top;align=left;spacingLeft=10;spacingTop=8;fontColor=#1E293B;" vertex="1" parent="1">
+          <mxGeometry x="65" y="680" width="320" height="110" as="geometry"/>
+        </mxCell>
+        <mxCell id="role_5" value="&lt;b style='font-size:12px;color:#B91C1C;'&gt;[O] Horse Owner&lt;/b&gt;&lt;br/&gt;&lt;span style='font-size:10.5px;color:#64748B;'&gt;Horse Profiles, Pedigree &amp;amp; Digital Wallet&lt;/span&gt;&lt;br/&gt;&lt;span style='font-size:9.5px;color:#334155;'&gt;/horses, /wallet, /reports/owner&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#CBD5E1;strokeWidth=1.2;fillColor=#F8FAFC;verticalAlign=top;align=left;spacingLeft=10;spacingTop=8;fontColor=#1E293B;" vertex="1" parent="1">
+          <mxGeometry x="65" y="800" width="320" height="110" as="geometry"/>
+        </mxCell>
+        <mxCell id="c_backend_plat" value="RACEHORSE BACKEND PLATFORM &amp;amp; INFRASTRUCTURE" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#94A3B8;strokeWidth=1.5;fillColor=#FAFAFA;verticalAlign=top;align=right;spacingRight=15;spacingTop=10;fontColor=#475569;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="470" y="210" width="1390" height="835" as="geometry"/>
+        </mxCell>
+        <mxCell id="bk_proxy" value="&lt;b style='font-size:13px;color:#0F172A;'&gt;PayOS Webhook Proxy&lt;/b&gt;&lt;br/&gt;&lt;span style='font-size:11px;color:#64748B;'&gt;Node.js Micro-Proxy • Port :8099&lt;/span&gt;&lt;br/&gt;&lt;span style='font-size:10px;color:#334155;'&gt;Catches external PayOS webhooks &amp;amp; forwards&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#CBD5E1;strokeWidth=1.2;fillColor=#F8FAFC;verticalAlign=top;align=left;spacingLeft=10;spacingTop=8;fontColor=#1E293B;" vertex="1" parent="1">
+          <mxGeometry x="980" y="250" width="300" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="bk_server" value="&lt;b style='font-size:18px;color:#0F172A;'&gt;Spring Boot Application Server&lt;/b&gt;&lt;br/&gt;&lt;span style='font-size:12.5px;color:#64748B;'&gt;Java 21 • Spring Boot 4.1.1 • Embedded Tomcat (:8080)&lt;/span&gt;&lt;br/&gt;&lt;span style='font-size:11px;color:#0284C7;font-weight:bold;'&gt;Architecture: Modular Monolith (com.racehorse.*) • Dockerized&lt;/span&gt;&lt;hr style='border:none;border-top:1px solid #CBD5E1;margin:8px 0;'/&gt;&lt;b style='font-size:11px;color:#1E293B;'&gt;Spring Security + OAuth2 Resource Server:&lt;/b&gt; &lt;span style='font-size:10.5px;color:#475569;'&gt;Bearer JWT Filter • RBAC Matrix (@PreAuthorize)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#334155;strokeWidth=1.8;fillColor=#FFFFFF;verticalAlign=top;align=left;spacingLeft=15;spacingTop=12;fontColor=#0F172A;" vertex="1" parent="1">
+          <mxGeometry x="500" y="350" width="780" height="675" as="geometry"/>
+        </mxCell>
+        <mxCell id="mod_1" value="&lt;b&gt;1. Auth &amp;amp; RBAC Module&lt;/b&gt;&lt;br/&gt;&lt;span style='font-size:9.5px;color:#64748B;'&gt;JWT Auth, UserAccount, RolePermission&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#CBD5E1;strokeWidth=1.2;fillColor=#F8FAFC;verticalAlign=top;align=left;spacingLeft=10;spacingTop=8;fontColor=#1E293B;" vertex="1" parent="1">
+          <mxGeometry x="520" y="480" width="360" height="85" as="geometry"/>
+        </mxCell>
+        <mxCell id="mod_2" value="&lt;b&gt;2. Horse &amp;amp; Pedigree Module&lt;/b&gt;&lt;br/&gt;&lt;span style='font-size:9.5px;color:#64748B;'&gt;Horse profile, 3-gen pedigree, ownership&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#CBD5E1;strokeWidth=1.2;fillColor=#F8FAFC;verticalAlign=top;align=left;spacingLeft=10;spacingTop=8;fontColor=#1E293B;" vertex="1" parent="1">
+          <mxGeometry x="520" y="575" width="360" height="85" as="geometry"/>
+        </mxCell>
+        <mxCell id="mod_3" value="&lt;b&gt;3. Training &amp;amp; Conflict Engine&lt;/b&gt;&lt;br/&gt;&lt;span style='font-size:9.5px;color:#64748B;'&gt;Hourly racetrack slot, conflict detection&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#CBD5E1;strokeWidth=1.2;fillColor=#F8FAFC;verticalAlign=top;align=left;spacingLeft=10;spacingTop=8;fontColor=#1E293B;" vertex="1" parent="1">
+          <mxGeometry x="520" y="670" width="360" height="85" as="geometry"/>
+        </mxCell>
+        <mxCell id="mod_4" value="&lt;b&gt;4. Racing &amp;amp; Competition Module&lt;/b&gt;&lt;br/&gt;&lt;span style='font-size:9.5px;color:#64748B;'&gt;Race events, entries, results, trials&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#CBD5E1;strokeWidth=1.2;fillColor=#F8FAFC;verticalAlign=top;align=left;spacingLeft=10;spacingTop=8;fontColor=#1E293B;" vertex="1" parent="1">
+          <mxGeometry x="520" y="765" width="360" height="85" as="geometry"/>
+        </mxCell>
+        <mxCell id="mod_5" value="&lt;b&gt;5. Clinical Care &amp;amp; Vet Module&lt;/b&gt;&lt;br/&gt;&lt;span style='font-size:9.5px;color:#64748B;'&gt;Exams, 21-zone injury map, training lock&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#CBD5E1;strokeWidth=1.2;fillColor=#F8FAFC;verticalAlign=top;align=left;spacingLeft=10;spacingTop=8;fontColor=#1E293B;" vertex="1" parent="1">
+          <mxGeometry x="520" y="860" width="360" height="85" as="geometry"/>
+        </mxCell>
+        <mxCell id="mod_6" value="&lt;b&gt;6. Stables &amp;amp; Facilities Module&lt;/b&gt;&lt;br/&gt;&lt;span style='font-size:9.5px;color:#64748B;'&gt;Barn map, stall grid, intake staging&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#CBD5E1;strokeWidth=1.2;fillColor=#F8FAFC;verticalAlign=top;align=left;spacingLeft=10;spacingTop=8;fontColor=#1E293B;" vertex="1" parent="1">
+          <mxGeometry x="900" y="480" width="360" height="85" as="geometry"/>
+        </mxCell>
+        <mxCell id="mod_7" value="&lt;b&gt;7. Care &amp;amp; Nutrition Module&lt;/b&gt;&lt;br/&gt;&lt;span style='font-size:9.5px;color:#64748B;'&gt;Checklists, feeding matrix, attendance&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#CBD5E1;strokeWidth=1.2;fillColor=#F8FAFC;verticalAlign=top;align=left;spacingLeft=10;spacingTop=8;fontColor=#1E293B;" vertex="1" parent="1">
+          <mxGeometry x="900" y="575" width="360" height="85" as="geometry"/>
+        </mxCell>
+        <mxCell id="mod_8" value="&lt;b&gt;8. Incidents &amp;amp; Inventory&lt;/b&gt;&lt;br/&gt;&lt;span style='font-size:9.5px;color:#64748B;'&gt;1-touch triage (&amp;lt;30s), stock replenishment&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#CBD5E1;strokeWidth=1.2;fillColor=#F8FAFC;verticalAlign=top;align=left;spacingLeft=10;spacingTop=8;fontColor=#1E293B;" vertex="1" parent="1">
+          <mxGeometry x="900" y="670" width="360" height="85" as="geometry"/>
+        </mxCell>
+        <mxCell id="mod_9" value="&lt;b&gt;9. Wallet &amp;amp; Billing Module&lt;/b&gt;&lt;br/&gt;&lt;span style='font-size:9.5px;color:#64748B;'&gt;Owner wallet, deposit, PayOS auto-renewal&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#CBD5E1;strokeWidth=1.2;fillColor=#F8FAFC;verticalAlign=top;align=left;spacingLeft=10;spacingTop=8;fontColor=#1E293B;" vertex="1" parent="1">
+          <mxGeometry x="900" y="765" width="360" height="85" as="geometry"/>
+        </mxCell>
+        <mxCell id="mod_10" value="&lt;b&gt;10. Scheduled Automation&lt;/b&gt;&lt;br/&gt;&lt;span style='font-size:9.5px;color:#64748B;'&gt;DailyAutomationJob (cron 06:00), notif queue&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#CBD5E1;strokeWidth=1.2;fillColor=#F8FAFC;verticalAlign=top;align=left;spacingLeft=10;spacingTop=8;fontColor=#1E293B;" vertex="1" parent="1">
+          <mxGeometry x="900" y="860" width="360" height="85" as="geometry"/>
+        </mxCell>
+        <mxCell id="db_server" value="&lt;b style='font-size:18px;color:#0F172A;'&gt;Microsoft SQL Server&lt;/b&gt;&lt;br/&gt;&lt;span style='font-size:12.5px;color:#64748B;'&gt;Relational Database • Port :1433 • Collation: Vietnamese_100_CI_AS_SC&lt;/span&gt;&lt;br/&gt;&lt;span style='font-size:11px;color:#0284C7;font-weight:bold;'&gt;racehorse_local / Azure SQL Database • Dockerized&lt;/span&gt;&lt;hr style='border:none;border-top:1px solid #CBD5E1;margin:8px 0;'/&gt;&lt;b style='font-size:11px;color:#1E293B;'&gt;48 T-SQL Schema &amp;amp; Migration Scripts (DATABASE/)&lt;/b&gt;&lt;br/&gt;&lt;span style='font-size:10px;color:#475569;'&gt;• Spring Data JPA &amp;amp; Hibernate ORM + JdbcTemplate&lt;br/&gt;• HikariCP Connection Pool (SET ARITHABORT ON)&lt;br/&gt;• Concurrency Locks (sp_getapplock for Stalls &amp;amp; Lanes)&lt;br/&gt;• ACID Transaction Management (@Transactional)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#334155;strokeWidth=1.8;fillColor=#FFFFFF;verticalAlign=top;align=left;spacingLeft=15;spacingTop=12;fontColor=#0F172A;" vertex="1" parent="1">
+          <mxGeometry x="1330" y="255" width="500" height="340" as="geometry"/>
+        </mxCell>
+        <mxCell id="log_server" value="&lt;b style='font-size:18px;color:#0F172A;'&gt;Logging &amp;amp; Observability&lt;/b&gt;&lt;br/&gt;&lt;span style='font-size:12.5px;color:#64748B;'&gt;Logback • SLF4J • Spring Boot Actuator • Database Audit&lt;/span&gt;&lt;hr style='border:none;border-top:1px solid #CBD5E1;margin:8px 0;'/&gt;&lt;b style='font-size:11px;color:#1E293B;'&gt;Spring Boot Actuator:&lt;/b&gt; &lt;span style='font-size:10px;color:#475569;'&gt;/actuator/health, /actuator/info&lt;/span&gt;&lt;br/&gt;&lt;b style='font-size:11px;color:#1E293B;'&gt;Application Logs:&lt;/b&gt; &lt;span style='font-size:10px;color:#475569;'&gt;logging.level.com.racehorse=INFO&lt;/span&gt;&lt;br/&gt;&lt;b style='font-size:11px;color:#1E293B;'&gt;Database Audit Trail:&lt;/b&gt; &lt;span style='font-size:10px;color:#475569;'&gt;dbo.audit_logs (roles, stalls, wallets)&lt;/span&gt;&lt;br/&gt;&lt;b style='font-size:11px;color:#1E293B;'&gt;Priority In-App Alerts:&lt;/b&gt; &lt;span style='font-size:10px;color:#475569;'&gt;dbo.notifications queue (&amp;lt;30s vet alert)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#334155;strokeWidth=1.8;fillColor=#FFFFFF;verticalAlign=top;align=left;spacingLeft=15;spacingTop=12;fontColor=#0F172A;" vertex="1" parent="1">
+          <mxGeometry x="1330" y="620" width="500" height="405" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_spa_bk_req" value="request" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1E293B;strokeWidth=1.8;endArrow=block;endFill=1;fontSize=10;fontColor=#334155;fontStyle=1;" edge="1" parent="1" source="cl_spa" target="bk_server">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="435" y="195"/>
+              <mxPoint x="435" y="440"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_bk_spa_resp" value="response" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;strokeWidth=1.6;dashed=1;endArrow=block;endFill=1;fontSize=10;fontColor=#64748B;fontStyle=1;" edge="1" parent="1" source="bk_server" target="cl_spa">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="452" y="465"/>
+              <mxPoint x="452" y="220"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_bk_db_req" value="request" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1E293B;strokeWidth=1.8;endArrow=block;endFill=1;fontSize=10;fontColor=#334155;fontStyle=1;" edge="1" parent="1" source="bk_server" target="db_server">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1280" y="420"/>
+              <mxPoint x="1330" y="420"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_db_bk_resp" value="response" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;strokeWidth=1.6;dashed=1;endArrow=block;endFill=1;fontSize=10;fontColor=#64748B;fontStyle=1;" edge="1" parent="1" source="db_server" target="bk_server">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1330" y="450"/>
+              <mxPoint x="1280" y="450"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_bk_log_req" value="request" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1E293B;strokeWidth=1.8;endArrow=block;endFill=1;fontSize=10;fontColor=#334155;fontStyle=1;" edge="1" parent="1" source="bk_server" target="log_server">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1280" y="780"/>
+              <mxPoint x="1330" y="780"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_log_bk_resp" value="response" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;strokeWidth=1.6;dashed=1;endArrow=block;endFill=1;fontSize=10;fontColor=#64748B;fontStyle=1;" edge="1" parent="1" source="log_server" target="bk_server">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1330" y="810"/>
+              <mxPoint x="1280" y="810"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_bk_cloud_req" value="request" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1E293B;strokeWidth=1.8;endArrow=block;endFill=1;fontSize=10;fontColor=#334155;fontStyle=1;" edge="1" parent="1" source="bk_server" target="tp_cloudinary">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="640" y="350"/>
+              <mxPoint x="640" y="170"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_cloud_bk_resp" value="response" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;strokeWidth=1.6;dashed=1;endArrow=block;endFill=1;fontSize=10;fontColor=#64748B;fontStyle=1;" edge="1" parent="1" source="tp_cloudinary" target="bk_server">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="655" y="170"/>
+              <mxPoint x="655" y="350"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_bk_payos_req" value="request" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1E293B;strokeWidth=1.8;endArrow=block;endFill=1;fontSize=10;fontColor=#334155;fontStyle=1;" edge="1" parent="1" source="bk_server" target="tp_payos">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="880" y="350"/>
+              <mxPoint x="880" y="170"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_payos_bk_resp" value="response" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;strokeWidth=1.6;dashed=1;endArrow=block;endFill=1;fontSize=10;fontColor=#64748B;fontStyle=1;" edge="1" parent="1" source="tp_payos" target="bk_server">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="895" y="170"/>
+              <mxPoint x="895" y="350"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_payos_proxy" value="webhook" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1E293B;strokeWidth=1.8;endArrow=block;endFill=1;fontSize=10;fontColor=#334155;fontStyle=1;" edge="1" parent="1" source="tp_payos" target="bk_proxy">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="950" y="170"/>
+              <mxPoint x="950" y="290"/>
+              <mxPoint x="980" y="290"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_proxy_bk" value="forward" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1E293B;strokeWidth=1.8;endArrow=block;endFill=1;fontSize=10;fontColor=#334155;fontStyle=1;" edge="1" parent="1" source="bk_proxy" target="bk_server">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1130" y="330"/>
+              <mxPoint x="1130" y="350"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
