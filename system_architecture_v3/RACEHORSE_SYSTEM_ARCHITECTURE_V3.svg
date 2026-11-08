@@ -1,0 +1,207 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <!-- Arrowhead Markers -->
+    <marker id="arrow-solid" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#1e293b"/>
+    </marker>
+    <marker id="arrow-dashed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#475569"/>
+    </marker>
+    <marker id="arrow-webhook" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#4f46e5"/>
+    </marker>
+  </defs>
+
+  <!-- Clean White Background (Matching Lecturer Reference) -->
+  <rect width="1920" height="1080" fill="#ffffff"/>
+
+  <!-- ========================================================================= -->
+  <!-- BOX 2: THIRD-PARTY SERVICES (Top Container)                              -->
+  <!-- ========================================================================= -->
+  <g id="box-third-parties">
+    <!-- Container Outline: Thin black border, white fill -->
+    <rect x="460" y="50" width="1380" height="180" fill="#ffffff" stroke="#222222" stroke-width="1.8"/>
+    <!-- Container Label at bottom right (Matching Lecturer Reference) -->
+    <text x="1815" y="212" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="500" fill="#444444" text-anchor="end">Third parties</text>
+
+    <!-- Cloudinary Component Card -->
+    <g transform="translate(710, 75)">
+      <rect width="210" height="125" fill="#ffffff" stroke="#555555" stroke-width="1.4"/>
+      <g transform="translate(80, 16)">
+<g transform="scale(1.15)">
+  <rect x="4" y="6" width="42" height="38" rx="8" fill="#3448c5"/>
+  <path d="M20 30 C16 30 14 27 15 23 C16 19 20 18 22 19 C24 15 30 14 33 17 C36 17 38 20 37 23 C39 24 40 27 38 29 C37 30 35 30 33 30 Z" fill="#ffffff"/>
+  <path d="M23 26 L27 22 L31 26" fill="none" stroke="#3448c5" stroke-width="2" stroke-linecap="round"/>
+</g>
+</g>
+      <text x="105" y="98" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="15" fill="#111111" text-anchor="middle">Cloudinary</text>
+    </g>
+
+    <!-- PayOS Component Card -->
+    <g transform="translate(970, 75)">
+      <rect width="210" height="125" fill="#ffffff" stroke="#555555" stroke-width="1.4"/>
+      <g transform="translate(80, 16)">
+<g transform="scale(1.15)">
+  <rect x="4" y="6" width="42" height="38" rx="8" fill="#582be8"/>
+  <text x="25" y="32" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="22" fill="#ffffff" text-anchor="middle">P</text>
+  <circle cx="35" cy="16" r="4" fill="#00d8ff"/>
+</g>
+</g>
+      <text x="105" y="98" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="15" fill="#111111" text-anchor="middle">PayOS</text>
+    </g>
+  </g>
+
+  <!-- ========================================================================= -->
+  <!-- BOX 1: CLIENT APPLICATIONS (Left Container)                              -->
+  <!-- ========================================================================= -->
+  <g id="box-client-applications">
+    <!-- Container Outline: Thin black border, white fill -->
+    <rect x="80" y="180" width="300" height="800" fill="#ffffff" stroke="#222222" stroke-width="1.8"/>
+    <!-- Container Label at top -->
+    <text x="230" y="235" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#111111" text-anchor="middle">Client Applications</text>
+
+    <!-- React Web App Component Card (Centered vertically to align with Backend) -->
+    <g transform="translate(125, 455)">
+      <rect width="210" height="170" fill="#ffffff" stroke="#555555" stroke-width="1.4"/>
+      <g transform="translate(77, 24)">
+<g transform="scale(1.2)">
+  <ellipse cx="25" cy="25" rx="22" ry="8.5" fill="none" stroke="#00d8ff" stroke-width="2.2" transform="rotate(0 25 25)"/>
+  <ellipse cx="25" cy="25" rx="22" ry="8.5" fill="none" stroke="#00d8ff" stroke-width="2.2" transform="rotate(60 25 25)"/>
+  <ellipse cx="25" cy="25" rx="22" ry="8.5" fill="none" stroke="#00d8ff" stroke-width="2.2" transform="rotate(120 25 25)"/>
+  <circle cx="25" cy="25" r="4.2" fill="#00d8ff"/>
+</g>
+</g>
+      <text x="105" y="118" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="15" fill="#111111" text-anchor="middle">React</text>
+      <text x="105" y="142" font-family="Arial, Helvetica, sans-serif" font-weight="600" font-size="14" fill="#333333" text-anchor="middle">Web App</text>
+    </g>
+  </g>
+
+  <!-- ========================================================================= -->
+  <!-- BOX 3: RACEHORSE SYSTEM (Center/Right Container)                         -->
+  <!-- ========================================================================= -->
+  <g id="box-racehorse-system">
+    <!-- Container Outline: Thin black border, white fill -->
+    <rect x="460" y="340" width="1380" height="640" fill="#ffffff" stroke="#222222" stroke-width="1.8"/>
+    <!-- Container Label at top left (Matching Lecturer Reference style) -->
+    <text x="495" y="380" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#111111">Racehorse System</text>
+
+    <!-- 1. Spring Boot Backend Server Component Card -->
+    <g transform="translate(670, 440)">
+      <rect width="520" height="190" fill="#ffffff" stroke="#444444" stroke-width="1.5"/>
+      <g transform="translate(233, 26)">
+<g transform="scale(1.2)">
+  <path d="M25 4 L44 14.5 L44 35.5 L25 46 L6 35.5 L6 14.5 Z" fill="#6db33f"/>
+  <path d="M25 7 L41 16 L41 34 L25 43 L9 16 Z" fill="#ffffff" opacity="0.15"/>
+  <path d="M19 33 C18 29 20 23 26 20 C32 17 33 12 32 10 C36 14 36 21 30 25 C25 28 24 31 25 33 Z" fill="#ffffff"/>
+  <circle cx="21" cy="31" r="2" fill="#ffffff"/>
+</g>
+</g>
+      <text x="260" y="128" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="16" fill="#111111" text-anchor="middle">Spring Boot</text>
+      <text x="260" y="154" font-family="Arial, Helvetica, sans-serif" font-weight="600" font-size="14" fill="#333333" text-anchor="middle">Backend Server</text>
+    </g>
+
+    <!-- 2. Microsoft SQL Server Database Component Card -->
+    <g transform="translate(1380, 440)">
+      <rect width="250" height="190" fill="#ffffff" stroke="#444444" stroke-width="1.5"/>
+      <g transform="translate(100, 24)">
+<g transform="scale(1.1)">
+  <rect x="8" y="6" width="34" height="38" rx="4" fill="#cc292b"/>
+  <path d="M12 14 C12 11 38 11 38 14 C38 17 12 17 12 14 Z" fill="#ffffff" opacity="0.9"/>
+  <path d="M12 20 C12 17 38 17 38 20 C38 23 12 23 12 20 Z" fill="#ffffff" opacity="0.9"/>
+  <path d="M12 26 C12 23 38 23 38 26 C38 29 12 29 12 26 Z" fill="#ffffff" opacity="0.9"/>
+  <path d="M12 32 C12 29 38 29 38 32 C38 35 12 35 12 32 Z" fill="#ffffff" opacity="0.9"/>
+  <path d="M12 38 C12 35 38 35 38 38 C38 41 12 41 12 38 Z" fill="#ffffff" opacity="0.9"/>
+</g>
+</g>
+      <text x="125" y="128" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="16" fill="#111111" text-anchor="middle">SQL Server</text>
+      <text x="125" y="154" font-family="Arial, Helvetica, sans-serif" font-weight="600" font-size="14" fill="#333333" text-anchor="middle">Database</text>
+    </g>
+
+    <!-- 3. Java Runtime Component Card (Directly below Spring Boot, matching Next.js position) -->
+    <g transform="translate(770, 725)">
+      <rect width="320" height="190" fill="#ffffff" stroke="#444444" stroke-width="1.5"/>
+      <g transform="translate(135, 24)">
+<g transform="scale(1.1)">
+  <path d="M22 34 C16 34 12 35 15 36 C19 37 28 37 32 36 C35 35 30 34 22 34 Z" fill="#e76f00"/>
+  <path d="M20 38 C14 38 10 39 13 40 C18 41 31 41 35 40 C38 39 32 38 20 38 Z" fill="#5382a1"/>
+  <path d="M24 12 C26 15 26 18 21 21 C17 24 19 27 25 29 C21 29 15 27 15 24 C15 19 24 17 24 12 Z" fill="#e76f00"/>
+  <path d="M28 16 C30 18 29 21 25 23 C20 26 23 28 27 30 C22 30 18 28 19 25 C20 22 28 20 28 16 Z" fill="#5382a1"/>
+</g>
+</g>
+      <text x="160" y="128" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="16" fill="#111111" text-anchor="middle">Java</text>
+      <text x="160" y="154" font-family="Arial, Helvetica, sans-serif" font-weight="600" font-size="14" fill="#333333" text-anchor="middle">Runtime Environment</text>
+    </g>
+  </g>
+
+  <!-- ========================================================================= -->
+  <!-- CONNECTORS (Matching Lecturer Reference: Thin Solid & Dashed Arrows)     -->
+  <!-- ========================================================================= -->
+  <g id="connectors">
+
+    <!-- 1. Client <-> Backend Connectors (Horizontal Corridor) -->
+    <!-- Solid Request Arrow: React Web App (x=335) -> Spring Boot (x=670) -->
+    <g id="conn-client-req">
+      <line x1="335" y1="500" x2="670" y2="500" stroke="#111111" stroke-width="1.6" marker-end="url(#arrow-solid)"/>
+      <text x="500" y="490" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="500" fill="#111111" text-anchor="middle">request</text>
+    </g>
+    <!-- Dashed Response Arrow: Spring Boot (x=670) -> React Web App (x=335) -->
+    <g id="conn-client-res">
+      <line x1="670" y1="560" x2="335" y2="560" stroke="#444444" stroke-width="1.6" stroke-dasharray="6,4" marker-end="url(#arrow-dashed)"/>
+      <text x="500" y="580" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="500" fill="#444444" text-anchor="middle">response</text>
+    </g>
+
+    <!-- 2. Backend <-> Database Connectors (Horizontal Corridor) -->
+    <!-- Solid Request Arrow: Spring Boot (x=1190) -> SQL Server (x=1380) -->
+    <g id="conn-db-req">
+      <line x1="1190" y1="500" x2="1380" y2="500" stroke="#111111" stroke-width="1.6" marker-end="url(#arrow-solid)"/>
+      <text x="1285" y="490" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="500" fill="#111111" text-anchor="middle">request</text>
+    </g>
+    <!-- Dashed Response Arrow: SQL Server (x=1380) -> Spring Boot (x=1190) -->
+    <g id="conn-db-res">
+      <line x1="1380" y1="560" x2="1190" y2="560" stroke="#444444" stroke-width="1.6" stroke-dasharray="6,4" marker-end="url(#arrow-dashed)"/>
+      <text x="1285" y="580" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="500" fill="#444444" text-anchor="middle">response</text>
+    </g>
+
+    <!-- 3. Backend <-> Java Runtime Connectors (Vertical Corridor) -->
+    <!-- Solid Line: Spring Boot (y=630) -> Java Runtime (y=725) -->
+    <g id="conn-java-req">
+      <line x1="890" y1="630" x2="890" y2="725" stroke="#111111" stroke-width="1.6" marker-end="url(#arrow-solid)"/>
+      <text x="865" y="682" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="500" fill="#111111" text-anchor="end">runtime</text>
+    </g>
+    <!-- Dashed Line: Java Runtime (y=725) -> Spring Boot (y=630) -->
+    <g id="conn-java-res">
+      <line x1="960" y1="725" x2="960" y2="630" stroke="#444444" stroke-width="1.6" stroke-dasharray="6,4" marker-end="url(#arrow-dashed)"/>
+      <text x="985" y="682" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="500" fill="#444444" text-anchor="start">execution</text>
+    </g>
+
+    <!-- 4. Backend <-> Cloudinary Connectors (Vertical Corridor) -->
+    <!-- Solid Request: Spring Boot (y=440) -> Cloudinary (y=200) -->
+    <g id="conn-cloud-req">
+      <line x1="770" y1="440" x2="770" y2="200" stroke="#111111" stroke-width="1.6" marker-end="url(#arrow-solid)"/>
+      <text x="745" y="320" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="500" fill="#111111" text-anchor="end">request</text>
+    </g>
+    <!-- Dashed Response: Cloudinary (y=200) -> Spring Boot (y=440) -->
+    <g id="conn-cloud-res">
+      <line x1="835" y1="200" x2="835" y2="440" stroke="#444444" stroke-width="1.6" stroke-dasharray="6,4" marker-end="url(#arrow-dashed)"/>
+      <text x="860" y="320" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="500" fill="#444444" text-anchor="start">response</text>
+    </g>
+
+    <!-- 5. Backend <-> PayOS Connectors (Vertical Corridor) -->
+    <!-- Solid Request: Spring Boot (y=440) -> PayOS (y=200) -->
+    <g id="conn-pay-req">
+      <line x1="1010" y1="440" x2="1010" y2="200" stroke="#111111" stroke-width="1.6" marker-end="url(#arrow-solid)"/>
+      <text x="985" y="320" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="500" fill="#111111" text-anchor="end">request</text>
+    </g>
+    <!-- Dashed Response: PayOS (y=200) -> Spring Boot (y=440) -->
+    <g id="conn-pay-res">
+      <line x1="1065" y1="200" x2="1065" y2="440" stroke="#444444" stroke-width="1.6" stroke-dasharray="6,4" marker-end="url(#arrow-dashed)"/>
+      <text x="1090" y="275" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="500" fill="#444444" text-anchor="start">response</text>
+    </g>
+    <!-- Solid Webhook: PayOS (y=200) -> Spring Boot (y=440) -->
+    <g id="conn-pay-webhook">
+      <line x1="1130" y1="200" x2="1130" y2="440" stroke="#4f46e5" stroke-width="1.6" marker-end="url(#arrow-webhook)"/>
+      <text x="1150" y="320" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#4f46e5" text-anchor="start">webhook</text>
+    </g>
+
+  </g>
+</svg>

@@ -1,0 +1,134 @@
+<mxfile host="app.diagrams.net" modified="2026-11-09T01:00:00.000Z" agent="Mozilla/5.0" version="24.0.0">
+  <diagram id="Racehorse-System-Architecture-V3" name="System Architecture V3">
+    <mxGraphModel dx="1422" dy="798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1080" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- BOX 2: THIRD-PARTY SERVICES -->
+        <mxCell id="box_third_parties" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#222222;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="460" y="50" width="1380" height="180" as="geometry"/>
+        </mxCell>
+        <mxCell id="lbl_third_parties" value="Third parties" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=0;fontSize=14;fontColor=#444444;" vertex="1" parent="box_third_parties">
+          <mxGeometry x="1230" y="145" width="130" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="card_cloudinary" value="&lt;b&gt;Cloudinary&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#555555;strokeWidth=1.5;verticalAlign=bottom;spacingBottom=15;fontSize=15;fontColor=#111111;" vertex="1" parent="box_third_parties">
+          <mxGeometry x="250" y="25" width="210" height="125" as="geometry"/>
+        </mxCell>
+        <mxCell id="card_payos" value="&lt;b&gt;PayOS&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#555555;strokeWidth=1.5;verticalAlign=bottom;spacingBottom=15;fontSize=15;fontColor=#111111;" vertex="1" parent="box_third_parties">
+          <mxGeometry x="510" y="25" width="210" height="125" as="geometry"/>
+        </mxCell>
+
+        <!-- BOX 1: CLIENT APPLICATIONS -->
+        <mxCell id="box_client_apps" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#222222;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="80" y="180" width="300" height="800" as="geometry"/>
+        </mxCell>
+        <mxCell id="lbl_client_apps" value="Client Applications" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=18;fontColor=#111111;" vertex="1" parent="box_client_apps">
+          <mxGeometry x="20" y="20" width="260" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="card_react_app" value="&lt;b&gt;React&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Web App&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#555555;strokeWidth=1.5;verticalAlign=bottom;spacingBottom=18;fontSize=16;fontColor=#111111;" vertex="1" parent="box_client_apps">
+          <mxGeometry x="45" y="275" width="210" height="170" as="geometry"/>
+        </mxCell>
+
+        <!-- BOX 3: RACEHORSE SYSTEM -->
+        <mxCell id="box_system" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#222222;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="460" y="340" width="1380" height="640" as="geometry"/>
+        </mxCell>
+        <mxCell id="lbl_system" value="Racehorse System" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=18;fontColor=#111111;" vertex="1" parent="box_system">
+          <mxGeometry x="35" y="20" width="250" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- Components inside Box 3 -->
+        <mxCell id="card_backend" value="&lt;b&gt;Spring Boot&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Backend Server&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#444444;strokeWidth=1.5;verticalAlign=bottom;spacingBottom=20;fontSize=16;fontColor=#111111;" vertex="1" parent="box_system">
+          <mxGeometry x="210" y="100" width="520" height="190" as="geometry"/>
+        </mxCell>
+        <mxCell id="card_database" value="&lt;b&gt;SQL Server&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Database&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#444444;strokeWidth=1.5;verticalAlign=bottom;spacingBottom=20;fontSize=16;fontColor=#111111;" vertex="1" parent="box_system">
+          <mxGeometry x="920" y="100" width="250" height="190" as="geometry"/>
+        </mxCell>
+        <mxCell id="card_java" value="&lt;b&gt;Java&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Runtime Environment&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#444444;strokeWidth=1.5;verticalAlign=bottom;spacingBottom=20;fontSize=16;fontColor=#111111;" vertex="1" parent="box_system">
+          <mxGeometry x="310" y="385" width="320" height="190" as="geometry"/>
+        </mxCell>
+
+        <!-- CONNECTORS -->
+        <!-- Client -> Backend (Request) -->
+        <mxCell id="edge_client_req" value="request" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#111111;strokeWidth=1.6;fontSize=13;fontColor=#111111;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="335" y="500" as="sourcePoint"/>
+            <mxPoint x="670" y="500" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <!-- Backend -> Client (Response) -->
+        <mxCell id="edge_client_res" value="response" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#444444;strokeWidth=1.6;dashed=1;fontSize=13;fontColor=#444444;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="670" y="560" as="sourcePoint"/>
+            <mxPoint x="335" y="560" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Backend -> Database (Request) -->
+        <mxCell id="edge_db_req" value="request" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#111111;strokeWidth=1.6;fontSize=13;fontColor=#111111;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1190" y="500" as="sourcePoint"/>
+            <mxPoint x="1380" y="500" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <!-- Database -> Backend (Response) -->
+        <mxCell id="edge_db_res" value="response" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#444444;strokeWidth=1.6;dashed=1;fontSize=13;fontColor=#444444;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1380" y="560" as="sourcePoint"/>
+            <mxPoint x="1190" y="560" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Backend -> Java Runtime -->
+        <mxCell id="edge_java_req" value="runtime" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#111111;strokeWidth=1.6;fontSize=12;fontColor=#111111;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="890" y="630" as="sourcePoint"/>
+            <mxPoint x="890" y="725" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_java_res" value="execution" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#444444;strokeWidth=1.6;dashed=1;fontSize=12;fontColor=#444444;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="960" y="725" as="sourcePoint"/>
+            <mxPoint x="960" y="630" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Backend -> Cloudinary -->
+        <mxCell id="edge_cloud_req" value="request" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#111111;strokeWidth=1.6;fontSize=12;fontColor=#111111;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="770" y="440" as="sourcePoint"/>
+            <mxPoint x="770" y="200" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_cloud_res" value="response" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#444444;strokeWidth=1.6;dashed=1;fontSize=12;fontColor=#444444;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="835" y="200" as="sourcePoint"/>
+            <mxPoint x="835" y="440" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Backend -> PayOS -->
+        <mxCell id="edge_pay_req" value="request" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#111111;strokeWidth=1.6;fontSize=12;fontColor=#111111;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1010" y="440" as="sourcePoint"/>
+            <mxPoint x="1010" y="200" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_pay_res" value="response" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#444444;strokeWidth=1.6;dashed=1;fontSize=12;fontColor=#444444;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1065" y="200" as="sourcePoint"/>
+            <mxPoint x="1065" y="440" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_pay_webhook" value="webhook" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#4f46e5;strokeWidth=1.6;fontSize=12;fontColor=#4f46e5;fontStyle=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1130" y="200" as="sourcePoint"/>
+            <mxPoint x="1130" y="440" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
