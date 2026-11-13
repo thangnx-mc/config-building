@@ -1,0 +1,199 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1840 490" width="1840" height="490">
+  <defs>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#15803d"/>
+    </marker>
+    <marker id="arrow-slate" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#334155"/>
+    </marker>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#dc2626"/>
+    </marker>
+
+    <filter id="card-shadow" x="-4%" y="-3%" width="108%" height="108%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="3.5" flood-color="#0f172a" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <!-- PURE WHITE BACKGROUND -->
+  <rect width="1840" height="490" fill="#ffffff"/>
+
+  <!-- TOP AUTHENTICATION FLOW (Symmetrically centered relative to the 6 functional cards) -->
+  <g id="auth-flow">
+    <!-- Node 1: Stable Staff Entry Card -->
+    <g id="auth-node-1" filter="url(#card-shadow)">
+      <rect x="180" y="40" width="150" height="84" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+      <g transform="translate(240, 52)">
+        <circle cx="15" cy="11" r="8" fill="#15803d"/>
+        <path d="M 5 30 C 5 22, 25 22, 25 30 Z" fill="#15803d"/>
+      </g>
+      <text x="255" y="106" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="#1e293b" text-anchor="middle">Stable staff</text>
+    </g>
+
+    <!-- Connector: Node 1 -> Node 2 -->
+    <line x1="330" y1="82" x2="385" y2="82" stroke="#334155" stroke-width="1.6" marker-end="url(#arrow-slate)"/>
+
+    <!-- Node 2: Credentials Input Card -->
+    <g id="auth-node-2" filter="url(#card-shadow)">
+      <rect x="385" y="40" width="175" height="84" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+      <g transform="translate(458, 51)">
+        <rect x="5" y="10" width="18" height="14" rx="3" fill="#15803d"/>
+        <path d="M 9 10 V 6 A 5 5 0 0 1 19 6 V 10" fill="none" stroke="#15803d" stroke-width="2.2" stroke-linecap="round"/>
+        <circle cx="14" cy="17" r="2" fill="#ffffff"/>
+      </g>
+      <text x="472" y="97" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1e293b" text-anchor="middle">Enter username</text>
+      <text x="472" y="112" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1e293b" text-anchor="middle">and password</text>
+    </g>
+
+    <!-- Connector: Node 2 -> Decision Diamond -->
+    <line x1="560" y1="82" x2="615" y2="82" stroke="#334155" stroke-width="1.6" marker-end="url(#arrow-slate)"/>
+
+    <!-- Node 3: Decision Diamond -->
+    <g id="auth-diamond">
+      <polygon points="695,40 775,82 695,124 615,82" fill="#fffbeb" stroke="#f59e0b" stroke-width="1.8"/>
+      <text x="695" y="80" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="#92400e" text-anchor="middle">Valid login</text>
+      <text x="695" y="96" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="#92400e" text-anchor="middle">with</text>
+    </g>
+
+    <!-- Branch: Decision -> NO (Access Denied) -->
+    <line x1="695" y1="124" x2="695" y2="164" stroke="#dc2626" stroke-width="1.6" marker-end="url(#arrow-red)"/>
+    <text x="708" y="147" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" fill="#dc2626">NO</text>
+
+    <!-- Error Card: Access Denied -->
+    <g id="auth-denied">
+      <rect x="612" y="164" width="166" height="50" rx="8" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.4"/>
+      <text x="695" y="184" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="700" fill="#b91c1c" text-anchor="middle">Access denied</text>
+      <text x="695" y="200" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#ef4444" text-anchor="middle">Check login details</text>
+    </g>
+
+    <!-- Branch: Decision -> YES (Dashboard) -->
+    <line x1="775" y1="82" x2="830" y2="82" stroke="#15803d" stroke-width="1.8" marker-end="url(#arrow-green)"/>
+    <text x="802" y="73" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" fill="#15803d">yes</text>
+
+    <!-- Node 4: Admin / Staff Dashboard Card -->
+    <g id="auth-dashboard" filter="url(#card-shadow)">
+      <rect x="830" y="40" width="200" height="84" rx="10" fill="#f0fdf4" stroke="#86efac" stroke-width="1.8"/>
+      <g transform="translate(916, 52)">
+        <circle cx="14" cy="14" r="13" fill="#15803d"/>
+        <path d="M 9 14 L 13 18 L 20 10" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <text x="930" y="97" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="#14532d" text-anchor="middle">Open the staff</text>
+      <text x="930" y="112" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="#14532d" text-anchor="middle">dashboard</text>
+    </g>
+
+    <!-- Connector: Dashboard -> Logout -->
+    <line x1="1030" y1="82" x2="1105" y2="82" stroke="#334155" stroke-width="1.6" marker-end="url(#arrow-slate)"/>
+    <text x="1067" y="73" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#64748b" text-anchor="middle">Session end</text>
+
+    <!-- Node 5: Logout Card -->
+    <g id="auth-logout" filter="url(#card-shadow)">
+      <rect x="1105" y="40" width="165" height="84" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+      <g transform="translate(1174, 51)">
+        <rect x="5" y="10" width="18" height="14" rx="3" fill="#15803d"/>
+        <path d="M 9 10 V 6 A 5 5 0 0 1 19 6 V 10" fill="none" stroke="#15803d" stroke-width="2.2" stroke-linecap="round"/>
+        <circle cx="14" cy="17" r="2" fill="#ffffff"/>
+      </g>
+      <text x="1187" y="97" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1e293b" text-anchor="middle">Log out</text>
+      <text x="1187" y="112" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1e293b" text-anchor="middle">Revoke the session</text>
+    </g>
+  </g>
+
+  <!-- BRANCHING BUS CONNECTOR -->
+  <g id="branching-bus">
+    <!-- Vertical stem dropping symmetrically from Dashboard bottom (x = 930) -->
+    <line x1="930" y1="124" x2="930" y2="236" stroke="#334155" stroke-width="1.8"/>
+
+    <!-- Horizontal distribution bar spanning all 6 module centers -->
+    <line x1="192" y1="236" x2="1648" y2="236" stroke="#334155" stroke-width="1.8"/>
+
+    <!-- 6 Vertical drop lines entering functional cards -->
+    <line x1="192" y1="236" x2="192" y2="270" stroke="#334155" stroke-width="1.8" marker-end="url(#arrow-slate)"/>
+    <line x1="483" y1="236" x2="483" y2="270" stroke="#334155" stroke-width="1.8" marker-end="url(#arrow-slate)"/>
+    <line x1="774" y1="236" x2="774" y2="270" stroke="#334155" stroke-width="1.8" marker-end="url(#arrow-slate)"/>
+    <line x1="1065" y1="236" x2="1065" y2="270" stroke="#334155" stroke-width="1.8" marker-end="url(#arrow-slate)"/>
+    <line x1="1356" y1="236" x2="1356" y2="270" stroke="#334155" stroke-width="1.8" marker-end="url(#arrow-slate)"/>
+    <line x1="1648" y1="236" x2="1648" y2="270" stroke="#334155" stroke-width="1.8" marker-end="url(#arrow-slate)"/>
+  </g>
+
+  <!-- SIX SIMPLIFIED FUNCTIONAL CARDS (ONLY ICON + TITLE) -->
+  <!-- Card 1: Daily Tasks -->
+  <g id="card-1-daily-tasks" filter="url(#card-shadow)">
+    <rect x="60" y="270" width="265" height="175" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+    <circle cx="192" cy="336" r="30" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.4"/>
+    <g transform="translate(176, 319)">
+      <rect x="4" y="6" width="24" height="26" rx="3" fill="none" stroke="#2563eb" stroke-width="2"/>
+      <path d="M 11 6 V 4 A 2 2 0 0 1 21 4 V 6" fill="none" stroke="#2563eb" stroke-width="2"/>
+      <circle cx="16" cy="4" r="1.5" fill="#2563eb"/>
+      <path d="M 9 14 L 12 17 L 18 11" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <line x1="10" y1="22" x2="22" y2="22" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+      <line x1="10" y1="26" x2="19" y2="26" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+    </g>
+    <text x="192" y="405" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="700" fill="#0f172a" text-anchor="middle">Daily Tasks</text>
+  </g>
+
+  <!-- Card 2: Training Preparation -->
+  <g id="card-2-training-prep" filter="url(#card-shadow)">
+    <rect x="351" y="270" width="265" height="175" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+    <circle cx="483" cy="336" r="30" fill="#eef2ff" stroke="#c7d2fe" stroke-width="1.4"/>
+    <g transform="translate(467, 319)">
+      <rect x="4" y="6" width="24" height="24" rx="3" fill="none" stroke="#4f46e5" stroke-width="2"/>
+      <line x1="4" y1="12" x2="28" y2="12" stroke="#4f46e5" stroke-width="2"/>
+      <line x1="10" y1="3" x2="10" y2="7" stroke="#4f46e5" stroke-width="2" stroke-linecap="round"/>
+      <line x1="22" y1="3" x2="22" y2="7" stroke="#4f46e5" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="16" cy="20" r="5" fill="none" stroke="#4f46e5" stroke-width="1.8"/>
+      <polyline points="16,18 16,20 18,20" fill="none" stroke="#4f46e5" stroke-width="1.8" stroke-linecap="round"/>
+    </g>
+    <text x="483" y="405" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="700" fill="#0f172a" text-anchor="middle">Training Preparation</text>
+  </g>
+
+  <!-- Card 3: Stable & Horse Activities -->
+  <g id="card-3-stable-activities" filter="url(#card-shadow)">
+    <rect x="642" y="270" width="265" height="175" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+    <circle cx="774" cy="336" r="30" fill="#f0fdfa" stroke="#99f6e4" stroke-width="1.4"/>
+    <g transform="translate(758, 319)">
+      <path d="M 4 14 L 16 4 L 28 14 V 28 H 4 Z" fill="none" stroke="#0d9488" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M 11 28 V 17 H 21 V 28" fill="none" stroke="#0d9488" stroke-width="2"/>
+      <line x1="16" y1="4" x2="16" y2="10" stroke="#0d9488" stroke-width="2"/>
+    </g>
+    <text x="774" y="405" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" fill="#0f172a" text-anchor="middle">Stable &amp; Horse Activities</text>
+  </g>
+
+  <!-- Card 4: Feeding Management -->
+  <g id="card-4-feeding-mgmt" filter="url(#card-shadow)">
+    <rect x="933" y="270" width="265" height="175" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+    <circle cx="1065" cy="336" r="30" fill="#fffbeb" stroke="#fde68a" stroke-width="1.4"/>
+    <g transform="translate(1049, 319)">
+      <path d="M 5 14 Q 16 28 27 14 Z" fill="none" stroke="#d97706" stroke-width="2"/>
+      <line x1="3" y1="14" x2="29" y2="14" stroke="#d97706" stroke-width="2" stroke-linecap="round"/>
+      <path d="M 12 7 Q 16 4 20 7" fill="none" stroke="#d97706" stroke-width="1.8" stroke-linecap="round"/>
+      <circle cx="16" cy="10" r="1.5" fill="#d97706"/>
+    </g>
+    <text x="1065" y="405" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="700" fill="#0f172a" text-anchor="middle">Feeding Management</text>
+  </g>
+
+  <!-- Card 5: Incident Reporting -->
+  <g id="card-5-incident-reporting" filter="url(#card-shadow)">
+    <rect x="1224" y="270" width="265" height="175" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+    <circle cx="1356" cy="336" r="30" fill="#fef2f2" stroke="#fecaca" stroke-width="1.4"/>
+    <g transform="translate(1340, 319)">
+      <polygon points="16,4 30,28 2,28" fill="none" stroke="#dc2626" stroke-width="2" stroke-linejoin="round"/>
+      <line x1="16" y1="12" x2="16" y2="19" stroke="#dc2626" stroke-width="2.2" stroke-linecap="round"/>
+      <circle cx="16" cy="23.5" r="1.5" fill="#dc2626"/>
+    </g>
+    <text x="1356" y="405" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="700" fill="#0f172a" text-anchor="middle">Incident Reporting</text>
+  </g>
+
+  <!-- Card 6: Inventory & Supplies -->
+  <g id="card-6-inventory-supplies" filter="url(#card-shadow)">
+    <rect x="1515" y="270" width="265" height="175" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+    <circle cx="1648" cy="336" r="30" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1.4"/>
+    <g transform="translate(1632, 319)">
+      <polygon points="16,3 29,10 16,17 3,10" fill="none" stroke="#059669" stroke-width="1.8" stroke-linejoin="round"/>
+      <polygon points="3,10 16,17 16,30 3,23" fill="none" stroke="#059669" stroke-width="1.8" stroke-linejoin="round"/>
+      <polygon points="29,10 16,17 16,30 29,23" fill="none" stroke="#059669" stroke-width="1.8" stroke-linejoin="round"/>
+      <line x1="16" y1="17" x2="16" y2="30" stroke="#059669" stroke-width="1.8"/>
+    </g>
+    <text x="1648" y="405" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="700" fill="#0f172a" text-anchor="middle">Inventory &amp; Supplies</text>
+  </g>
+
+</svg>

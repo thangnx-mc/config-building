@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2026-11-14T01:00:00.000Z" agent="Antigravity RTMS Stable Staff Flow V6" version="24.7.5">
+  <diagram id="stable_staff_flow_v6" name="Stable Staff Minimalist Business Flowchart V6">
+    <mxGraphModel dx="1840" dy="490" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1840" pageHeight="490" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Top Auth Row -->
+        <mxCell id="auth_1" value="&lt;b style=&quot;font-size:13px;color:#1E293B;&quot;&gt;Stable staff&lt;/b&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;strokeColor=#CBD5E1;strokeWidth=1.4;fillColor=#FFFFFF;verticalAlign=bottom;spacingBottom=12;" vertex="1" parent="1">
+          <mxGeometry x="180" y="40" width="150" height="84" as="geometry"/>
+        </mxCell>
+        <mxCell id="auth_2" value="&lt;b style=&quot;font-size:12px;color:#1E293B;&quot;&gt;Enter username&lt;br/&gt;and password&lt;/b&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;strokeColor=#CBD5E1;strokeWidth=1.4;fillColor=#FFFFFF;verticalAlign=bottom;spacingBottom=8;" vertex="1" parent="1">
+          <mxGeometry x="385" y="40" width="175" height="84" as="geometry"/>
+        </mxCell>
+        <mxCell id="auth_diamond" value="&lt;b style=&quot;font-size:13px;color:#92400E;&quot;&gt;Valid login&lt;br/&gt;with&lt;/b&gt;" style="rhombus;whiteSpace=wrap;html=1;strokeColor=#F59E0B;strokeWidth=1.8;fillColor=#FFFBEB;" vertex="1" parent="1">
+          <mxGeometry x="615" y="40" width="160" height="84" as="geometry"/>
+        </mxCell>
+        <mxCell id="auth_denied" value="&lt;b style=&quot;font-size:12px;color:#B91C1C;&quot;&gt;Access denied&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:11px;color:#EF4444;&quot;&gt;Check login details&lt;/span&gt;" style="rounded=1;arcSize=15;whiteSpace=wrap;html=1;strokeColor=#FCA5A5;strokeWidth=1.4;fillColor=#FEF2F2;" vertex="1" parent="1">
+          <mxGeometry x="612" y="164" width="166" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="auth_dashboard" value="&lt;b style=&quot;font-size:13px;color:#14532D;&quot;&gt;Open the staff&lt;br/&gt;dashboard&lt;/b&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;strokeColor=#86EFAC;strokeWidth=1.8;fillColor=#F0FDF4;verticalAlign=bottom;spacingBottom=8;" vertex="1" parent="1">
+          <mxGeometry x="830" y="40" width="200" height="84" as="geometry"/>
+        </mxCell>
+        <mxCell id="auth_logout" value="&lt;b style=&quot;font-size:12px;color:#1E293B;&quot;&gt;Log out&lt;br/&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;&quot;&gt;Revoke the session&lt;/span&gt;&lt;/b&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;strokeColor=#CBD5E1;strokeWidth=1.4;fillColor=#FFFFFF;verticalAlign=bottom;spacingBottom=8;" vertex="1" parent="1">
+          <mxGeometry x="1105" y="40" width="165" height="84" as="geometry"/>
+        </mxCell>
+
+        <!-- Auth Connectors -->
+        <mxCell id="e_auth1_auth2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;strokeWidth=1.6;endArrow=block;endFill=1;" edge="1" parent="1" source="auth_1" target="auth_2"/>
+        <mxCell id="e_auth2_diamond" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;strokeWidth=1.6;endArrow=block;endFill=1;" edge="1" parent="1" source="auth_2" target="auth_diamond"/>
+        <mxCell id="e_diamond_denied" value="&lt;b style=&quot;color:#DC2626;font-size:11px;&quot;&gt;NO&lt;/b&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#DC2626;strokeWidth=1.6;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="auth_diamond" target="auth_denied"/>
+        <mxCell id="e_diamond_dash" value="&lt;b style=&quot;color:#15803D;font-size:11px;&quot;&gt;yes&lt;/b&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#15803D;strokeWidth=1.8;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="auth_diamond" target="auth_dashboard"/>
+        <mxCell id="e_dash_logout" value="&lt;span style=&quot;color:#64748B;font-size:11px;&quot;&gt;Session end&lt;/span&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;strokeWidth=1.6;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="auth_dashboard" target="auth_logout"/>
+
+        <!-- 6 Simplified Functional Cards -->
+        <!-- Card 1 -->
+        <mxCell id="c1" value="&lt;b style=&quot;font-size:16px;color:#0F172A;&quot;&gt;Daily Tasks&lt;/b&gt;" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;strokeColor=#CBD5E1;strokeWidth=1.5;fillColor=#FFFFFF;verticalAlign=bottom;spacingBottom=20;" vertex="1" parent="1">
+          <mxGeometry x="60" y="270" width="265" height="175" as="geometry"/>
+        </mxCell>
+        <!-- Card 2 -->
+        <mxCell id="c2" value="&lt;b style=&quot;font-size:16px;color:#0F172A;&quot;&gt;Training Preparation&lt;/b&gt;" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;strokeColor=#CBD5E1;strokeWidth=1.5;fillColor=#FFFFFF;verticalAlign=bottom;spacingBottom=20;" vertex="1" parent="1">
+          <mxGeometry x="351" y="270" width="265" height="175" as="geometry"/>
+        </mxCell>
+        <!-- Card 3 -->
+        <mxCell id="c3" value="&lt;b style=&quot;font-size:15px;color:#0F172A;&quot;&gt;Stable &amp;amp; Horse Activities&lt;/b&gt;" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;strokeColor=#CBD5E1;strokeWidth=1.5;fillColor=#FFFFFF;verticalAlign=bottom;spacingBottom=20;" vertex="1" parent="1">
+          <mxGeometry x="642" y="270" width="265" height="175" as="geometry"/>
+        </mxCell>
+        <!-- Card 4 -->
+        <mxCell id="c4" value="&lt;b style=&quot;font-size:16px;color:#0F172A;&quot;&gt;Feeding Management&lt;/b&gt;" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;strokeColor=#CBD5E1;strokeWidth=1.5;fillColor=#FFFFFF;verticalAlign=bottom;spacingBottom=20;" vertex="1" parent="1">
+          <mxGeometry x="933" y="270" width="265" height="175" as="geometry"/>
+        </mxCell>
+        <!-- Card 5 -->
+        <mxCell id="c5" value="&lt;b style=&quot;font-size:16px;color:#0F172A;&quot;&gt;Incident Reporting&lt;/b&gt;" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;strokeColor=#CBD5E1;strokeWidth=1.5;fillColor=#FFFFFF;verticalAlign=bottom;spacingBottom=20;" vertex="1" parent="1">
+          <mxGeometry x="1224" y="270" width="265" height="175" as="geometry"/>
+        </mxCell>
+        <!-- Card 6 -->
+        <mxCell id="c6" value="&lt;b style=&quot;font-size:16px;color:#0F172A;&quot;&gt;Inventory &amp;amp; Supplies&lt;/b&gt;" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;strokeColor=#CBD5E1;strokeWidth=1.5;fillColor=#FFFFFF;verticalAlign=bottom;spacingBottom=20;" vertex="1" parent="1">
+          <mxGeometry x="1515" y="270" width="265" height="175" as="geometry"/>
+        </mxCell>
+
+        <!-- Distribution Bus Connectors -->
+        <mxCell id="bus_stem" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;strokeWidth=1.8;endArrow=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="930" y="124" as="sourcePoint"/>
+            <mxPoint x="930" y="236" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bus_bar" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;strokeWidth=1.8;endArrow=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="192" y="236" as="sourcePoint"/>
+            <mxPoint x="1648" y="236" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bus_c1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;strokeWidth=1.8;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="192" y="236" as="sourcePoint"/>
+            <mxPoint x="192" y="270" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bus_c2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;strokeWidth=1.8;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="483" y="236" as="sourcePoint"/>
+            <mxPoint x="483" y="270" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bus_c3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;strokeWidth=1.8;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="774" y="236" as="sourcePoint"/>
+            <mxPoint x="774" y="270" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bus_c4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;strokeWidth=1.8;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1065" y="236" as="sourcePoint"/>
+            <mxPoint x="1065" y="270" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bus_c5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;strokeWidth=1.8;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1356" y="236" as="sourcePoint"/>
+            <mxPoint x="1356" y="270" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bus_c6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;strokeWidth=1.8;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1648" y="236" as="sourcePoint"/>
+            <mxPoint x="1648" y="270" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
