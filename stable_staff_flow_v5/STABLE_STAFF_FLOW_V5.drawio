@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2026-11-14T00:00:00.000Z" agent="Antigravity RTMS Stable Staff Flow V5" version="24.7.5">
+  <diagram id="stable_staff_flow_v5" name="Stable Staff Presentation Business Flowchart V5">
+    <mxGraphModel dx="1920" dy="1080" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1080" background="#243c30" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Header -->
+        <mxCell id="hdr_title" value="&lt;b style=&quot;font-family:Playfair Display, Georgia, serif;font-style:italic;font-size:36px;color:#FFFFFF;&quot;&gt;Stable Staff&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="75" y="38" width="240" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="hdr_sub" value="&lt;span style=&quot;font-family:Segoe UI, sans-serif;font-size:14px;color:#A7F3D0;&quot;&gt;Field Operations &amp;amp; Daily Care Workflow&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="360" y="48" width="300" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="hdr_badge" value="&lt;b style=&quot;color:#D1FAE5;font-size:12px;&quot;&gt;● Role: STABLE_STAFF&lt;/b&gt;" style="rounded=1;arcSize=50;whiteSpace=wrap;html=1;strokeColor=#365344;strokeWidth=1.2;fillColor=#1B2E25;" vertex="1" parent="1">
+          <mxGeometry x="1670" y="42" width="180" height="38" as="geometry"/>
+        </mxCell>
+
+        <!-- Canvas Background -->
+        <mxCell id="canvas_bg" value="" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;strokeColor=#1B2E25;strokeWidth=1.5;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="50" y="105" width="1820" height="925" as="geometry"/>
+        </mxCell>
+
+        <!-- Top Auth Row -->
+        <mxCell id="auth_1" value="&lt;div style=&quot;font-size:10px;font-weight:bold;color:#15803D;letter-spacing:0.5px;&quot;&gt;STABLE STAFF&lt;/div&gt;&lt;br/&gt;&lt;b style=&quot;font-size:13px;color:#1E293B;&quot;&gt;Stable staff&lt;/b&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;strokeColor=#CBD5E1;strokeWidth=1.4;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="230" y="145" width="165" height="92" as="geometry"/>
+        </mxCell>
+        <mxCell id="auth_2" value="&lt;div style=&quot;font-size:10px;font-weight:bold;color:#15803D;letter-spacing:0.5px;&quot;&gt;STABLE STAFF&lt;/div&gt;&lt;br/&gt;&lt;b style=&quot;font-size:12px;color:#1E293B;&quot;&gt;Enter username&lt;br/&gt;and password&lt;/b&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;strokeColor=#CBD5E1;strokeWidth=1.4;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="445" y="145" width="180" height="92" as="geometry"/>
+        </mxCell>
+        <mxCell id="auth_diamond" value="&lt;b style=&quot;font-size:13px;color:#92400E;&quot;&gt;Valid login&lt;br/&gt;with&lt;/b&gt;" style="rhombus;whiteSpace=wrap;html=1;strokeColor=#F59E0B;strokeWidth=1.8;fillColor=#FFFBEB;" vertex="1" parent="1">
+          <mxGeometry x="685" y="145" width="160" height="92" as="geometry"/>
+        </mxCell>
+        <mxCell id="auth_denied" value="&lt;b style=&quot;font-size:12px;color:#B91C1C;&quot;&gt;Access denied&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:11px;color:#EF4444;&quot;&gt;Check login details&lt;/span&gt;" style="rounded=1;arcSize=15;whiteSpace=wrap;html=1;strokeColor=#FCA5A5;strokeWidth=1.4;fillColor=#FEF2F2;" vertex="1" parent="1">
+          <mxGeometry x="680" y="285" width="170" height="52" as="geometry"/>
+        </mxCell>
+        <mxCell id="auth_dashboard" value="&lt;div style=&quot;font-size:10px;font-weight:bold;color:#15803D;letter-spacing:0.5px;&quot;&gt;STABLE STAFF&lt;/div&gt;&lt;br/&gt;&lt;b style=&quot;font-size:13px;color:#14532D;&quot;&gt;Open the staff&lt;br/&gt;dashboard&lt;/b&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;strokeColor=#86EFAC;strokeWidth=1.8;fillColor=#F0FDF4;" vertex="1" parent="1">
+          <mxGeometry x="905" y="145" width="210" height="92" as="geometry"/>
+        </mxCell>
+        <mxCell id="auth_logout" value="&lt;div style=&quot;font-size:10px;font-weight:bold;color:#15803D;letter-spacing:0.5px;&quot;&gt;STABLE STAFF&lt;/div&gt;&lt;br/&gt;&lt;b style=&quot;font-size:12px;color:#1E293B;&quot;&gt;Log out&lt;br/&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;&quot;&gt;Revoke the session&lt;/span&gt;&lt;/b&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;strokeColor=#CBD5E1;strokeWidth=1.4;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="1195" y="145" width="175" height="92" as="geometry"/>
+        </mxCell>
+
+        <!-- Auth Connectors -->
+        <mxCell id="e_auth1_auth2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;strokeWidth=1.6;endArrow=block;endFill=1;" edge="1" parent="1" source="auth_1" target="auth_2"/>
+        <mxCell id="e_auth2_diamond" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;strokeWidth=1.6;endArrow=block;endFill=1;" edge="1" parent="1" source="auth_2" target="auth_diamond"/>
+        <mxCell id="e_diamond_denied" value="&lt;b style=&quot;color:#DC2626;font-size:11px;&quot;&gt;NO&lt;/b&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#DC2626;strokeWidth=1.6;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="auth_diamond" target="auth_denied"/>
+        <mxCell id="e_diamond_dash" value="&lt;b style=&quot;color:#15803D;font-size:11px;&quot;&gt;yes&lt;/b&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#15803D;strokeWidth=1.8;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="auth_diamond" target="auth_dashboard"/>
+        <mxCell id="e_dash_logout" value="&lt;span style=&quot;color:#64748B;font-size:11px;&quot;&gt;Session end&lt;/span&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;strokeWidth=1.6;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="auth_dashboard" target="auth_logout"/>
+
+        <!-- 6 Functional Cards -->
+        <!-- Card 1 -->
+        <mxCell id="c1" value="&lt;div style=&quot;font-size:10px;font-weight:bold;color:#15803D;letter-spacing:0.5px;&quot;&gt;STABLE STAFF&lt;/div&gt;&lt;br/&gt;&lt;b style=&quot;font-size:16px;color:#0F172A;&quot;&gt;Daily Tasks&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:11px;font-weight:bold;color:#2563EB;&quot;&gt;SHIFT CHECKLIST &amp;amp; ROUTINES&lt;/span&gt;&lt;hr style=&quot;border:none;border-top:1px solid #F1F5F9;margin:10px 0;&quot;/&gt;&lt;div style=&quot;text-align:left;font-size:12px;color:#1E293B;padding-left:10px;&quot;&gt;&lt;p&gt;● &lt;b&gt;Review daily task list&lt;/b&gt;&lt;br/&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#64748B;font-size:11px;&quot;&gt;Check assigned shift routine&lt;/span&gt;&lt;/p&gt;&lt;p&gt;● &lt;b&gt;Track task progress&lt;/b&gt;&lt;br/&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#64748B;font-size:11px;&quot;&gt;Filter active, pending &amp;amp; overdue&lt;/span&gt;&lt;/p&gt;&lt;p&gt;● &lt;b&gt;Execute care duties&lt;/b&gt;&lt;br/&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#64748B;font-size:11px;&quot;&gt;Mucking, grooming, walking&lt;/span&gt;&lt;/p&gt;&lt;p&gt;● &lt;b&gt;Confirm &amp;amp; mark complete&lt;/b&gt;&lt;br/&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#64748B;font-size:11px;&quot;&gt;Update task completion status&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;strokeColor=#CBD5E1;strokeWidth=1.5;fillColor=#FFFFFF;verticalAlign=top;spacingTop=15;" vertex="1" parent="1">
+          <mxGeometry x="100" y="425" width="265" height="565" as="geometry"/>
+        </mxCell>
+        <mxCell id="c1_badge" value="&lt;b style=&quot;color:#1D4ED8;font-size:11px;&quot;&gt;● Shift Checklist Engine&lt;/b&gt;" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;strokeColor=#BFDBFE;strokeWidth=1;fillColor=#EFF6FF;" vertex="1" parent="1">
+          <mxGeometry x="120" y="890" width="225" height="38" as="geometry"/>
+        </mxCell>
+
+        <!-- Card 2 -->
+        <mxCell id="c2" value="&lt;div style=&quot;font-size:10px;font-weight:bold;color:#15803D;letter-spacing:0.5px;&quot;&gt;STABLE STAFF&lt;/div&gt;&lt;br/&gt;&lt;b style=&quot;font-size:16px;color:#0F172A;&quot;&gt;Training Preparation&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:11px;font-weight:bold;color:#4F46E5;&quot;&gt;EXERCISE &amp;amp; TACK READINESS&lt;/span&gt;&lt;hr style=&quot;border:none;border-top:1px solid #F1F5F9;margin:10px 0;&quot;/&gt;&lt;div style=&quot;text-align:left;font-size:12px;color:#1E293B;padding-left:10px;&quot;&gt;&lt;p&gt;● &lt;b&gt;Check training schedule&lt;/b&gt;&lt;br/&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#64748B;font-size:11px;&quot;&gt;Identify horses assigned today&lt;/span&gt;&lt;/p&gt;&lt;p&gt;● &lt;b&gt;Inspect tack &amp;amp; equipment&lt;/b&gt;&lt;br/&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#64748B;font-size:11px;&quot;&gt;Check saddles, bridles &amp;amp; boots&lt;/span&gt;&lt;/p&gt;&lt;p&gt;● &lt;b&gt;Prep horse for session&lt;/b&gt;&lt;br/&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#64748B;font-size:11px;&quot;&gt;Warm-up walking &amp;amp; grooming&lt;/span&gt;&lt;/p&gt;&lt;p&gt;● &lt;b&gt;Handover to track rider&lt;/b&gt;&lt;br/&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#64748B;font-size:11px;&quot;&gt;Safe track-side transfer&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;strokeColor=#CBD5E1;strokeWidth=1.5;fillColor=#FFFFFF;verticalAlign=top;spacingTop=15;" vertex="1" parent="1">
+          <mxGeometry x="391" y="425" width="265" height="565" as="geometry"/>
+        </mxCell>
+        <mxCell id="c2_badge" value="&lt;b style=&quot;color:#3730A3;font-size:11px;&quot;&gt;● Track Handover Protocol&lt;/b&gt;" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;strokeColor=#C7D2FE;strokeWidth=1;fillColor=#EEF2FF;" vertex="1" parent="1">
+          <mxGeometry x="411" y="890" width="225" height="38" as="geometry"/>
+        </mxCell>
+
+        <!-- Card 3 -->
+        <mxCell id="c3" value="&lt;div style=&quot;font-size:10px;font-weight:bold;color:#15803D;letter-spacing:0.5px;&quot;&gt;STABLE STAFF&lt;/div&gt;&lt;br/&gt;&lt;b style=&quot;font-size:15px;color:#0F172A;&quot;&gt;Stable &amp;amp; Horse Activities&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:11px;font-weight:bold;color:#0D9488;&quot;&gt;BARN MAP &amp;amp; LIVING CARE&lt;/span&gt;&lt;hr style=&quot;border:none;border-top:1px solid #F1F5F9;margin:10px 0;&quot;/&gt;&lt;div style=&quot;text-align:left;font-size:12px;color:#1E293B;padding-left:10px;&quot;&gt;&lt;p&gt;● &lt;b&gt;Review barn stall map&lt;/b&gt;&lt;br/&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#64748B;font-size:11px;&quot;&gt;Check stall &amp;amp; paddock allocations&lt;/span&gt;&lt;/p&gt;&lt;p&gt;● &lt;b&gt;Inspect stall hygiene&lt;/b&gt;&lt;br/&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#64748B;font-size:11px;&quot;&gt;Fresh bedding, water &amp;amp; ventilation&lt;/span&gt;&lt;/p&gt;&lt;p&gt;● &lt;b&gt;Record daily activity&lt;/b&gt;&lt;br/&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#64748B;font-size:11px;&quot;&gt;Paddock turnout &amp;amp; walker logs&lt;/span&gt;&lt;/p&gt;&lt;p&gt;● &lt;b&gt;Assist horse intake/moves&lt;/b&gt;&lt;br/&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#64748B;font-size:11px;&quot;&gt;Verify vet clearance before entry&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;strokeColor=#CBD5E1;strokeWidth=1.5;fillColor=#FFFFFF;verticalAlign=top;spacingTop=15;" vertex="1" parent="1">
+          <mxGeometry x="682" y="425" width="265" height="565" as="geometry"/>
+        </mxCell>
+        <mxCell id="c3_badge" value="&lt;b style=&quot;color:#0F766E;font-size:11px;&quot;&gt;● Living Care &amp;amp; Stall Map&lt;/b&gt;" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;strokeColor=#99F6E4;strokeWidth=1;fillColor=#F0FDFA;" vertex="1" parent="1">
+          <mxGeometry x="702" y="890" width="225" height="38" as="geometry"/>
+        </mxCell>
+
+        <!-- Card 4 -->
+        <mxCell id="c4" value="&lt;div style=&quot;font-size:10px;font-weight:bold;color:#15803D;letter-spacing:0.5px;&quot;&gt;STABLE STAFF&lt;/div&gt;&lt;br/&gt;&lt;b style=&quot;font-size:16px;color:#0F172A;&quot;&gt;Feeding Management&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:11px;font-weight:bold;color:#D97706;&quot;&gt;DIET PLANS &amp;amp; NUTRITION&lt;/span&gt;&lt;hr style=&quot;border:none;border-top:1px solid #F1F5F9;margin:10px 0;&quot;/&gt;&lt;div style=&quot;text-align:left;font-size:12px;color:#1E293B;padding-left:10px;&quot;&gt;&lt;p&gt;● &lt;b&gt;Review feeding plans&lt;/b&gt;&lt;br/&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#64748B;font-size:11px;&quot;&gt;Check approved horse daily diets&lt;/span&gt;&lt;/p&gt;&lt;p&gt;● &lt;b&gt;Weigh exact rations&lt;/b&gt;&lt;br/&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#64748B;font-size:11px;&quot;&gt;Accurate grains, hay &amp;amp; supplements&lt;/span&gt;&lt;/p&gt;&lt;p&gt;● &lt;b&gt;Apply vet dietary orders&lt;/b&gt;&lt;br/&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#64748B;font-size:11px;&quot;&gt;Follow custom recovery diets&lt;/span&gt;&lt;/p&gt;&lt;p&gt;● &lt;b&gt;Log meal attendance&lt;/b&gt;&lt;br/&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#64748B;font-size:11px;&quot;&gt;Record intake &amp;amp; appetite notes&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;strokeColor=#CBD5E1;strokeWidth=1.5;fillColor=#FFFFFF;verticalAlign=top;spacingTop=15;" vertex="1" parent="1">
+          <mxGeometry x="973" y="425" width="265" height="565" as="geometry"/>
+        </mxCell>
+        <mxCell id="c4_badge" value="&lt;b style=&quot;color:#B45309;font-size:11px;&quot;&gt;● Nutrition &amp;amp; Meal Tracker&lt;/b&gt;" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;strokeColor=#FDE68A;strokeWidth=1;fillColor=#FFFBEB;" vertex="1" parent="1">
+          <mxGeometry x="993" y="890" width="225" height="38" as="geometry"/>
+        </mxCell>
+
+        <!-- Card 5 -->
+        <mxCell id="c5" value="&lt;div style=&quot;font-size:10px;font-weight:bold;color:#15803D;letter-spacing:0.5px;&quot;&gt;STABLE STAFF&lt;/div&gt;&lt;br/&gt;&lt;b style=&quot;font-size:16px;color:#0F172A;&quot;&gt;Incident Reporting&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:11px;font-weight:bold;color:#DC2626;&quot;&gt;EMERGENCY &amp;amp; HEALTH ALERTS&lt;/span&gt;&lt;hr style=&quot;border:none;border-top:1px solid #F1F5F9;margin:10px 0;&quot;/&gt;&lt;div style=&quot;text-align:left;font-size:12px;color:#1E293B;padding-left:10px;&quot;&gt;&lt;p&gt;● &lt;b&gt;Spot abnormal symptoms&lt;/b&gt;&lt;br/&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#64748B;font-size:11px;&quot;&gt;Colic, lameness, cuts or fever&lt;/span&gt;&lt;/p&gt;&lt;p&gt;● &lt;b&gt;Create incident report&lt;/b&gt;&lt;br/&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#64748B;font-size:11px;&quot;&gt;Log severity, photo &amp;amp; description&lt;/span&gt;&lt;/p&gt;&lt;p&gt;● &lt;b&gt;Dispatch instant alerts&lt;/b&gt;&lt;br/&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#64748B;font-size:11px;&quot;&gt;Notify Vet, Trainer &amp;amp; Manager&lt;/span&gt;&lt;/p&gt;&lt;p&gt;● &lt;b&gt;Track resolution progress&lt;/b&gt;&lt;br/&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#64748B;font-size:11px;&quot;&gt;Follow treatment until cleared&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;strokeColor=#CBD5E1;strokeWidth=1.5;fillColor=#FFFFFF;verticalAlign=top;spacingTop=15;" vertex="1" parent="1">
+          <mxGeometry x="1264" y="425" width="265" height="565" as="geometry"/>
+        </mxCell>
+        <mxCell id="c5_badge" value="&lt;b style=&quot;color:#B91C1C;font-size:11px;&quot;&gt;● Rapid Emergency Dispatch&lt;/b&gt;" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;strokeColor=#FECACA;strokeWidth=1;fillColor=#FEF2F2;" vertex="1" parent="1">
+          <mxGeometry x="1284" y="890" width="225" height="38" as="geometry"/>
+        </mxCell>
+
+        <!-- Card 6 -->
+        <mxCell id="c6" value="&lt;div style=&quot;font-size:10px;font-weight:bold;color:#15803D;letter-spacing:0.5px;&quot;&gt;STABLE STAFF&lt;/div&gt;&lt;br/&gt;&lt;b style=&quot;font-size:16px;color:#0F172A;&quot;&gt;Inventory &amp;amp; Supplies&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:11px;font-weight:bold;color:#059669;&quot;&gt;STOCK LEVELS &amp;amp; RESTOCK&lt;/span&gt;&lt;hr style=&quot;border:none;border-top:1px solid #F1F5F9;margin:10px 0;&quot;/&gt;&lt;div style=&quot;text-align:left;font-size:12px;color:#1E293B;padding-left:10px;&quot;&gt;&lt;p&gt;● &lt;b&gt;Monitor barn supplies&lt;/b&gt;&lt;br/&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#64748B;font-size:11px;&quot;&gt;Check feed sacks, straw &amp;amp; gear&lt;/span&gt;&lt;/p&gt;&lt;p&gt;● &lt;b&gt;Detect low-stock thresholds&lt;/b&gt;&lt;br/&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#64748B;font-size:11px;&quot;&gt;Real-time depletion alerts&lt;/span&gt;&lt;/p&gt;&lt;p&gt;● &lt;b&gt;Submit refill requests&lt;/b&gt;&lt;br/&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#64748B;font-size:11px;&quot;&gt;Restock requisition to Manager&lt;/span&gt;&lt;/p&gt;&lt;p&gt;● &lt;b&gt;Receive &amp;amp; inspect stock&lt;/b&gt;&lt;br/&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color:#64748B;font-size:11px;&quot;&gt;Verify delivery counts &amp;amp; quality&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;strokeColor=#CBD5E1;strokeWidth=1.5;fillColor=#FFFFFF;verticalAlign=top;spacingTop=15;" vertex="1" parent="1">
+          <mxGeometry x="1555" y="425" width="265" height="565" as="geometry"/>
+        </mxCell>
+        <mxCell id="c6_badge" value="&lt;b style=&quot;color:#047857;font-size:11px;&quot;&gt;● Inventory &amp;amp; Requisitions&lt;/b&gt;" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;strokeColor=#A7F3D0;strokeWidth=1;fillColor=#ECFDF5;" vertex="1" parent="1">
+          <mxGeometry x="1575" y="890" width="225" height="38" as="geometry"/>
+        </mxCell>
+
+        <!-- Distribution Bus Connectors -->
+        <mxCell id="bus_stem" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;strokeWidth=1.8;endArrow=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1010" y="237" as="sourcePoint"/>
+            <mxPoint x="1010" y="385" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bus_bar" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;strokeWidth=1.8;endArrow=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="232" y="385" as="sourcePoint"/>
+            <mxPoint x="1687" y="385" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bus_c1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;strokeWidth=1.8;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="232" y="385" as="sourcePoint"/>
+            <mxPoint x="232" y="425" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bus_c2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;strokeWidth=1.8;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="523" y="385" as="sourcePoint"/>
+            <mxPoint x="523" y="425" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bus_c3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;strokeWidth=1.8;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="814" y="385" as="sourcePoint"/>
+            <mxPoint x="814" y="425" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bus_c4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;strokeWidth=1.8;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1105" y="385" as="sourcePoint"/>
+            <mxPoint x="1105" y="425" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bus_c5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;strokeWidth=1.8;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1396" y="385" as="sourcePoint"/>
+            <mxPoint x="1396" y="425" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bus_c6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;strokeWidth=1.8;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1687" y="385" as="sourcePoint"/>
+            <mxPoint x="1687" y="425" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

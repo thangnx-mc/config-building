@@ -1,0 +1,343 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#15803d"/>
+    </marker>
+    <marker id="arrow-slate" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#334155"/>
+    </marker>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#dc2626"/>
+    </marker>
+
+    <filter id="card-shadow" x="-4%" y="-2%" width="108%" height="106%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <rect width="1920" height="1080" fill="#243c30"/>
+
+  <text x="75" y="72" font-family="'Playfair Display', Georgia, 'Times New Roman', serif" font-style="italic" font-size="40" font-weight="700" fill="#ffffff">Stable Staff</text>
+  <text x="360" y="70" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="14" font-weight="500" fill="#a7f3d0">Field Operations &amp; Daily Care Workflow</text>
+
+  <rect x="1670" y="42" width="180" height="38" rx="19" fill="#1b2e25" stroke="#365344" stroke-width="1.2"/>
+  <circle cx="1695" cy="61" r="5" fill="#34d399"/>
+  <text x="1710" y="65" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="12" font-weight="600" fill="#d1fae5">Role: STABLE_STAFF</text>
+
+  <rect x="50" y="105" width="1820" height="925" rx="14" fill="#ffffff" stroke="#1b2e25" stroke-width="1.5"/>
+
+  <g id="auth-flow">
+    <g id="auth-node-1" filter="url(#card-shadow)">
+      <rect x="230" y="145" width="165" height="92" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+      <text x="312" y="168" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" fill="#15803d" text-anchor="middle" letter-spacing="0.5">STABLE STAFF</text>
+      <g transform="translate(296, 178)">
+        <circle cx="16" cy="10" r="7" fill="#15803d"/>
+        <path d="M 6 27 C 6 20, 26 20, 26 27 Z" fill="#15803d"/>
+      </g>
+      <text x="312" y="224" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="#1e293b" text-anchor="middle">Stable staff</text>
+    </g>
+
+    <line x1="395" y1="191" x2="445" y2="191" stroke="#334155" stroke-width="1.6" marker-end="url(#arrow-slate)"/>
+
+    <g id="auth-node-2" filter="url(#card-shadow)">
+      <rect x="445" y="145" width="180" height="92" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+      <text x="535" y="168" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" fill="#15803d" text-anchor="middle" letter-spacing="0.5">STABLE STAFF</text>
+      <g transform="translate(521, 175)">
+        <rect x="5" y="10" width="18" height="14" rx="3" fill="#15803d"/>
+        <path d="M 9 10 V 6 A 5 5 0 0 1 19 6 V 10" fill="none" stroke="#15803d" stroke-width="2.2" stroke-linecap="round"/>
+        <circle cx="14" cy="17" r="2" fill="#ffffff"/>
+      </g>
+      <text x="535" y="215" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1e293b" text-anchor="middle">Enter username</text>
+      <text x="535" y="230" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1e293b" text-anchor="middle">and password</text>
+    </g>
+
+    <line x1="625" y1="191" x2="685" y2="191" stroke="#334155" stroke-width="1.6" marker-end="url(#arrow-slate)"/>
+
+    <g id="auth-diamond">
+      <polygon points="765,145 845,191 765,237 685,191" fill="#fffbeb" stroke="#f59e0b" stroke-width="1.8"/>
+      <text x="765" y="188" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="#92400e" text-anchor="middle">Valid login</text>
+      <text x="765" y="204" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="#92400e" text-anchor="middle">with</text>
+    </g>
+
+    <line x1="765" y1="237" x2="765" y2="285" stroke="#dc2626" stroke-width="1.6" marker-end="url(#arrow-red)"/>
+    <text x="778" y="262" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" fill="#dc2626">NO</text>
+
+    <g id="auth-denied">
+      <rect x="680" y="285" width="170" height="52" rx="8" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.4"/>
+      <text x="765" y="307" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="700" fill="#b91c1c" text-anchor="middle">Access denied</text>
+      <text x="765" y="323" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#ef4444" text-anchor="middle">Check login details</text>
+    </g>
+
+    <line x1="845" y1="191" x2="905" y2="191" stroke="#15803d" stroke-width="1.8" marker-end="url(#arrow-green)"/>
+    <text x="875" y="181" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" fill="#15803d">yes</text>
+
+    <g id="auth-dashboard" filter="url(#card-shadow)">
+      <rect x="905" y="145" width="210" height="92" rx="10" fill="#f0fdf4" stroke="#86efac" stroke-width="1.8"/>
+      <text x="1010" y="168" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" fill="#15803d" text-anchor="middle" letter-spacing="0.5">STABLE STAFF</text>
+      <g transform="translate(994, 174)">
+        <circle cx="16" cy="14" r="12" fill="#15803d"/>
+        <path d="M 11 14 L 15 18 L 22 10" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <text x="1010" y="215" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="#14532d" text-anchor="middle">Open the staff</text>
+      <text x="1010" y="230" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="#14532d" text-anchor="middle">dashboard</text>
+    </g>
+
+    <line x1="1115" y1="191" x2="1195" y2="191" stroke="#334155" stroke-width="1.6" marker-end="url(#arrow-slate)"/>
+    <text x="1155" y="181" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#64748b" text-anchor="middle">Session end</text>
+
+    <g id="auth-logout" filter="url(#card-shadow)">
+      <rect x="1195" y="145" width="175" height="92" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+      <text x="1282" y="168" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" fill="#15803d" text-anchor="middle" letter-spacing="0.5">STABLE STAFF</text>
+      <g transform="translate(1268, 175)">
+        <rect x="5" y="10" width="18" height="14" rx="3" fill="#15803d"/>
+        <path d="M 9 10 V 6 A 5 5 0 0 1 19 6 V 10" fill="none" stroke="#15803d" stroke-width="2.2" stroke-linecap="round"/>
+        <circle cx="14" cy="17" r="2" fill="#ffffff"/>
+      </g>
+      <text x="1282" y="215" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1e293b" text-anchor="middle">Log out</text>
+      <text x="1282" y="230" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1e293b" text-anchor="middle">Revoke the session</text>
+    </g>
+  </g>
+
+  <g id="branching-bus">
+    <line x1="1010" y1="237" x2="1010" y2="385" stroke="#334155" stroke-width="1.8"/>
+    <line x1="232" y1="385" x2="1687" y2="385" stroke="#334155" stroke-width="1.8"/>
+
+    <line x1="232" y1="385" x2="232" y2="425" stroke="#334155" stroke-width="1.8" marker-end="url(#arrow-slate)"/>
+    <line x1="523" y1="385" x2="523" y2="425" stroke="#334155" stroke-width="1.8" marker-end="url(#arrow-slate)"/>
+    <line x1="814" y1="385" x2="814" y2="425" stroke="#334155" stroke-width="1.8" marker-end="url(#arrow-slate)"/>
+    <line x1="1105" y1="385" x2="1105" y2="425" stroke="#334155" stroke-width="1.8" marker-end="url(#arrow-slate)"/>
+    <line x1="1396" y1="385" x2="1396" y2="425" stroke="#334155" stroke-width="1.8" marker-end="url(#arrow-slate)"/>
+    <line x1="1687" y1="385" x2="1687" y2="425" stroke="#334155" stroke-width="1.8" marker-end="url(#arrow-slate)"/>
+  </g>
+
+  <g id="card-1-daily-tasks" filter="url(#card-shadow)">
+    <rect x="100" y="425" width="265" height="565" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+    <text x="232" y="455" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" fill="#15803d" text-anchor="middle" letter-spacing="0.5">STABLE STAFF</text>
+    
+    <circle cx="232" cy="500" r="28" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.2"/>
+    <g transform="translate(216, 484)">
+      <rect x="4" y="6" width="24" height="26" rx="3" fill="none" stroke="#2563eb" stroke-width="2"/>
+      <path d="M 11 6 V 4 A 2 2 0 0 1 21 4 V 6" fill="none" stroke="#2563eb" stroke-width="2"/>
+      <circle cx="16" cy="4" r="1.5" fill="#2563eb"/>
+      <path d="M 9 14 L 12 17 L 18 11" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <line x1="10" y1="22" x2="22" y2="22" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+      <line x1="10" y1="26" x2="19" y2="26" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <text x="232" y="555" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="700" fill="#0f172a" text-anchor="middle">Daily Tasks</text>
+    <text x="232" y="574" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#2563eb" text-anchor="middle">SHIFT CHECKLIST &amp; ROUTINES</text>
+
+    <line x1="125" y1="590" x2="340" y2="590" stroke="#f1f5f9" stroke-width="1.5"/>
+
+    <circle cx="128" cy="620" r="3.5" fill="#2563eb"/>
+    <text x="140" y="624" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1e293b">Review daily task list</text>
+    <text x="140" y="640" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b">Check assigned shift routine</text>
+
+    <circle cx="128" cy="680" r="3.5" fill="#2563eb"/>
+    <text x="140" y="684" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1e293b">Track task progress</text>
+    <text x="140" y="700" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b">Filter active, pending &amp; overdue</text>
+
+    <circle cx="128" cy="740" r="3.5" fill="#2563eb"/>
+    <text x="140" y="744" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1e293b">Execute care duties</text>
+    <text x="140" y="760" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b">Mucking, grooming, walking</text>
+
+    <circle cx="128" cy="800" r="3.5" fill="#2563eb"/>
+    <text x="140" y="804" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1e293b">Confirm &amp; mark complete</text>
+    <text x="140" y="820" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b">Update task completion status</text>
+
+    <rect x="120" y="890" width="225" height="38" rx="8" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
+    <circle cx="142" cy="909" r="4" fill="#2563eb"/>
+    <text x="156" y="913" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#1d4ed8">Shift Checklist Engine</text>
+  </g>
+
+  <g id="card-2-training-prep" filter="url(#card-shadow)">
+    <rect x="391" y="425" width="265" height="565" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+    <text x="523" y="455" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" fill="#15803d" text-anchor="middle" letter-spacing="0.5">STABLE STAFF</text>
+    
+    <circle cx="523" cy="500" r="28" fill="#eef2ff" stroke="#c7d2fe" stroke-width="1.2"/>
+    <g transform="translate(507, 484)">
+      <rect x="4" y="6" width="24" height="24" rx="3" fill="none" stroke="#4f46e5" stroke-width="2"/>
+      <line x1="4" y1="12" x2="28" y2="12" stroke="#4f46e5" stroke-width="2"/>
+      <line x1="10" y1="3" x2="10" y2="7" stroke="#4f46e5" stroke-width="2" stroke-linecap="round"/>
+      <line x1="22" y1="3" x2="22" y2="7" stroke="#4f46e5" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="16" cy="20" r="5" fill="none" stroke="#4f46e5" stroke-width="1.8"/>
+      <polyline points="16,18 16,20 18,20" fill="none" stroke="#4f46e5" stroke-width="1.8" stroke-linecap="round"/>
+    </g>
+
+    <text x="523" y="555" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="700" fill="#0f172a" text-anchor="middle">Training Preparation</text>
+    <text x="523" y="574" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#4f46e5" text-anchor="middle">EXERCISE &amp; TACK READINESS</text>
+
+    <line x1="416" y1="590" x2="631" y2="590" stroke="#f1f5f9" stroke-width="1.5"/>
+
+    <circle cx="419" cy="620" r="3.5" fill="#4f46e5"/>
+    <text x="431" y="624" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1e293b">Check training schedule</text>
+    <text x="431" y="640" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b">Identify horses assigned today</text>
+
+    <circle cx="419" cy="680" r="3.5" fill="#4f46e5"/>
+    <text x="431" y="684" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1e293b">Inspect tack &amp; equipment</text>
+    <text x="431" y="700" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b">Check saddles, bridles &amp; boots</text>
+
+    <circle cx="419" cy="740" r="3.5" fill="#4f46e5"/>
+    <text x="431" y="744" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1e293b">Prep horse for session</text>
+    <text x="431" y="760" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b">Warm-up walking &amp; grooming</text>
+
+    <circle cx="419" cy="800" r="3.5" fill="#4f46e5"/>
+    <text x="431" y="804" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1e293b">Handover to track rider</text>
+    <text x="431" y="820" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b">Safe track-side transfer</text>
+
+    <rect x="411" y="890" width="225" height="38" rx="8" fill="#eef2ff" stroke="#c7d2fe" stroke-width="1"/>
+    <circle cx="433" cy="909" r="4" fill="#4f46e5"/>
+    <text x="447" y="913" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#3730a3">Track Handover Protocol</text>
+  </g>
+
+  <g id="card-3-stable-activities" filter="url(#card-shadow)">
+    <rect x="682" y="425" width="265" height="565" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+    <text x="814" y="455" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" fill="#15803d" text-anchor="middle" letter-spacing="0.5">STABLE STAFF</text>
+    
+    <circle cx="814" cy="500" r="28" fill="#f0fdfa" stroke="#99f6e4" stroke-width="1.2"/>
+    <g transform="translate(798, 484)">
+      <path d="M 4 14 L 16 4 L 28 14 V 28 H 4 Z" fill="none" stroke="#0d9488" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M 11 28 V 17 H 21 V 28" fill="none" stroke="#0d9488" stroke-width="2"/>
+      <line x1="16" y1="4" x2="16" y2="10" stroke="#0d9488" stroke-width="2"/>
+    </g>
+
+    <text x="814" y="555" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" fill="#0f172a" text-anchor="middle">Stable &amp; Horse Activities</text>
+    <text x="814" y="574" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#0d9488" text-anchor="middle">BARN MAP &amp; LIVING CARE</text>
+
+    <line x1="707" y1="590" x2="922" y2="590" stroke="#f1f5f9" stroke-width="1.5"/>
+
+    <circle cx="710" cy="620" r="3.5" fill="#0d9488"/>
+    <text x="722" y="624" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1e293b">Review barn stall map</text>
+    <text x="722" y="640" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b">Check stall &amp; paddock allocations</text>
+
+    <circle cx="710" cy="680" r="3.5" fill="#0d9488"/>
+    <text x="722" y="684" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1e293b">Inspect stall hygiene</text>
+    <text x="722" y="700" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b">Fresh bedding, water &amp; ventilation</text>
+
+    <circle cx="710" cy="740" r="3.5" fill="#0d9488"/>
+    <text x="722" y="744" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1e293b">Record daily activity</text>
+    <text x="722" y="760" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b">Paddock turnout &amp; walker logs</text>
+
+    <circle cx="710" cy="800" r="3.5" fill="#0d9488"/>
+    <text x="722" y="804" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1e293b">Assist horse intake/moves</text>
+    <text x="722" y="820" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b">Verify vet clearance before entry</text>
+
+    <rect x="702" y="890" width="225" height="38" rx="8" fill="#f0fdfa" stroke="#99f6e4" stroke-width="1"/>
+    <circle cx="724" cy="909" r="4" fill="#0d9488"/>
+    <text x="738" y="913" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#0f766e">Living Care &amp; Stall Map</text>
+  </g>
+
+  <g id="card-4-feeding-mgmt" filter="url(#card-shadow)">
+    <rect x="973" y="425" width="265" height="565" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+    <text x="1105" y="455" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" fill="#15803d" text-anchor="middle" letter-spacing="0.5">STABLE STAFF</text>
+    
+    <circle cx="1105" cy="500" r="28" fill="#fffbeb" stroke="#fde68a" stroke-width="1.2"/>
+    <g transform="translate(1089, 484)">
+      <path d="M 5 14 Q 16 28 27 14 Z" fill="none" stroke="#d97706" stroke-width="2"/>
+      <line x1="3" y1="14" x2="29" y2="14" stroke="#d97706" stroke-width="2" stroke-linecap="round"/>
+      <path d="M 12 7 Q 16 4 20 7" fill="none" stroke="#d97706" stroke-width="1.8" stroke-linecap="round"/>
+      <circle cx="16" cy="10" r="1.5" fill="#d97706"/>
+    </g>
+
+    <text x="1105" y="555" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="700" fill="#0f172a" text-anchor="middle">Feeding Management</text>
+    <text x="1105" y="574" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#d97706" text-anchor="middle">DIET PLANS &amp; NUTRITION</text>
+
+    <line x1="998" y1="590" x2="1213" y2="590" stroke="#f1f5f9" stroke-width="1.5"/>
+
+    <circle cx="1001" cy="620" r="3.5" fill="#d97706"/>
+    <text x="1013" y="624" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1e293b">Review feeding plans</text>
+    <text x="1013" y="640" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b">Check approved horse daily diets</text>
+
+    <circle cx="1001" cy="680" r="3.5" fill="#d97706"/>
+    <text x="1013" y="684" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1e293b">Weigh exact rations</text>
+    <text x="1013" y="700" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b">Accurate grains, hay &amp; supplements</text>
+
+    <circle cx="1001" cy="740" r="3.5" fill="#d97706"/>
+    <text x="1013" y="744" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1e293b">Apply vet dietary orders</text>
+    <text x="1013" y="760" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b">Follow custom recovery diets</text>
+
+    <circle cx="1001" cy="800" r="3.5" fill="#d97706"/>
+    <text x="1013" y="804" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1e293b">Log meal attendance</text>
+    <text x="1013" y="820" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b">Record intake &amp; appetite notes</text>
+
+    <rect x="993" y="890" width="225" height="38" rx="8" fill="#fffbeb" stroke="#fde68a" stroke-width="1"/>
+    <circle cx="1015" cy="909" r="4" fill="#d97706"/>
+    <text x="1029" y="913" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#b45309">Nutrition &amp; Meal Tracker</text>
+  </g>
+
+  <g id="card-5-incident-reporting" filter="url(#card-shadow)">
+    <rect x="1264" y="425" width="265" height="565" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+    <text x="1396" y="455" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" fill="#15803d" text-anchor="middle" letter-spacing="0.5">STABLE STAFF</text>
+    
+    <circle cx="1396" cy="500" r="28" fill="#fef2f2" stroke="#fecaca" stroke-width="1.2"/>
+    <g transform="translate(1380, 484)">
+      <polygon points="16,4 30,28 2,28" fill="none" stroke="#dc2626" stroke-width="2" stroke-linejoin="round"/>
+      <line x1="16" y1="12" x2="16" y2="19" stroke="#dc2626" stroke-width="2.2" stroke-linecap="round"/>
+      <circle cx="16" cy="23.5" r="1.5" fill="#dc2626"/>
+    </g>
+
+    <text x="1396" y="555" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="700" fill="#0f172a" text-anchor="middle">Incident Reporting</text>
+    <text x="1396" y="574" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#dc2626" text-anchor="middle">EMERGENCY &amp; HEALTH ALERTS</text>
+
+    <line x1="1289" y1="590" x2="1504" y2="590" stroke="#f1f5f9" stroke-width="1.5"/>
+
+    <circle cx="1292" cy="620" r="3.5" fill="#dc2626"/>
+    <text x="1304" y="624" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1e293b">Spot abnormal symptoms</text>
+    <text x="1304" y="640" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b">Colic, lameness, cuts or fever</text>
+
+    <circle cx="1292" cy="680" r="3.5" fill="#dc2626"/>
+    <text x="1304" y="684" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1e293b">Create incident report</text>
+    <text x="1304" y="700" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b">Log severity, photo &amp; description</text>
+
+    <circle cx="1292" cy="740" r="3.5" fill="#dc2626"/>
+    <text x="1304" y="744" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1e293b">Dispatch instant alerts</text>
+    <text x="1304" y="760" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b">Notify Vet, Trainer &amp; Manager</text>
+
+    <circle cx="1292" cy="800" r="3.5" fill="#dc2626"/>
+    <text x="1304" y="804" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1e293b">Track resolution progress</text>
+    <text x="1304" y="820" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b">Follow treatment until cleared</text>
+
+    <rect x="1284" y="890" width="225" height="38" rx="8" fill="#fef2f2" stroke="#fecaca" stroke-width="1"/>
+    <circle cx="1306" cy="909" r="4" fill="#dc2626"/>
+    <text x="1320" y="913" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#b91c1c">Rapid Emergency Dispatch</text>
+  </g>
+
+  <g id="card-6-inventory-supplies" filter="url(#card-shadow)">
+    <rect x="1555" y="425" width="265" height="565" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+    <text x="1687" y="455" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" fill="#15803d" text-anchor="middle" letter-spacing="0.5">STABLE STAFF</text>
+    
+    <circle cx="1687" cy="500" r="28" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1.2"/>
+    <g transform="translate(1671, 484)">
+      <polygon points="16,3 29,10 16,17 3,10" fill="none" stroke="#059669" stroke-width="1.8" stroke-linejoin="round"/>
+      <polygon points="3,10 16,17 16,30 3,23" fill="none" stroke="#059669" stroke-width="1.8" stroke-linejoin="round"/>
+      <polygon points="29,10 16,17 16,30 29,23" fill="none" stroke="#059669" stroke-width="1.8" stroke-linejoin="round"/>
+      <line x1="16" y1="17" x2="16" y2="30" stroke="#059669" stroke-width="1.8"/>
+    </g>
+
+    <text x="1687" y="555" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="700" fill="#0f172a" text-anchor="middle">Inventory &amp; Supplies</text>
+    <text x="1687" y="574" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#059669" text-anchor="middle">STOCK LEVELS &amp; RESTOCK</text>
+
+    <line x1="1580" y1="590" x2="1795" y2="590" stroke="#f1f5f9" stroke-width="1.5"/>
+
+    <circle cx="1583" cy="620" r="3.5" fill="#059669"/>
+    <text x="1595" y="624" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1e293b">Monitor barn supplies</text>
+    <text x="1595" y="640" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b">Check feed sacks, straw &amp; gear</text>
+
+    <circle cx="1583" cy="680" r="3.5" fill="#059669"/>
+    <text x="1595" y="684" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1e293b">Detect low-stock thresholds</text>
+    <text x="1595" y="700" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b">Real-time depletion alerts</text>
+
+    <circle cx="1583" cy="740" r="3.5" fill="#059669"/>
+    <text x="1595" y="744" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1e293b">Submit refill requests</text>
+    <text x="1595" y="760" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b">Restock requisition to Manager</text>
+
+    <circle cx="1583" cy="800" r="3.5" fill="#059669"/>
+    <text x="1595" y="804" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1e293b">Receive &amp; inspect stock</text>
+    <text x="1595" y="820" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b">Verify delivery counts &amp; quality</text>
+
+    <rect x="1575" y="890" width="225" height="38" rx="8" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1"/>
+    <circle cx="1597" cy="909" r="4" fill="#059669"/>
+    <text x="1611" y="913" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#047857">Inventory &amp; Requisitions</text>
+  </g>
+
+</svg>
