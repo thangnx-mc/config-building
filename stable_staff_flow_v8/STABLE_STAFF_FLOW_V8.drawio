@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2026-11-14T04:30:00.000Z" agent="Antigravity RTMS Stable Staff Flow V8" version="24.7.5">
+  <diagram id="stable_staff_flow_v8" name="Stable Staff Business Flow V8">
+    <mxGraphModel dx="1350" dy="500" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1350" pageHeight="500" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Top Auth Row (Shifted Right +150px: x=175..1175, Centered) -->
+        <!-- Auth Node 1: Stable Staff -->
+        <mxCell id="auth_1" value="&lt;b style=&quot;font-size:12.5px;color:#1E293B;&quot;&gt;Stable staff&lt;/b&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;strokeColor=#CBD5E1;strokeWidth=1.4;fillColor=#FFFFFF;verticalAlign=bottom;spacingBottom=12;" vertex="1" parent="1">
+          <mxGeometry x="175" y="36" width="130" height="82" as="geometry"/>
+        </mxCell>
+        <mxCell id="icon_auth_1" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2032%2032%22%20width%3D%2232%22%20height%3D%2232%22%3E%0A%20%20%3Ccircle%20cx%3D%2216%22%20cy%3D%2211%22%20r%3D%227%22%20fill%3D%22%2315803d%22/%3E%0A%20%20%3Cpath%20d%3D%22M%206%2027%20C%206%2020%2C%2026%2020%2C%2026%2027%20Z%22%20fill%3D%22%2315803d%22/%3E%0A%3C/svg%3E;" vertex="1" parent="1">
+          <mxGeometry x="226" y="46" width="28" height="28" as="geometry"/>
+        </mxCell>
+
+        <!-- Auth Node 2: Credentials -->
+        <mxCell id="auth_2" value="&lt;b style=&quot;font-size:12px;color:#1E293B;&quot;&gt;Enter username&lt;br/&gt;and password&lt;/b&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;strokeColor=#CBD5E1;strokeWidth=1.4;fillColor=#FFFFFF;verticalAlign=bottom;spacingBottom=8;" vertex="1" parent="1">
+          <mxGeometry x="355" y="36" width="160" height="82" as="geometry"/>
+        </mxCell>
+        <mxCell id="icon_auth_2" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2032%2032%22%20width%3D%2232%22%20height%3D%2232%22%3E%0A%20%20%3Crect%20x%3D%227%22%20y%3D%2213%22%20width%3D%2218%22%20height%3D%2215%22%20rx%3D%223%22%20fill%3D%22%2315803d%22/%3E%0A%20%20%3Cpath%20d%3D%22M%2011%2013%20V%209%20A%205%205%200%200%201%2021%209%20V%2013%22%20fill%3D%22none%22%20stroke%3D%22%2315803d%22%20stroke-width%3D%222.6%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%3Ccircle%20cx%3D%2216%22%20cy%3D%2220.5%22%20r%3D%222%22%20fill%3D%22%23ffffff%22/%3E%0A%3C/svg%3E;" vertex="1" parent="1">
+          <mxGeometry x="421" y="45" width="28" height="28" as="geometry"/>
+        </mxCell>
+
+        <!-- Auth Decision Diamond -->
+        <mxCell id="auth_diamond" value="&lt;b style=&quot;font-size:12.5px;color:#92400E;&quot;&gt;Valid login&lt;br/&gt;with&lt;/b&gt;" style="rhombus;whiteSpace=wrap;html=1;strokeColor=#F59E0B;strokeWidth=1.8;fillColor=#FFFBEB;" vertex="1" parent="1">
+          <mxGeometry x="565" y="36" width="140" height="82" as="geometry"/>
+        </mxCell>
+
+        <!-- Auth Access Denied -->
+        <mxCell id="auth_denied" value="&lt;b style=&quot;font-size:11.5px;color:#B91C1C;&quot;&gt;Access denied&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:11px;color:#EF4444;&quot;&gt;Check login details&lt;/span&gt;" style="rounded=1;arcSize=15;whiteSpace=wrap;html=1;strokeColor=#FCA5A5;strokeWidth=1.4;fillColor=#FEF2F2;" vertex="1" parent="1">
+          <mxGeometry x="555" y="152" width="160" height="48" as="geometry"/>
+        </mxCell>
+
+        <!-- Auth Dashboard Card -->
+        <mxCell id="auth_dashboard" value="&lt;b style=&quot;font-size:12.5px;color:#14532D;&quot;&gt;Open the staff&lt;br/&gt;dashboard&lt;/b&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;strokeColor=#86EFAC;strokeWidth=1.8;fillColor=#F0FDF4;verticalAlign=bottom;spacingBottom=8;" vertex="1" parent="1">
+          <mxGeometry x="755" y="36" width="190" height="82" as="geometry"/>
+        </mxCell>
+        <mxCell id="icon_auth_dashboard" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2032%2032%22%20width%3D%2232%22%20height%3D%2232%22%3E%0A%20%20%3Ccircle%20cx%3D%2216%22%20cy%3D%2216%22%20r%3D%2214%22%20fill%3D%22%2315803d%22/%3E%0A%20%20%3Cpath%20d%3D%22M%2010%2016%20L%2014%2020%20L%2022%2011%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%222.6%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%3C/svg%3E;" vertex="1" parent="1">
+          <mxGeometry x="836" y="46" width="28" height="28" as="geometry"/>
+        </mxCell>
+
+        <!-- Auth Logout Card -->
+        <mxCell id="auth_logout" value="&lt;b style=&quot;font-size:12px;color:#1E293B;&quot;&gt;Log out&lt;br/&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;&quot;&gt;Revoke the session&lt;/span&gt;&lt;/b&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;strokeColor=#CBD5E1;strokeWidth=1.4;fillColor=#FFFFFF;verticalAlign=bottom;spacingBottom=8;" vertex="1" parent="1">
+          <mxGeometry x="1015" y="36" width="160" height="82" as="geometry"/>
+        </mxCell>
+        <mxCell id="icon_auth_logout" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2032%2032%22%20width%3D%2232%22%20height%3D%2232%22%3E%0A%20%20%3Crect%20x%3D%227%22%20y%3D%2213%22%20width%3D%2218%22%20height%3D%2215%22%20rx%3D%223%22%20fill%3D%22%2315803d%22/%3E%0A%20%20%3Cpath%20d%3D%22M%2011%2013%20V%209%20A%205%205%200%200%201%2021%209%20V%2013%22%20fill%3D%22none%22%20stroke%3D%22%2315803d%22%20stroke-width%3D%222.6%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%3Ccircle%20cx%3D%2216%22%20cy%3D%2220.5%22%20r%3D%222%22%20fill%3D%22%23ffffff%22/%3E%0A%3C/svg%3E;" vertex="1" parent="1">
+          <mxGeometry x="1081" y="45" width="28" height="28" as="geometry"/>
+        </mxCell>
+
+        <!-- Auth Connectors with Geometry -->
+        <mxCell id="e_auth1_auth2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;strokeWidth=1.6;endArrow=block;endFill=1;" edge="1" parent="1" source="auth_1" target="auth_2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_auth2_diamond" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;strokeWidth=1.6;endArrow=block;endFill=1;" edge="1" parent="1" source="auth_2" target="auth_diamond">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_diamond_denied" value="&lt;b style=&quot;color:#DC2626;font-size:11.5px;&quot;&gt;NO&lt;/b&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#DC2626;strokeWidth=1.6;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;labelBorderColor=none;align=center;" edge="1" parent="1" source="auth_diamond" target="auth_denied">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_diamond_dash" value="&lt;b style=&quot;color:#15803D;font-size:11.5px;&quot;&gt;yes&lt;/b&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#15803D;strokeWidth=1.8;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;labelBorderColor=none;align=center;" edge="1" parent="1" source="auth_diamond" target="auth_dashboard">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_dash_logout" value="&lt;b style=&quot;color:#64748B;font-size:11px;&quot;&gt;Session end&lt;/b&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;strokeWidth=1.6;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;labelBorderColor=none;align=center;verticalAlign=bottom;spacingBottom=3;" edge="1" parent="1" source="auth_dashboard" target="auth_logout">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- 6 Compact Functional Cards (200x205, y=255) with 25px outer canvas margins -->
+        <!-- Card 1 -->
+        <mxCell id="c1" value="&lt;b style=&quot;font-size:15.5px;color:#0F172A;&quot;&gt;Daily&lt;br/&gt;Tasks&lt;/b&gt;" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;strokeColor=#CBD5E1;strokeWidth=1.5;fillColor=#FFFFFF;verticalAlign=bottom;spacingBottom=25;" vertex="1" parent="1">
+          <mxGeometry x="25" y="255" width="200" height="205" as="geometry"/>
+        </mxCell>
+        <mxCell id="circle_c1" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#EFF6FF;strokeColor=#BFDBFE;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="91" y="280" width="68" height="68" as="geometry"/>
+        </mxCell>
+        <mxCell id="icon_c1" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2040%2040%22%20width%3D%2240%22%20height%3D%2240%22%3E%0A%20%20%3Crect%20x%3D%225%22%20y%3D%226%22%20width%3D%2228%22%20height%3D%2230%22%20rx%3D%223%22%20fill%3D%22none%22%20stroke%3D%22%232563eb%22%20stroke-width%3D%222.4%22/%3E%0A%20%20%3Cpath%20d%3D%22M%2013%206%20V%204%20A%202%202%200%200%201%2025%204%20V%206%22%20fill%3D%22none%22%20stroke%3D%22%232563eb%22%20stroke-width%3D%222.4%22/%3E%0A%20%20%3Ccircle%20cx%3D%2219%22%20cy%3D%224%22%20r%3D%221.5%22%20fill%3D%22%232563eb%22/%3E%0A%20%20%3Cpath%20d%3D%22M%2011%2016%20L%2015%2020%20L%2023%2012%22%20fill%3D%22none%22%20stroke%3D%22%232563eb%22%20stroke-width%3D%222.4%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Cline%20x1%3D%2212%22%20y1%3D%2225%22%20x2%3D%2226%22%20y2%3D%2225%22%20stroke%3D%22%232563eb%22%20stroke-width%3D%222.4%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%3Cline%20x1%3D%2212%22%20y1%3D%2230%22%20x2%3D%2222%22%20y2%3D%2230%22%20stroke%3D%22%232563eb%22%20stroke-width%3D%222.4%22%20stroke-linecap%3D%22round%22/%3E%0A%3C/svg%3E;" vertex="1" parent="1">
+          <mxGeometry x="107" y="296" width="36" height="36" as="geometry"/>
+        </mxCell>
+
+        <!-- Card 2 -->
+        <mxCell id="c2" value="&lt;b style=&quot;font-size:15.5px;color:#0F172A;&quot;&gt;Training&lt;br/&gt;Preparation&lt;/b&gt;" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;strokeColor=#CBD5E1;strokeWidth=1.5;fillColor=#FFFFFF;verticalAlign=bottom;spacingBottom=25;" vertex="1" parent="1">
+          <mxGeometry x="245" y="255" width="200" height="205" as="geometry"/>
+        </mxCell>
+        <mxCell id="circle_c2" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#EEF2FF;strokeColor=#C7D2FE;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="311" y="280" width="68" height="68" as="geometry"/>
+        </mxCell>
+        <mxCell id="icon_c2" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2040%2040%22%20width%3D%2240%22%20height%3D%2240%22%3E%0A%20%20%3Crect%20x%3D%225%22%20y%3D%226%22%20width%3D%2228%22%20height%3D%2228%22%20rx%3D%223%22%20fill%3D%22none%22%20stroke%3D%22%234f46e5%22%20stroke-width%3D%222.4%22/%3E%0A%20%20%3Cline%20x1%3D%225%22%20y1%3D%2213%22%20x2%3D%2233%22%20y2%3D%2213%22%20stroke%3D%22%234f46e5%22%20stroke-width%3D%222.4%22/%3E%0A%20%20%3Cline%20x1%3D%2212%22%20y1%3D%223%22%20x2%3D%2212%22%20y2%3D%227%22%20stroke%3D%22%234f46e5%22%20stroke-width%3D%222.4%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%3Cline%20x1%3D%2226%22%20y1%3D%223%22%20x2%3D%2226%22%20y2%3D%227%22%20stroke%3D%22%234f46e5%22%20stroke-width%3D%222.4%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%3Ccircle%20cx%3D%2219%22%20cy%3D%2222%22%20r%3D%225.5%22%20fill%3D%22none%22%20stroke%3D%22%234f46e5%22%20stroke-width%3D%222.2%22/%3E%0A%20%20%3Cpolyline%20points%3D%2219%2C19%2019%2C22%2022%2C22%22%20fill%3D%22none%22%20stroke%3D%22%234f46e5%22%20stroke-width%3D%222.2%22%20stroke-linecap%3D%22round%22/%3E%0A%3C/svg%3E;" vertex="1" parent="1">
+          <mxGeometry x="327" y="296" width="36" height="36" as="geometry"/>
+        </mxCell>
+
+        <!-- Card 3 -->
+        <mxCell id="c3" value="&lt;b style=&quot;font-size:15.5px;color:#0F172A;&quot;&gt;Stable &amp;amp; Horse&lt;br/&gt;Activities&lt;/b&gt;" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;strokeColor=#CBD5E1;strokeWidth=1.5;fillColor=#FFFFFF;verticalAlign=bottom;spacingBottom=25;" vertex="1" parent="1">
+          <mxGeometry x="465" y="255" width="200" height="205" as="geometry"/>
+        </mxCell>
+        <mxCell id="circle_c3" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#F0FDFA;strokeColor=#99F6E4;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="531" y="280" width="68" height="68" as="geometry"/>
+        </mxCell>
+        <mxCell id="icon_c3" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2040%2040%22%20width%3D%2240%22%20height%3D%2240%22%3E%0A%20%20%3Cpath%20d%3D%22M%205%2017%20L%2019%205%20L%2033%2017%20V%2033%20H%205%20Z%22%20fill%3D%22none%22%20stroke%3D%22%230d9488%22%20stroke-width%3D%222.4%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Cpath%20d%3D%22M%2013%2033%20V%2020%20H%2025%20V%2033%22%20fill%3D%22none%22%20stroke%3D%22%230d9488%22%20stroke-width%3D%222.4%22/%3E%0A%20%20%3Cline%20x1%3D%2219%22%20y1%3D%225%22%20x2%3D%2219%22%20y2%3D%2212%22%20stroke%3D%22%230d9488%22%20stroke-width%3D%222.4%22/%3E%0A%3C/svg%3E;" vertex="1" parent="1">
+          <mxGeometry x="547" y="296" width="36" height="36" as="geometry"/>
+        </mxCell>
+
+        <!-- Card 4 -->
+        <mxCell id="c4" value="&lt;b style=&quot;font-size:15.5px;color:#0F172A;&quot;&gt;Feeding&lt;br/&gt;Management&lt;/b&gt;" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;strokeColor=#CBD5E1;strokeWidth=1.5;fillColor=#FFFFFF;verticalAlign=bottom;spacingBottom=25;" vertex="1" parent="1">
+          <mxGeometry x="685" y="255" width="200" height="205" as="geometry"/>
+        </mxCell>
+        <mxCell id="circle_c4" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFBEB;strokeColor=#FDE68A;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="751" y="280" width="68" height="68" as="geometry"/>
+        </mxCell>
+        <mxCell id="icon_c4" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2040%2040%22%20width%3D%2240%22%20height%3D%2240%22%3E%0A%20%20%3Cpath%20d%3D%22M%206%2017%20Q%2019%2034%2032%2017%20Z%22%20fill%3D%22none%22%20stroke%3D%22%23d97706%22%20stroke-width%3D%222.4%22/%3E%0A%20%20%3Cline%20x1%3D%224%22%20y1%3D%2217%22%20x2%3D%2234%22%20y2%3D%2217%22%20stroke%3D%22%23d97706%22%20stroke-width%3D%222.4%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%3Cpath%20d%3D%22M%2014%209%20Q%2019%205%2024%209%22%20fill%3D%22none%22%20stroke%3D%22%23d97706%22%20stroke-width%3D%222.4%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%3Ccircle%20cx%3D%2219%22%20cy%3D%2212.5%22%20r%3D%221.8%22%20fill%3D%22%23d97706%22/%3E%0A%3C/svg%3E;" vertex="1" parent="1">
+          <mxGeometry x="767" y="296" width="36" height="36" as="geometry"/>
+        </mxCell>
+
+        <!-- Card 5 -->
+        <mxCell id="c5" value="&lt;b style=&quot;font-size:15.5px;color:#0F172A;&quot;&gt;Incident&lt;br/&gt;Reporting&lt;/b&gt;" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;strokeColor=#CBD5E1;strokeWidth=1.5;fillColor=#FFFFFF;verticalAlign=bottom;spacingBottom=25;" vertex="1" parent="1">
+          <mxGeometry x="905" y="255" width="200" height="205" as="geometry"/>
+        </mxCell>
+        <mxCell id="circle_c5" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FEF2F2;strokeColor=#FECACA;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="971" y="280" width="68" height="68" as="geometry"/>
+        </mxCell>
+        <mxCell id="icon_c5" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2040%2040%22%20width%3D%2240%22%20height%3D%2240%22%3E%0A%20%20%3Cpolygon%20points%3D%2219%2C4%2035%2C32%203%2C32%22%20fill%3D%22none%22%20stroke%3D%22%23dc2626%22%20stroke-width%3D%222.4%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Cline%20x1%3D%2219%22%20y1%3D%2213%22%20x2%3D%2219%22%20y2%3D%2221%22%20stroke%3D%22%23dc2626%22%20stroke-width%3D%222.6%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%3Ccircle%20cx%3D%2219%22%20cy%3D%2226.5%22%20r%3D%221.8%22%20fill%3D%22%23dc2626%22/%3E%0A%3C/svg%3E;" vertex="1" parent="1">
+          <mxGeometry x="987" y="296" width="36" height="36" as="geometry"/>
+        </mxCell>
+
+        <!-- Card 6 -->
+        <mxCell id="c6" value="&lt;b style=&quot;font-size:15.5px;color:#0F172A;&quot;&gt;Inventory &amp;amp;&lt;br/&gt;Supplies&lt;/b&gt;" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;strokeColor=#CBD5E1;strokeWidth=1.5;fillColor=#FFFFFF;verticalAlign=bottom;spacingBottom=25;" vertex="1" parent="1">
+          <mxGeometry x="1125" y="255" width="200" height="205" as="geometry"/>
+        </mxCell>
+        <mxCell id="circle_c6" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ECFDF5;strokeColor=#A7F3D0;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="1191" y="280" width="68" height="68" as="geometry"/>
+        </mxCell>
+        <mxCell id="icon_c6" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2040%2040%22%20width%3D%2240%22%20height%3D%2240%22%3E%0A%20%20%3Cpolygon%20points%3D%2219%2C3%2034%2C11%2019%2C19%204%2C11%22%20fill%3D%22none%22%20stroke%3D%22%23059669%22%20stroke-width%3D%222.2%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Cpolygon%20points%3D%224%2C11%2019%2C19%2019%2C34%204%2C26%22%20fill%3D%22none%22%20stroke%3D%22%23059669%22%20stroke-width%3D%222.2%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Cpolygon%20points%3D%2234%2C11%2019%2C19%2019%2C34%2034%2C26%22%20fill%3D%22none%22%20stroke%3D%22%23059669%22%20stroke-width%3D%222.2%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Cline%20x1%3D%2219%22%20y1%3D%2219%22%20x2%3D%2219%22%20y2%3D%2234%22%20stroke%3D%22%23059669%22%20stroke-width%3D%222.2%22/%3E%0A%3C/svg%3E;" vertex="1" parent="1">
+          <mxGeometry x="1207" y="296" width="36" height="36" as="geometry"/>
+        </mxCell>
+
+        <!-- Distribution Bus Connectors -->
+        <!-- Vertical stem dropping from shifted Dashboard bottom center (x=850, y=118 -> y=220) -->
+        <mxCell id="bus_stem" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;strokeWidth=1.8;endArrow=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="850" y="118" as="sourcePoint"/>
+            <mxPoint x="850" y="220" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Horizontal bus bar spanning across all 6 cards (x=125 to x=1225 at y=220) -->
+        <mxCell id="bus_bar" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;strokeWidth=1.8;endArrow=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="125" y="220" as="sourcePoint"/>
+            <mxPoint x="1225" y="220" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 6 Downward Branch Connectors to Card Centers -->
+        <mxCell id="bus_c1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;strokeWidth=1.8;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="125" y="220" as="sourcePoint"/>
+            <mxPoint x="125" y="255" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bus_c2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;strokeWidth=1.8;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="345" y="220" as="sourcePoint"/>
+            <mxPoint x="345" y="255" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bus_c3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;strokeWidth=1.8;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="565" y="220" as="sourcePoint"/>
+            <mxPoint x="565" y="255" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bus_c4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;strokeWidth=1.8;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="785" y="220" as="sourcePoint"/>
+            <mxPoint x="785" y="255" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bus_c5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;strokeWidth=1.8;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1005" y="220" as="sourcePoint"/>
+            <mxPoint x="1005" y="255" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bus_c6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;strokeWidth=1.8;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1225" y="220" as="sourcePoint"/>
+            <mxPoint x="1225" y="255" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
